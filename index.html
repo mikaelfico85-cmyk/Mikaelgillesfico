@@ -743,3 +743,24 @@
   </script>
 </body>
   </html>
+<style>
+.reveal{opacity:0;transform:translateY(32px);transition:opacity .7s ease,transform .7s ease}
+.reveal.visible{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+</style>
+<script>
+(function(){
+  if(!('IntersectionObserver' in window)){return;}
+  var els=document.querySelectorAll('.hero > div, .location-card, .section-heading, .about-copy, .project-card, .contact-box');
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target);}
+    });
+  },{threshold:0.15});
+  els.forEach(function(el,i){
+    el.classList.add('reveal');
+    el.style.transitionDelay=(i%2?0.12:0)+'s';
+    io.observe(el);
+  });
+})();
+</script>
