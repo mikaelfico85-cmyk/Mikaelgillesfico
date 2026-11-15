@@ -176,6 +176,18 @@ body.loading{overflow:hidden}
 .card:nth-child(3n),.tl div:nth-child(3){animation-duration:6.8s;animation-delay:-4s}
 .card:nth-child(4n){animation-duration:8s;animation-delay:-1s}
 .card:hover,.fact:hover,.tl div:hover{animation-play-state:paused}
+/* CORRECTIF TEXTE + DRAPEAU */
+.strap{background:none;-webkit-background-clip:border-box;background-clip:border-box;color:#22d3ee;animation:none}
+.num{background:none;-webkit-background-clip:border-box;background-clip:border-box;color:#ffc247}
+#ld .wd{background:none;-webkit-background-clip:border-box;background-clip:border-box;color:#f7f6ff}
+.card:hover::before{opacity:.6}
+@keyframes wv{0%,100%{transform:perspective(260px) rotateY(-14deg) rotate(-3deg)}50%{transform:perspective(260px) rotateY(14deg) rotate(3deg)}}
+@keyframes fl2{0%,100%{translate:0 0}50%{translate:0 -12px}}
+.flag{display:block;width:84px;height:56px;filter:drop-shadow(0 14px 18px rgba(0,0,0,.5));animation:fl2 3.4s ease-in-out infinite}
+.flag svg{display:block;width:100%;height:100%;border-radius:6px;animation:wv 3.4s ease-in-out infinite}
+#ld .flag{margin:0 auto 22px;width:96px;height:64px}
+.hero-flag{position:absolute;right:max(20px,4%);top:36px}
+@media (max-width:680px){.hero-flag{top:12px;right:16px}.hero-flag .flag{width:60px;height:40px}}
 </style>
 </head>
 <body>
@@ -196,6 +208,7 @@ body.loading{overflow:hidden}
 <main>
 <div class="hero" id="accueil">
   <div class="blob b1"></div><div class="blob b2"></div><div class="grid-bg"></div>
+  <div class="hero-flag" role="img" aria-label="Drapeau du Bénin"><span class="flag"><svg viewBox="0 0 60 40" aria-hidden="true"><rect width="60" height="40" fill="#E8112D"/><rect width="24" height="40" fill="#008751"/><rect x="24" width="36" height="20" fill="#FCD116"/></svg></span></div>
   <div class="wrap">
     <span class="tag"><span class="dot"></span>Cotonou, Bénin</span>
     <h1 id="t">Mikael Fico</h1>
@@ -330,14 +343,14 @@ body.loading{overflow:hidden}
   if(matchMedia("(prefers-reduced-motion: reduce)").matches)return;
   var L=[["Welcome","en"],["欢迎","zh"],["स्वागत है","hi"],["Bienvenido","es"],["مرحبًا بك","ar"],["Bienvenue","fr"],["স্বাগতম","bn"],["Bem-vindo","pt"],["Добро пожаловать","ru"],["ようこそ","ja"],["Karibu","sw"],["Ẹ káàbọ̀","yo"]];
   var d=document.createElement("div");d.id="ld";d.setAttribute("role","status");
-  d.innerHTML='<div class="in"><div class="wd" id="lw"></div><div class="f"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/></svg><div><b>Mikael-Fico.profil</b><small>Ouverture en cours…</small></div></div><div class="tr"><i id="lb"></i></div><div class="pc"><span>Chargement</span><span id="lp">0%</span></div><div class="sk">Touchez pour passer</div></div>';
+  d.innerHTML='<div class="in"><span class="flag"><svg viewBox="0 0 60 40" aria-hidden="true"><rect width="60" height="40" fill="#E8112D"/><rect width="24" height="40" fill="#008751"/><rect x="24" width="36" height="20" fill="#FCD116"/></svg></span><div class="wd" id="lw"></div><div class="f"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/></svg><div><b>Mikael-Fico.profil</b><small>Ouverture en cours…</small></div></div><div class="tr"><i id="lb"></i></div><div class="pc"><span>Chargement</span><span id="lp">0%</span></div><div class="sk">Touchez pour passer</div></div>';
   document.body.appendChild(d);document.body.classList.add("loading");
-  var i=0,w=document.getElementById("lw"),b=document.getElementById("lb"),p=document.getElementById("lp"),t0=Date.now(),T=2200,done=false;
+  var i=0,w=document.getElementById("lw"),b=document.getElementById("lb"),p=document.getElementById("lp"),t0=Date.now(),T=5000,done=false;
   function show(){w.textContent=L[i][0];w.lang=L[i][1];w.dir=L[i][1]==="ar"?"rtl":"ltr";i=(i+1)%L.length}
-  show();var iv=setInterval(show,180);
+  show();var iv=setInterval(show,Math.round(5000/L.length));
   function finish(){if(done)return;done=true;clearInterval(iv);b.style.width="100%";p.textContent="100%";d.classList.add("out");document.body.classList.remove("loading");setTimeout(function(){d.remove()},600)}
   function tick(){var r=Math.min(1,(Date.now()-t0)/T);r=1-Math.pow(1-r,2);b.style.width=r*100+"%";p.textContent=Math.round(r*100)+"%";if(r<1&&!done)requestAnimationFrame(tick);else finish()}
-  d.addEventListener("click",finish);requestAnimationFrame(tick);setTimeout(finish,4000);
+  d.addEventListener("click",finish);requestAnimationFrame(tick);setTimeout(finish,6500);
 })();
 </script>
 </body>
