@@ -4,663 +4,871 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#090b0e">
+<meta name="theme-color" content="#f7f5ef">
+<title>Mikael Fico — Worlds & Ventures</title>
+<meta name="description" content="Découvrez l'univers de Mikael Fico et ses projets dans l'événementiel, l'agriculture et l'industrie musicale.">
 
-<title>THE STRATEGIC OFFICE | Mikael Fico</title>
-<meta name="description" content="Mikael Fico — Strategic Mindset, Business Intelligence, Venture Building et développement de projets.">
-<meta name="author" content="Mikael Fico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
 
 <style>
 :root {
-  --bg: #090b0e;
-  --surface: #11151b;
-  --surface2: #171d25;
-  --gold: #c6a66a;
-  --gold-light: #e4ca91;
-  --white: #f4f1e9;
-  --muted: #969ba5;
-  --line: rgba(198,166,106,.2);
+  --cream:#f7f5ef;
+  --white:#fffefa;
+  --ink:#20241f;
+  --muted:#777970;
+  --green:#315c49;
+  --line:#e6e3da;
+  --serif:'Playfair Display',Georgia,serif;
+  --sans:'DM Sans',Arial,sans-serif;
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
 }
 
 html {
-  scroll-behavior: smooth;
-  scroll-padding-top: 85px;
+  scroll-behavior:smooth;
+  scroll-padding-top:90px;
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  background: var(--bg);
-  color: var(--white);
-  line-height: 1.7;
+  background:var(--cream);
+  color:var(--ink);
+  font-family:var(--sans);
+  overflow-x:hidden;
+}
+
+button,input,textarea,select {
+  font:inherit;
+}
+
+button,a {
+  -webkit-tap-highlight-color:transparent;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+  text-decoration:none;
+  color:inherit;
 }
 
-button, input, select, textarea {
-  font: inherit;
+img {
+  display:block;
+  width:100%;
+  object-fit:cover;
 }
 
-button, a {
-  -webkit-tap-highlight-color: transparent;
+button {
+  cursor:pointer;
 }
 
 .container {
-  width: min(1120px, 90%);
-  margin: auto;
+  width:min(1180px,90%);
+  margin:auto;
 }
 
-.gold {
-  color: var(--gold);
+.page {
+  display:none;
+  animation:pageIn .45s ease;
+}
+
+.page.active {
+  display:block;
+}
+
+@keyframes pageIn {
+  from {opacity:0;transform:translateY(9px)}
+  to {opacity:1;transform:translateY(0)}
+}
+
+.serif {
+  font-family:var(--serif);
 }
 
 .eyebrow {
-  color: var(--gold);
-  font-size: 11px;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  font-weight: bold;
+  font-size:10px;
+  letter-spacing:3px;
+  font-weight:700;
+  text-transform:uppercase;
+}
+
+.muted {
+  color:var(--muted);
 }
 
 .section {
-  padding: 100px 0;
+  padding:105px 0;
 }
 
-.section-heading {
-  margin-bottom: 42px;
+.section-head {
+  max-width:680px;
+  margin-bottom:45px;
 }
 
-.section-heading h2 {
-  font-size: clamp(30px, 5vw, 45px);
-  line-height: 1.2;
-  margin-top: 12px;
+.section-head h2 {
+  font:600 clamp(32px,5vw,53px)/1.12 var(--serif);
+  margin:15px 0;
+  letter-spacing:-1px;
 }
 
-.section-heading p {
-  color: var(--muted);
-  max-width: 600px;
-  margin-top: 14px;
+.section-head p {
+  color:var(--muted);
+  line-height:1.9;
+  font-size:14px;
+}
+
+.btn {
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:12px;
+  padding:15px 22px;
+  border:1px solid var(--ink);
+  background:var(--ink);
+  color:white;
+  font-size:11px;
+  font-weight:700;
+  letter-spacing:1px;
+  transition:.3s;
+}
+
+.btn:hover {
+  background:transparent;
+  color:var(--ink);
+}
+
+.btn-light {
+  background:var(--white);
+  color:var(--ink);
+  border-color:var(--white);
+}
+
+.btn-light:hover {
+  background:transparent;
+  color:white;
+  border-color:white;
+}
+
+.btn-green {
+  background:var(--green);
+  border-color:var(--green);
+}
+
+.btn-green:hover {
+  background:transparent;
+  color:var(--green);
 }
 
 /* NAVIGATION */
 
 header {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  background: rgba(9,11,14,.94);
-  backdrop-filter: blur(15px);
-  border-bottom: 1px solid var(--line);
+  height:78px;
+  position:sticky;
+  top:0;
+  z-index:1000;
+  background:rgba(247,245,239,.95);
+  backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--line);
 }
 
 .nav {
-  min-height: 76px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  height:100%;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
 }
 
-.brand {
-  font-size: 19px;
-  letter-spacing: 2px;
-  font-weight: 800;
+.logo {
+  font-size:19px;
+  font-weight:700;
+  letter-spacing:1px;
+  cursor:pointer;
 }
 
-.brand span {
-  color: var(--gold);
+.logo span {
+  color:var(--green);
 }
 
 .nav-links {
-  display: flex;
-  align-items: center;
-  gap: 27px;
+  display:flex;
+  gap:28px;
+  align-items:center;
 }
 
-.nav-links a {
-  color: #c3c4c8;
-  font-size: 12px;
-  transition: .3s;
+.nav-links button {
+  background:none;
+  border:0;
+  color:#575b54;
+  font-size:11px;
+  font-weight:600;
 }
 
-.nav-links a:hover {
-  color: var(--gold);
+.nav-links button:hover {
+  color:var(--green);
 }
 
-.menu-btn {
-  display: none;
-  background: none;
-  color: white;
-  border: 1px solid var(--line);
-  border-radius: 7px;
-  padding: 8px 12px;
-  font-size: 20px;
+.nav-contact {
+  border:1px solid var(--ink)!important;
+  padding:11px 17px;
 }
 
-/* HERO */
+.menu {
+  display:none;
+  background:none;
+  border:1px solid var(--line);
+  padding:8px 12px;
+  font-size:20px;
+}
 
-.hero {
-  min-height: 680px;
-  display: flex;
-  align-items: center;
-  position: relative;
-  overflow: hidden;
+/* HOME HERO */
+
+.home-hero {
+  min-height:680px;
+  display:flex;
+  align-items:center;
+  position:relative;
+  color:white;
   background:
-    radial-gradient(ellipse at 80% 35%, rgba(198,166,106,.12), transparent 38%),
-    linear-gradient(135deg,#090b0e,#11151b);
-  border-bottom: 1px solid var(--line);
+  linear-gradient(90deg,rgba(12,25,19,.83),rgba(12,25,19,.16)),
+  url("https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=2000&q=85") center/cover;
 }
 
-.hero::after {
-  content: "MF";
-  position: absolute;
-  right: 5%;
-  top: 10%;
-  font-size: clamp(180px,35vw,430px);
-  font-weight: 900;
-  color: rgba(198,166,106,.035);
-  pointer-events: none;
+.home-hero-content {
+  max-width:750px;
+  padding:100px 0;
 }
 
-.hero-content {
-  position: relative;
-  z-index: 2;
-  max-width: 800px;
-  padding: 85px 0;
+.home-hero .eyebrow {
+  color:#d6c9a7;
 }
 
-.hero h1 {
-  font-size: clamp(45px,8vw,88px);
-  line-height: 1.04;
-  letter-spacing: -3px;
-  margin: 24px 0;
+.home-hero h1 {
+  font:600 clamp(48px,8vw,88px)/1.08 var(--serif);
+  margin:25px 0;
 }
 
-.hero h1 span {
-  color: var(--gold);
+.home-hero p {
+  color:#e4e5df;
+  max-width:550px;
+  font-size:15px;
+  line-height:1.9;
 }
 
-.hero-description {
-  color: #b4b7be;
-  max-width: 590px;
-  font-size: 16px;
+.home-hero .btn {
+  margin-top:32px;
 }
 
-.hero-actions {
-  display: flex;
-  gap: 14px;
-  flex-wrap: wrap;
-  margin-top: 35px;
-}
-
-.btn {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  gap: 9px;
-  padding: 14px 23px;
-  border-radius: 3px;
-  font-size: 12px;
-  font-weight: bold;
-  letter-spacing: .7px;
-  border: 1px solid var(--gold);
-  cursor: pointer;
-  transition: .3s;
-}
-
-.btn-primary {
-  background: var(--gold);
-  color: #111;
-}
-
-.btn-primary:hover {
-  background: var(--gold-light);
-}
-
-.btn-outline {
-  color: var(--gold);
-  background: transparent;
-}
-
-.btn-outline:hover {
-  background: var(--gold);
-  color: #111;
-}
-
-.hero-bottom {
-  margin-top: 65px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  color: #a0a3aa;
-  font-size: 10px;
-  letter-spacing: 2px;
+.hero-meta {
+  display:flex;
+  gap:35px;
+  flex-wrap:wrap;
+  margin-top:65px;
+  font-size:10px;
+  letter-spacing:2px;
+  color:#deded4;
 }
 
 /* INTRO */
 
 .intro-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 65px;
-  align-items: start;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:85px;
+  align-items:center;
 }
 
-.intro-text {
-  color: #aeb2ba;
-  font-size: 15px;
+.intro-image {
+  height:500px;
+  overflow:hidden;
 }
 
-.intro-text p + p {
-  margin-top: 18px;
+.intro-image img {
+  height:100%;
 }
 
-.quote {
-  border-left: 2px solid var(--gold);
-  padding: 15px 23px;
-  background: var(--surface);
-  color: var(--gold-light);
-  font-size: 20px;
-  margin-top: 25px;
+.intro-copy h2 {
+  font:600 clamp(35px,5vw,55px)/1.2 var(--serif);
+  margin:20px 0;
 }
 
-/* EXPERTISE */
-
-.expertise-grid {
-  display: grid;
-  grid-template-columns: repeat(4,1fr);
-  gap: 15px;
+.intro-copy p {
+  color:var(--muted);
+  font-size:14px;
+  line-height:2;
+  margin-bottom:17px;
 }
 
-.expertise-card {
-  background: var(--surface);
-  border: 1px solid #252a32;
-  padding: 25px 20px;
-  transition: .3s;
+.signature {
+  color:var(--green);
+  font:italic 23px var(--serif);
+  margin-top:25px;
 }
 
-.expertise-card:hover {
-  border-color: var(--gold);
-  transform: translateY(-5px);
+/* PROJECT DISCOVERY */
+
+.projects-section {
+  background:#eeece4;
 }
 
-.expertise-number {
-  color: var(--gold);
-  font-size: 12px;
+.project-grid {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:22px;
 }
 
-.expertise-card h3 {
-  font-size: 16px;
-  margin: 23px 0 12px;
+.project-tile {
+  background:var(--white);
+  overflow:hidden;
+  cursor:pointer;
+  transition:.35s;
 }
 
-.expertise-card p {
-  color: var(--muted);
-  font-size: 13px;
+.project-tile:hover {
+  transform:translateY(-8px);
 }
 
-/* PROJECTS */
-
-.projects {
-  background: #0d1117;
+.tile-image {
+  height:310px;
+  overflow:hidden;
+  position:relative;
 }
 
-.project-card {
-  display: grid;
-  grid-template-columns: .8fr 1.2fr;
-  margin-bottom: 22px;
-  border: 1px solid #292e36;
-  background: var(--surface);
-  overflow: hidden;
+.tile-image img {
+  height:100%;
+  transition:.6s;
 }
 
-.project-visual {
-  min-height: 340px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 35px;
-  text-align: center;
-  background:
-    radial-gradient(circle at center,rgba(198,166,106,.18),transparent 65%),
-    #141923;
+.project-tile:hover img {
+  transform:scale(1.05);
 }
 
-.project-symbol {
-  font-size: 65px;
-  color: var(--gold);
-  font-weight: bold;
-  letter-spacing: 4px;
+.tile-number {
+  position:absolute;
+  top:17px;
+  left:17px;
+  background:white;
+  padding:8px 12px;
+  font-size:10px;
 }
 
-.project-visual small {
-  color: var(--gold);
-  font-size: 10px;
-  letter-spacing: 3px;
-  margin-top: 17px;
+.tile-content {
+  padding:27px;
 }
 
-.project-content {
-  padding: 38px;
+.tile-content .eyebrow {
+  color:var(--green);
 }
 
-.project-index {
-  color: var(--gold);
-  font-size: 11px;
-  letter-spacing: 2px;
+.tile-content h3 {
+  font:600 27px var(--serif);
+  margin:12px 0;
 }
 
-.project-content h3 {
-  font-size: 29px;
-  margin: 13px 0;
+.tile-content p {
+  color:var(--muted);
+  font-size:13px;
+  line-height:1.8;
 }
 
-.project-content > p {
-  color: #aeb3bd;
-  font-size: 14px;
-  margin-bottom: 20px;
+.tile-link {
+  display:inline-block;
+  margin-top:23px;
+  font-size:10px;
+  font-weight:700;
+  letter-spacing:1.5px;
+  border-bottom:1px solid var(--green);
+  padding-bottom:6px;
+  color:var(--green);
 }
 
-.project-details {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 12px;
-  margin: 22px 0;
+/* EXPERIENCE STRIP */
+
+.statement {
+  background:#294b3d;
+  color:white;
+  padding:95px 0;
+  text-align:center;
 }
 
-.detail {
-  border-top: 1px solid #343b45;
-  padding-top: 12px;
+.statement h2 {
+  font:500 clamp(34px,6vw,58px)/1.25 var(--serif);
+  max-width:850px;
+  margin:22px auto;
 }
 
-.detail strong {
-  display: block;
-  color: var(--gold-light);
-  font-size: 12px;
+.statement p {
+  color:#d2ddd5;
+  font-size:13px;
 }
 
-.detail span {
-  color: var(--muted);
-  font-size: 12px;
+/* COMMON PROJECT HERO */
+
+.project-hero {
+  min-height:610px;
+  display:flex;
+  align-items:flex-end;
+  color:white;
+  position:relative;
+  background-size:cover;
+  background-position:center;
 }
 
-.project-link {
-  display: inline-block;
-  margin-top: 12px;
-  color: var(--gold);
-  font-size: 12px;
-  border-bottom: 1px solid var(--gold);
-  padding-bottom: 4px;
+.project-hero::before {
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(0deg,rgba(0,0,0,.77),rgba(0,0,0,.08));
 }
 
-/* APPROACH */
-
-.approach-grid {
-  display: grid;
-  grid-template-columns: repeat(3,1fr);
-  gap: 20px;
+.project-hero-content {
+  position:relative;
+  z-index:1;
+  padding:85px 0;
+  max-width:780px;
 }
 
-.approach-card {
-  padding: 27px;
-  background: var(--surface);
-  border: 1px solid #282e37;
+.project-hero .eyebrow {
+  color:#e7d8b8;
 }
 
-.approach-card h3 {
-  color: var(--gold);
-  font-size: 17px;
-  margin-bottom: 12px;
+.project-hero h1 {
+  font:600 clamp(48px,8vw,86px)/1.08 var(--serif);
+  margin:18px 0;
 }
 
-.approach-card p {
-  color: var(--muted);
-  font-size: 13px;
+.project-hero p {
+  max-width:600px;
+  color:#f0eee9;
+  line-height:1.9;
+  font-size:14px;
+}
+
+.project-hero .btn {
+  margin-top:27px;
+}
+
+.mfb-hero {
+  background-image:url("https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?auto=format&fit=crop&w=2000&q=85");
+}
+
+.agri-hero {
+  background-image:url("https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=2000&q=85");
+}
+
+.music-hero {
+  background-image:url("https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=2000&q=85");
+}
+
+/* PROJECT NAV */
+
+.project-subnav {
+  background:var(--white);
+  border-bottom:1px solid var(--line);
+}
+
+.project-subnav .container {
+  display:flex;
+  gap:25px;
+  overflow-x:auto;
+  padding-top:19px;
+  padding-bottom:19px;
+}
+
+.project-subnav a {
+  font-size:10px;
+  white-space:nowrap;
+  font-weight:700;
+  letter-spacing:1px;
+  color:var(--muted);
+}
+
+.project-subnav a:hover {
+  color:var(--green);
+}
+
+/* PROJECT DETAILS */
+
+.project-intro {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:70px;
+  align-items:center;
+}
+
+.project-intro h2 {
+  font:600 clamp(32px,5vw,51px)/1.2 var(--serif);
+  margin:18px 0;
+}
+
+.project-intro p {
+  color:var(--muted);
+  line-height:2;
+  font-size:14px;
+  margin-bottom:16px;
+}
+
+.project-intro-image {
+  height:430px;
+}
+
+.project-intro-image img {
+  height:100%;
+}
+
+.feature-grid {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+}
+
+.feature {
+  background:var(--white);
+  padding:30px 25px;
+  border:1px solid var(--line);
+}
+
+.feature .number {
+  font:500 25px var(--serif);
+  color:var(--green);
+}
+
+.feature h3 {
+  font:600 20px var(--serif);
+  margin:20px 0 10px;
+}
+
+.feature p {
+  color:var(--muted);
+  font-size:13px;
+  line-height:1.8;
+}
+
+/* GALLERY */
+
+.gallery {
+  display:grid;
+  grid-template-columns:1.3fr 1fr 1fr;
+  gap:14px;
+}
+
+.gallery img {
+  height:270px;
+}
+
+/* PROCESS */
+
+.process-list {
+  border-top:1px solid var(--line);
+}
+
+.process-item {
+  display:grid;
+  grid-template-columns:90px 1fr 1.2fr;
+  gap:25px;
+  padding:25px 0;
+  border-bottom:1px solid var(--line);
+}
+
+.process-item span {
+  color:var(--green);
+  font-size:12px;
+}
+
+.process-item h3 {
+  font:500 22px var(--serif);
+}
+
+.process-item p {
+  color:var(--muted);
+  font-size:13px;
+  line-height:1.8;
+}
+
+/* CTA */
+
+.project-cta {
+  padding:80px 0;
+  background:#294b3d;
+  color:white;
+  text-align:center;
+}
+
+.project-cta h2 {
+  font:500 clamp(33px,5vw,51px) var(--serif);
+  margin:15px 0;
+}
+
+.project-cta p {
+  color:#d7e0d9;
+  font-size:13px;
+  margin-bottom:25px;
 }
 
 /* CONTACT */
 
-.contact {
-  background:
-    radial-gradient(ellipse at 80% 20%,rgba(198,166,106,.09),transparent 40%),
-    #0d1117;
+.contact-layout {
+  display:grid;
+  grid-template-columns:.8fr 1.2fr;
+  gap:65px;
 }
 
-.contact-grid {
-  display: grid;
-  grid-template-columns: .8fr 1.2fr;
-  gap: 55px;
+.contact-copy h2 {
+  font:600 47px/1.15 var(--serif);
+  margin:20px 0;
 }
 
-.contact-info p {
-  color: var(--muted);
-  font-size: 14px;
-  margin: 18px 0 28px;
+.contact-copy p {
+  color:var(--muted);
+  font-size:14px;
+  line-height:1.9;
 }
 
-.contact-item {
-  margin: 18px 0;
-  font-size: 13px;
-  overflow-wrap: anywhere;
+.contact-line {
+  margin-top:25px;
 }
 
-.contact-item strong {
-  color: var(--gold);
-  display: block;
-  font-size: 10px;
-  letter-spacing: 2px;
-  margin-bottom: 5px;
+.contact-line strong {
+  display:block;
+  font-size:10px;
+  letter-spacing:2px;
+  color:var(--green);
 }
 
-.contact-item a:hover {
-  color: var(--gold);
+.contact-line a {
+  font-size:14px;
+  overflow-wrap:anywhere;
 }
 
 .socials {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 17px;
-  margin-top: 25px;
+  display:flex;
+  gap:18px;
+  flex-wrap:wrap;
+  margin-top:25px;
 }
 
 .socials a {
-  color: var(--gold);
-  font-size: 12px;
+  font-size:12px;
+  color:var(--green);
 }
 
 .contact-form {
-  padding: 30px;
-  background: var(--surface);
-  border: 1px solid #303641;
+  background:var(--white);
+  padding:35px;
+  border:1px solid var(--line);
 }
 
 .contact-form h3 {
-  font-size: 20px;
-  margin-bottom: 22px;
+  font:600 27px var(--serif);
+  margin-bottom:25px;
 }
 
-.form-group {
-  margin-bottom: 16px;
+.form-row {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:15px;
 }
 
-.form-group label {
-  display: block;
-  font-size: 11px;
-  color: #c4c7cd;
-  margin-bottom: 7px;
+.field {
+  margin-bottom:17px;
 }
 
-.form-group input,
-.form-group textarea,
-.form-group select {
-  width: 100%;
-  background: #0b1018;
-  color: white;
-  border: 1px solid #343c49;
-  padding: 13px;
-  border-radius: 3px;
-  outline: none;
+.field label {
+  display:block;
+  font-size:11px;
+  font-weight:700;
+  margin-bottom:8px;
 }
 
-.form-group input:focus,
-.form-group textarea:focus,
-.form-group select:focus {
-  border-color: var(--gold);
+.field input,
+.field textarea,
+.field select {
+  width:100%;
+  padding:14px;
+  background:#f9f8f4;
+  border:1px solid #deddd5;
+  outline:none;
+  border-radius:0;
+  color:var(--ink);
 }
 
-.form-group textarea {
-  min-height: 115px;
-  resize: vertical;
+.field input:focus,
+.field textarea:focus,
+.field select:focus {
+  border-color:var(--green);
+}
+
+.field textarea {
+  min-height:125px;
+  resize:vertical;
 }
 
 .contact-form .btn {
-  width: 100%;
+  width:100%;
 }
 
 .form-note {
-  color: #858c98;
-  font-size: 10px;
-  margin-top: 12px;
+  color:var(--muted);
+  font-size:10px;
+  margin-top:13px;
+  line-height:1.7;
 }
 
 /* FOOTER */
 
 footer {
-  padding: 35px 0;
-  border-top: 1px solid var(--line);
-  background: #080a0d;
+  background:#202e27;
+  color:white;
+  padding:55px 0 25px;
 }
 
-.footer-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 20px;
-  flex-wrap: wrap;
+.footer-top {
+  display:flex;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  gap:30px;
+  padding-bottom:40px;
 }
 
-.footer-content p {
-  color: #858b96;
-  font-size: 11px;
+.footer-brand {
+  font:600 28px var(--serif);
 }
 
-.back-top {
-  color: var(--gold);
-  font-size: 12px;
+.footer-brand span {
+  color:#c5b18a;
 }
 
-/* ANIMATIONS */
-
-.reveal {
-  opacity: 0;
-  transform: translateY(25px);
-  transition: opacity .7s ease, transform .7s ease;
+.footer-top p {
+  color:#c3cec6;
+  font-size:12px;
+  max-width:350px;
+  margin-top:12px;
+  line-height:1.8;
 }
 
-.reveal.visible {
-  opacity: 1;
-  transform: translateY(0);
+.footer-links {
+  display:flex;
+  flex-wrap:wrap;
+  gap:20px;
+}
+
+.footer-links button {
+  background:none;
+  border:0;
+  color:#d5ddd6;
+  font-size:11px;
+}
+
+.footer-bottom {
+  border-top:1px solid #4b5c51;
+  padding-top:22px;
+  display:flex;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  gap:15px;
+  color:#b9c5bb;
+  font-size:10px;
 }
 
 /* MOBILE */
 
 @media(max-width:850px) {
+  .menu {display:block}
+
   .nav-links {
-    display: none;
-    position: absolute;
-    top: 76px;
-    left: 0;
-    width: 100%;
-    padding: 25px;
-    background: #10141b;
-    border-bottom: 1px solid var(--line);
-    flex-direction: column;
-    align-items: flex-start;
+    display:none;
+    position:absolute;
+    top:78px;
+    left:0;
+    width:100%;
+    background:var(--cream);
+    padding:25px 5%;
+    flex-direction:column;
+    align-items:flex-start;
+    border-bottom:1px solid var(--line);
   }
 
-  .nav-links.active {
-    display: flex;
-  }
-
-  .menu-btn {
-    display: block;
-  }
-
-  .expertise-grid {
-    grid-template-columns: repeat(2,1fr);
-  }
+  .nav-links.open {display:flex}
 
   .intro-grid,
-  .contact-grid {
-    grid-template-columns: 1fr;
-    gap: 35px;
+  .project-intro,
+  .contact-layout {
+    grid-template-columns:1fr;
+    gap:35px;
   }
 
-  .project-card {
-    grid-template-columns: 1fr;
+  .project-grid {
+    grid-template-columns:1fr 1fr;
   }
 
-  .project-visual {
-    min-height: 220px;
+  .project-grid .project-tile:last-child {
+    grid-column:1/-1;
   }
 
-  .approach-grid {
-    grid-template-columns: 1fr;
+  .feature-grid {
+    grid-template-columns:1fr 1fr;
+  }
+
+  .gallery {
+    grid-template-columns:1fr 1fr;
+  }
+
+  .gallery img:last-child {
+    display:none;
+  }
+
+  .process-item {
+    grid-template-columns:55px 1fr;
+  }
+
+  .process-item p {
+    grid-column:2;
   }
 }
 
-@media(max-width:500px) {
-  .section {
-    padding: 70px 0;
+@media(max-width:540px) {
+  .section {padding:72px 0}
+
+  .home-hero {min-height:660px}
+
+  .home-hero-content {padding:75px 0}
+
+  .home-hero h1 {letter-spacing:-1.5px}
+
+  .hero-meta {gap:15px;margin-top:45px}
+
+  .project-grid,
+  .feature-grid {
+    grid-template-columns:1fr;
   }
 
-  .hero {
-    min-height: 600px;
+  .project-grid .project-tile:last-child {
+    grid-column:auto;
   }
 
-  .hero h1 {
-    letter-spacing: -2px;
-  }
+  .tile-image {height:250px}
 
-  .hero-bottom {
-    gap: 13px;
-  }
+  .project-hero {min-height:580px}
 
-  .expertise-grid {
-    grid-template-columns: 1fr 1fr;
-  }
+  .project-hero-content {padding:70px 0}
 
-  .expertise-card {
-    padding: 18px 13px;
-  }
+  .project-intro-image {height:300px}
 
-  .project-content {
-    padding: 24px 19px;
-  }
+  .gallery {grid-template-columns:1fr 1fr}
 
-  .project-details {
-    grid-template-columns: 1fr;
-  }
+  .gallery img {height:180px}
 
-  .contact-form {
-    padding: 20px;
-  }
-}
+  .gallery img:last-child {display:none}
 
-@media(prefers-reduced-motion:reduce) {
-  html { scroll-behavior: auto; }
-  *, *::before, *::after {
-    transition-duration: .01ms !important;
-    animation-duration: .01ms !important;
-  }
+  .contact-form {padding:22px}
+
+  .form-row {grid-template-columns:1fr}
+
+  .contact-copy h2 {font-size:39px}
+
+  .footer-top {flex-direction:column}
 }
 </style>
 </head>
@@ -669,433 +877,745 @@ footer {
 
 <header>
   <div class="container nav">
-    <a href="#home" class="brand">MF<span>.</span></a>
+    <a class="logo" href="#home" onclick="showPage('home')">
+      MIKAEL FICO<span>.</span>
+    </a>
 
     <nav class="nav-links" id="navLinks">
-      <a href="#home">Accueil</a>
-      <a href="#vision">Vision</a>
-      <a href="#expertise">Expertise</a>
-      <a href="#projects">Projets</a>
-      <a href="#approach">Approche</a>
-      <a href="#contact">Contact</a>
+      <button onclick="showPage('home')">ACCUEIL</button>
+      <button onclick="showPage('mfb')">MADE FOR BOUNCE</button>
+      <button onclick="showPage('agriculture')">AGRICULTURE</button>
+      <button onclick="showPage('music')">MUSIC</button>
+      <button class="nav-contact" onclick="showPage('contact')">CONTACT ↗</button>
     </nav>
 
-    <button class="menu-btn" id="menuBtn"
-      aria-label="Ouvrir le menu"
-      aria-expanded="false"
-      onclick="toggleMenu()">☰</button>
+    <button class="menu" id="menuBtn" onclick="toggleMenu()" aria-label="Ouvrir le menu">☰</button>
   </div>
 </header>
 
 <main>
 
-<!-- HERO -->
+<!-- ================= HOME ================= -->
 
-<section class="hero" id="home">
-  <div class="container hero-content reveal">
-    <div class="eyebrow">WELCOME TO MY WORLD</div>
+<div class="page active" id="home">
 
-    <h1>
-      THE STRATEGIC<br>
-      <span>OFFICE.</span>
-    </h1>
+  <section class="home-hero">
+    <div class="container home-hero-content">
+      <div class="eyebrow">A WORLD OF IDEAS & POSSIBILITIES</div>
 
-    <p class="hero-description">
-      Strategic Mindset · Business Intelligence · Venture Building.
+      <h1>
+        Discover the<br>
+        world of <span class="serif">Mikael Fico.</span>
+      </h1>
 
-      Je développe une vision orientée vers la stratégie,
-      l'identification des opportunités et la construction
-      de projets à potentiel économique et culturel.
-    </p>
+      <p>
+        Une vision, plusieurs univers.
+        Explorez des initiatives à la croisée
+        de l'événementiel, de l'agriculture
+        et de l'industrie musicale.
+      </p>
 
-    <div class="hero-actions">
-      <a href="#projects" class="btn btn-primary">
-        EXPLORER MES PROJETS ↗
-      </a>
+      <button class="btn btn-light" onclick="goToProjects()">
+        EXPLORER MES UNIVERS ↗
+      </button>
 
-      <a href="#contact" class="btn btn-outline">
-        COLLABORER
-      </a>
-    </div>
-
-    <div class="hero-bottom">
-      <span>VISION</span>
-      <span>STRATEGY</span>
-      <span>CAPITAL</span>
-      <span>VALUE CREATION</span>
-    </div>
-  </div>
-</section>
-
-<!-- VISION -->
-
-<section class="section" id="vision">
-  <div class="container intro-grid reveal">
-
-    <div>
-      <div class="eyebrow">01 — ABOUT & VISION</div>
-      <div class="section-heading">
-        <h2>Penser.<br>Structurer.<br><span class="gold">Construire.</span></h2>
+      <div class="hero-meta">
+        <span>VISION</span>
+        <span>CREATION</span>
+        <span>BUSINESS</span>
+        <span>DEVELOPMENT</span>
       </div>
     </div>
+  </section>
 
-    <div class="intro-text">
-      <p>
-        Je suis Mikael Fico. Je m'intéresse à la stratégie,
-        à l'intelligence économique, à l'entrepreneuriat
-        et à la création de nouvelles opportunités.
-      </p>
+  <section class="section">
+    <div class="container intro-grid">
 
-      <p>
-        THE STRATEGIC OFFICE est mon espace de réflexion,
-        de conception et de développement de projets.
-        Il rassemble différentes initiatives dans lesquelles
-        la vision, l'organisation et la création de valeur
-        occupent une place centrale.
-      </p>
-
-      <p>
-        Mon approche consiste à analyser les possibilités,
-        structurer les idées et rechercher les ressources
-        nécessaires à leur transformation en projets concrets.
-      </p>
-
-      <div class="quote">
-        « La vision précède le capital.
-        La stratégie transforme les idées en actifs. »
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<!-- EXPERTISE -->
-
-<section class="section" id="expertise">
-  <div class="container reveal">
-
-    <div class="section-heading">
-      <div class="eyebrow">02 — EXPERTISE</div>
-      <h2>Strategic Capabilities.</h2>
-      <p>
-        Des domaines de réflexion qui orientent
-        ma démarche entrepreneuriale.
-      </p>
-    </div>
-
-    <div class="expertise-grid">
-
-      <article class="expertise-card">
-        <div class="expertise-number">01 / INTELLIGENCE</div>
-        <h3>Business Intelligence</h3>
-        <p>
-          Analyse des marchés, compréhension
-          des environnements économiques et
-          identification des opportunités.
-        </p>
-      </article>
-
-      <article class="expertise-card">
-        <div class="expertise-number">02 / FINANCE</div>
-        <h3>Capital Allocation</h3>
-        <p>
-          Réflexion sur l'utilisation des ressources,
-          la gestion des risques et la création de valeur.
-        </p>
-      </article>
-
-      <article class="expertise-card">
-        <div class="expertise-number">03 / ENTREPRENEURIAT</div>
-        <h3>Venture Building</h3>
-        <p>
-          Structuration d'idées, développement
-          de concepts et construction de projets.
-        </p>
-      </article>
-
-      <article class="expertise-card">
-        <div class="expertise-number">04 / PLANIFICATION</div>
-        <h3>Strategic Planning</h3>
-        <p>
-          Vision à long terme, positionnement,
-          anticipation et planification.
-        </p>
-      </article>
-
-    </div>
-  </div>
-</section>
-
-<!-- PROJECTS -->
-
-<section class="section projects" id="projects">
-  <div class="container reveal">
-
-    <div class="section-heading">
-      <div class="eyebrow">03 — VENTURE PORTFOLIO</div>
-      <h2>Ideas into Opportunities.</h2>
-      <p>
-        Trois axes de développement, trois univers,
-        une même ambition : construire des initiatives
-        structurées et créatrices de valeur.
-      </p>
-    </div>
-
-    <!-- PROJECT 1 -->
-
-    <article class="project-card">
-
-      <div class="project-visual">
-        <div class="project-symbol">MFB</div>
-        <small>EVENTS · CULTURE · EXPERIENCE</small>
+      <div class="intro-image">
+        <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1000&q=85"
+             alt="Espace de travail et de réflexion">
       </div>
 
-      <div class="project-content">
-        <div class="project-index">PROJECT 01 — EVENT INDUSTRY</div>
+      <div class="intro-copy">
+        <div class="eyebrow">THE PERSON BEHIND THE VISION</div>
 
-        <h3>MADE FOR BOUNCE</h3>
+        <h2>Des idées aux projets. Des projets aux opportunités.</h2>
 
+        <p>
+          Je suis Mikael Fico. Je m'intéresse à la stratégie,
+          à l'entrepreneuriat et à la construction de projets
+          dans différents secteurs.
+        </p>
+
+        <p>
+          Cet espace présente mon univers, mes réflexions
+          et les initiatives que je souhaite développer.
+          Chaque projet possède son identité, sa vision
+          et ses perspectives.
+        </p>
+
+        <p>
+          Mon ambition : apprendre, expérimenter, structurer
+          et transformer des idées en réalisations concrètes.
+        </p>
+
+        <div class="signature">Mikael Fico.</div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section projects-section" id="discover">
+    <div class="container">
+
+      <div class="section-head">
+        <div class="eyebrow">EXPLORE THE UNIVERSES</div>
+        <h2>Three worlds. Three ambitions.</h2>
+        <p>
+          Chaque univers est une porte d'entrée vers
+          un secteur, une vision et de nouvelles possibilités.
+          Choisissez votre destination.
+        </p>
+      </div>
+
+      <div class="project-grid">
+
+        <article class="project-tile" onclick="showPage('mfb')">
+          <div class="tile-image">
+            <img src="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?auto=format&fit=crop&w=900&q=85"
+                 alt="Festival et expérience musicale">
+            <span class="tile-number">01 / EVENTS</span>
+          </div>
+          <div class="tile-content">
+            <div class="eyebrow">EVENTS & EXPERIENCES</div>
+            <h3>Made For Bounce</h3>
+            <p>
+              Une vision de l'événementiel construite autour
+              de la musique, du divertissement, des marques
+              et des expériences immersives.
+            </p>
+            <span class="tile-link">ENTRER DANS CET UNIVERS ↗</span>
+          </div>
+        </article>
+
+        <article class="project-tile" onclick="showPage('agriculture')">
+          <div class="tile-image">
+            <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=900&q=85"
+                 alt="Paysage agricole">
+            <span class="tile-number">02 / AGRICULTURE</span>
+          </div>
+          <div class="tile-content">
+            <div class="eyebrow">AGRICULTURE & DEVELOPMENT</div>
+            <h3>Agriculture</h3>
+            <p>
+              Une réflexion sur la production agricole,
+              la valorisation des ressources, les filières
+              et les opportunités économiques.
+            </p>
+            <span class="tile-link">ENTRER DANS CET UNIVERS ↗</span>
+          </div>
+        </article>
+
+        <article class="project-tile" onclick="showPage('music')">
+          <div class="tile-image">
+            <img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=900&q=85"
+                 alt="Artiste sur scène">
+            <span class="tile-number">03 / MUSIC</span>
+          </div>
+          <div class="tile-content">
+            <div class="eyebrow">MUSIC & ENTERTAINMENT</div>
+            <h3>Music Industry</h3>
+            <p>
+              Explorer le potentiel de l'industrie musicale,
+              le développement artistique et les modèles
+              économiques de la musique.
+            </p>
+            <span class="tile-link">ENTRER DANS CET UNIVERS ↗</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="statement">
+    <div class="container">
+      <div class="eyebrow">A LONG-TERM PERSPECTIVE</div>
+      <h2>Think beyond the idea. Build beyond the limits.</h2>
+      <p>Vision · Strategy · Creativity · Value Creation</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container section-head">
+      <div class="eyebrow">LET'S CONNECT</div>
+      <h2>Every great opportunity begins with a conversation.</h2>
+      <p>
+        Vous représentez une entreprise, une marque,
+        une structure ou vous souhaitez simplement échanger ?
+      </p>
+      <br>
+      <button class="btn btn-green" onclick="showPage('contact')">
+        PRENDRE CONTACT ↗
+      </button>
+    </div>
+  </section>
+
+</div>
+
+<!-- ================= MADE FOR BOUNCE ================= -->
+
+<div class="page" id="mfb">
+
+  <section class="project-hero mfb-hero">
+    <div class="container project-hero-content">
+      <div class="eyebrow">01 — EVENT & CULTURE</div>
+      <h1>MADE FOR<br>BOUNCE.</h1>
+      <p>
+        More than an event. An experience.
+        Un univers dédié au divertissement,
+        à la culture musicale et à la création
+        d'expériences mémorables.
+      </p>
+      <button class="btn btn-light"
+        onclick="document.getElementById('mfb-vision').scrollIntoView({behavior:'smooth'})">
+        DÉCOUVRIR LE CONCEPT ↓
+      </button>
+    </div>
+  </section>
+
+  <nav class="project-subnav">
+    <div class="container">
+      <a href="#mfb-vision">VISION</a>
+      <a href="#mfb-concept">CONCEPT</a>
+      <a href="#mfb-experience">EXPERIENCES</a>
+      <a href="#mfb-business">BUSINESS MODEL</a>
+      <a href="#mfb-gallery">UNIVERS</a>
+    </div>
+  </nav>
+
+  <section class="section" id="mfb-vision">
+    <div class="container project-intro">
+      <div>
+        <div class="eyebrow">THE VISION</div>
+        <h2>Créer une expérience qui dépasse la scène.</h2>
         <p>
           Made For Bounce est un concept événementiel
-          développé autour du divertissement, de la musique,
-          des expériences immersives et des partenariats
-          commerciaux.
+          qui ambitionne de proposer une expérience
+          de divertissement originale, en réunissant
+          musique, public, marques et créativité.
         </p>
-
         <p>
-          L'ambition est de construire une marque événementielle
-          capable de proposer des expériences distinctives,
-          de réunir différents publics et de créer des espaces
-          de visibilité pour les entreprises et partenaires.
+          L'idée est de penser l'événement comme un véritable
+          univers : une identité, une ambiance, des activités,
+          des partenaires et une expérience globale.
         </p>
+        <p>
+          La construction du projet repose sur la qualité
+          de l'organisation, la cohérence du concept
+          et la viabilité économique.
+        </p>
+      </div>
 
-        <div class="project-details">
-          <div class="detail">
-            <strong>EVENT DESIGN</strong>
-            <span>Conception d'expériences</span>
-          </div>
+      <div class="project-intro-image">
+        <img src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&w=1000&q=85"
+             alt="Public lors d'un festival">
+      </div>
+    </div>
+  </section>
 
-          <div class="detail">
-            <strong>PARTNERSHIPS</strong>
-            <span>Relations commerciales</span>
-          </div>
+  <section class="section projects-section" id="mfb-concept">
+    <div class="container">
+      <div class="section-head">
+        <div class="eyebrow">THE CONCEPT</div>
+        <h2>Une marque. Plusieurs dimensions.</h2>
+        <p>
+          L'expérience Made For Bounce peut se construire
+          autour de plusieurs composantes complémentaires.
+        </p>
+      </div>
 
-          <div class="detail">
-            <strong>BRAND ACTIVATION</strong>
-            <span>Visibilité des marques</span>
-          </div>
+      <div class="feature-grid">
+        <article class="feature">
+          <div class="number">01</div>
+          <h3>Live Experiences</h3>
+          <p>
+            Concerts, performances, DJ sets et animations
+            pour créer une expérience collective.
+          </p>
+        </article>
 
-          <div class="detail">
-            <strong>EVENT ECONOMICS</strong>
-            <span>Billetterie et rentabilité</span>
-          </div>
+        <article class="feature">
+          <div class="number">02</div>
+          <h3>Immersive Spaces</h3>
+          <p>
+            Espaces thématiques, installations visuelles,
+            zones interactives et expériences originales.
+          </p>
+        </article>
+
+        <article class="feature">
+          <div class="number">03</div>
+          <h3>Brand Experiences</h3>
+          <p>
+            Activations de marques, visibilité commerciale
+            et expériences destinées aux partenaires.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="mfb-experience">
+    <div class="container">
+      <div class="section-head">
+        <div class="eyebrow">THE EXPERIENCE</div>
+        <h2>Au-delà de la musique.</h2>
+        <p>
+          Un événement peut devenir un espace de découverte,
+          de rencontre, de divertissement et de création
+          de souvenirs.
+        </p>
+      </div>
+
+      <div class="gallery">
+        <img src="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?auto=format&fit=crop&w=800&q=80" alt="DJ et musique">
+        <img src="https://images.unsplash.com/photo-1506157786151-b8491531f063?auto=format&fit=crop&w=800&q=80" alt="Concert">
+        <img src="https://images.unsplash.com/photo-1459749411175-04bf5292ceea?auto=format&fit=crop&w=800&q=80" alt="Spectacle">
+      </div>
+    </div>
+  </section>
+
+  <section class="section projects-section" id="mfb-business">
+    <div class="container">
+      <div class="section-head">
+        <div class="eyebrow">BUSINESS & DEVELOPMENT</div>
+        <h2>Construire un modèle durable.</h2>
+        <p>
+          L'événementiel est également une activité économique.
+          Le projet doit penser son financement, ses revenus,
+          ses coûts et sa capacité à se développer.
+        </p>
+      </div>
+
+      <div class="process-list">
+        <div class="process-item">
+          <span>01</span>
+          <h3>Billetterie</h3>
+          <p>Conception de différentes catégories d'accès et d'expériences pour le public.</p>
         </div>
-
-        <a class="project-link" href="#contact"
-          onclick="setProject('Made For Bounce')">
-          DISCUTER DU PROJET ↗
-        </a>
-      </div>
-
-    </article>
-
-    <!-- PROJECT 2 -->
-
-    <article class="project-card">
-
-      <div class="project-visual">
-        <div class="project-symbol">KA.</div>
-        <small>AGRICULTURE · LAND · DEVELOPMENT</small>
-      </div>
-
-      <div class="project-content">
-        <div class="project-index">PROJECT 02 — AGRIBUSINESS</div>
-
-        <h3>KOUANDÉ AGRO</h3>
-
-        <p>
-          Un projet de développement agricole orienté
-          vers la valorisation du foncier, l'exploitation
-          des terres et la construction progressive
-          d'activités agricoles dans le nord du Bénin.
-        </p>
-
-        <p>
-          Le projet envisage une approche combinant
-          exploitation directe, mise en valeur des terres
-          et possibilités de collaboration avec des acteurs
-          du secteur agricole.
-        </p>
-
-        <div class="project-details">
-          <div class="detail">
-            <strong>LAND DEVELOPMENT</strong>
-            <span>Valorisation foncière</span>
-          </div>
-
-          <div class="detail">
-            <strong>CROP PRODUCTION</strong>
-            <span>Maïs, manioc, igname et sorgho</span>
-          </div>
-
-          <div class="detail">
-            <strong>AGRICULTURAL VALUE</strong>
-            <span>Production et commercialisation</span>
-          </div>
-
-          <div class="detail">
-            <strong>PARTNERSHIPS</strong>
-            <span>Producteurs et investisseurs</span>
-          </div>
+        <div class="process-item">
+          <span>02</span>
+          <h3>Sponsoring</h3>
+          <p>Développement de partenariats commerciaux et de visibilité pour les marques.</p>
         </div>
-
-        <a class="project-link" href="#contact"
-          onclick="setProject('Kouandé Agro')">
-          DISCUTER DU PROJET ↗
-        </a>
-      </div>
-
-    </article>
-
-    <!-- PROJECT 3 -->
-
-    <article class="project-card">
-
-      <div class="project-visual">
-        <div class="project-symbol">MUSIC.</div>
-        <small>MUSIC BUSINESS · TALENT · DISTRIBUTION</small>
-      </div>
-
-      <div class="project-content">
-        <div class="project-index">PROJECT 03 — MUSIC INDUSTRY</div>
-
-        <h3>MUSIC & ENTERTAINMENT</h3>
-
-        <p>
-          Un projet de développement dans l'industrie musicale,
-          avec une orientation vers l'accompagnement des artistes,
-          la production et la valorisation des œuvres.
-        </p>
-
-        <p>
-          L'objectif est de réfléchir à un modèle structuré
-          autour de la création artistique, de la distribution
-          numérique, de l'exploitation des catalogues
-          et des opportunités commerciales.
-        </p>
-
-        <div class="project-details">
-          <div class="detail">
-            <strong>ARTIST DEVELOPMENT</strong>
-            <span>Développement de talents</span>
-          </div>
-
-          <div class="detail">
-            <strong>MUSIC PRODUCTION</strong>
-            <span>Production et création</span>
-          </div>
-
-          <div class="detail">
-            <strong>DIGITAL DISTRIBUTION</strong>
-            <span>Streaming et plateformes</span>
-          </div>
-
-          <div class="detail">
-            <strong>MUSIC RIGHTS</strong>
-            <span>Catalogues et licences</span>
-          </div>
+        <div class="process-item">
+          <span>03</span>
+          <h3>Partenariats</h3>
+          <p>Collaboration avec des acteurs culturels, médiatiques et économiques.</p>
         </div>
-
-        <a class="project-link" href="#contact"
-          onclick="setProject('Music & Entertainment')">
-          DISCUTER DU PROJET ↗
-        </a>
+        <div class="process-item">
+          <span>04</span>
+          <h3>Développement</h3>
+          <p>Construction progressive d'une marque capable de produire plusieurs expériences.</p>
+        </div>
       </div>
+    </div>
+  </section>
 
-    </article>
+  <section class="project-cta">
+    <div class="container">
+      <div class="eyebrow">MADE FOR BOUNCE</div>
+      <h2>Let's create an experience.</h2>
+      <p>Vous souhaitez devenir partenaire ou collaborer au projet ?</p>
+      <button class="btn btn-light" onclick="contactProject('Made For Bounce')">
+        DISCUTER DU PROJET ↗
+      </button>
+    </div>
+  </section>
 
-  </div>
-</section>
+</div>
 
-<!-- APPROACH -->
+<!-- ================= AGRICULTURE ================= -->
 
-<section class="section" id="approach">
-  <div class="container reveal">
+<div class="page" id="agriculture">
 
-    <div class="section-heading">
-      <div class="eyebrow">04 — METHODOLOGY</div>
-      <h2>A Strategic Approach.</h2>
+  <section class="project-hero agri-hero">
+    <div class="container project-hero-content">
+      <div class="eyebrow">02 — AGRICULTURE & OPPORTUNITIES</div>
+      <h1>GROWING<br>THE FUTURE.</h1>
       <p>
-        Chaque projet suit une logique de construction
-        progressive.
+        Agriculture, production, transformation
+        et développement économique.
+        Explorer le potentiel agricole et construire
+        des activités durables.
       </p>
+      <button class="btn btn-light"
+        onclick="document.getElementById('agri-vision').scrollIntoView({behavior:'smooth'})">
+        EXPLORER L'UNIVERS ↓
+      </button>
     </div>
+  </section>
 
-    <div class="approach-grid">
-
-      <article class="approach-card">
-        <h3>01. ANALYSE</h3>
-        <p>
-          Comprendre le marché, identifier les besoins,
-          étudier les risques et détecter les opportunités.
-        </p>
-      </article>
-
-      <article class="approach-card">
-        <h3>02. STRUCTURATION</h3>
-        <p>
-          Définir le positionnement, les objectifs,
-          les ressources et le modèle de développement.
-        </p>
-      </article>
-
-      <article class="approach-card">
-        <h3>03. EXECUTION</h3>
-        <p>
-          Développer les relations, mobiliser les ressources
-          et transformer les concepts en réalisations.
-        </p>
-      </article>
-
+  <nav class="project-subnav">
+    <div class="container">
+      <a href="#agri-vision">VISION</a>
+      <a href="#agri-production">PRODUCTION</a>
+      <a href="#agri-transformation">TRANSFORMATION</a>
+      <a href="#agri-market">MARCHÉ</a>
+      <a href="#agri-gallery">UNIVERS</a>
     </div>
-  </div>
-</section>
+  </nav>
 
-<!-- CONTACT -->
+  <section class="section" id="agri-vision">
+    <div class="container project-intro">
+      <div>
+        <div class="eyebrow">THE VISION</div>
+        <h2>Faire de la terre une source de valeur.</h2>
+        <p>
+          L'agriculture représente un secteur essentiel
+          pour la sécurité alimentaire, l'emploi,
+          la transformation économique et la création
+          d'activités productives.
+        </p>
+        <p>
+          Cette initiative s'intéresse aux possibilités
+          offertes par la production agricole, la valorisation
+          des ressources, l'organisation des filières
+          et la commercialisation.
+        </p>
+        <p>
+          L'objectif est d'explorer des modèles d'exploitation
+          adaptés aux réalités locales et aux opportunités
+          du marché.
+        </p>
+      </div>
 
-<section class="section contact" id="contact">
-  <div class="container reveal">
+      <div class="project-intro-image">
+        <img src="https://images.unsplash.com/photo-1499529112087-3cb3b73cec95?auto=format&fit=crop&w=1000&q=85"
+             alt="Culture agricole">
+      </div>
+    </div>
+  </section>
 
-    <div class="section-heading">
-      <div class="eyebrow">05 — CONTACT & PARTNERSHIPS</div>
-      <h2>Let's build something valuable.</h2>
+  <section class="section projects-section" id="agri-production">
+    <div class="container">
+      <div class="section-head">
+        <div class="eyebrow">AGRICULTURAL PRODUCTION</div>
+        <h2>Produire avec méthode.</h2>
+        <p>
+          Identifier les cultures pertinentes,
+          étudier les conditions de production
+          et construire une organisation agricole efficace.
+        </p>
+      </div>
+
+      <div class="feature-grid">
+        <article class="feature">
+          <div class="number">01</div>
+          <h3>Cultures vivrières</h3>
+          <p>
+            Étudier les opportunités autour du maïs,
+            du manioc, de l'igname et d'autres cultures
+            adaptées aux conditions locales.
+          </p>
+        </article>
+
+        <article class="feature">
+          <div class="number">02</div>
+          <h3>Gestion des exploitations</h3>
+          <p>
+            Organisation du travail, gestion des intrants,
+            suivi des parcelles et planification des récoltes.
+          </p>
+        </article>
+
+        <article class="feature">
+          <div class="number">03</div>
+          <h3>Ressources agricoles</h3>
+          <p>
+            Réflexion sur les sols, l'eau, les équipements
+            et les moyens de production.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="agri-transformation">
+    <div class="container project-intro">
+      <div class="project-intro-image">
+        <img src="https://images.unsplash.com/photo-1601593768795-7c3f4e6a5c7e?auto=format&fit=crop&w=1000&q=85"
+             alt="Récolte agricole">
+      </div>
+
+      <div>
+        <div class="eyebrow">VALUE CHAIN</div>
+        <h2>Ne pas seulement produire. Valoriser.</h2>
+        <p>
+          La valeur agricole ne s'arrête pas à la récolte.
+          Le stockage, la transformation, le conditionnement
+          et la commercialisation constituent des étapes
+          essentielles de la chaîne de valeur.
+        </p>
+        <p>
+          Une approche intégrée permet d'étudier les pertes,
+          les coûts, la qualité et les débouchés commerciaux.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section projects-section" id="agri-market">
+    <div class="container">
+      <div class="section-head">
+        <div class="eyebrow">ECONOMIC OPPORTUNITIES</div>
+        <h2>Une filière, plusieurs opportunités.</h2>
+        <p>
+          Construire une activité agricole suppose
+          de comprendre chaque étape du marché.
+        </p>
+      </div>
+
+      <div class="process-list">
+        <div class="process-item">
+          <span>01</span>
+          <h3>Production</h3>
+          <p>Planification des cultures, gestion des exploitations et suivi des rendements.</p>
+        </div>
+        <div class="process-item">
+          <span>02</span>
+          <h3>Approvisionnement</h3>
+          <p>Accès aux semences, intrants, équipements et services agricoles.</p>
+        </div>
+        <div class="process-item">
+          <span>03</span>
+          <h3>Transformation</h3>
+          <p>Étude des possibilités de transformation et de conservation des produits.</p>
+        </div>
+        <div class="process-item">
+          <span>04</span>
+          <h3>Commercialisation</h3>
+          <p>Identification des acheteurs, circuits de distribution et marchés.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="project-cta">
+    <div class="container">
+      <div class="eyebrow">AGRICULTURE & DEVELOPMENT</div>
+      <h2>Let's grow opportunities.</h2>
+      <p>Échangeons autour d'une opportunité agricole ou commerciale.</p>
+      <button class="btn btn-light" onclick="contactProject('Agriculture')">
+        DISCUTER DU PROJET ↗
+      </button>
+    </div>
+  </section>
+
+</div>
+
+<!-- ================= MUSIC ================= -->
+
+<div class="page" id="music">
+
+  <section class="project-hero music-hero">
+    <div class="container project-hero-content">
+      <div class="eyebrow">03 — MUSIC & ENTERTAINMENT INDUSTRY</div>
+      <h1>BEYOND<br>THE SOUND.</h1>
       <p>
-        Une proposition de partenariat, une opportunité
-        commerciale, un investissement ou une collaboration ?
-        Entrons en contact.
+        La musique est une expression artistique,
+        mais aussi une industrie, un marché et
+        un ensemble d'opportunités économiques.
       </p>
+      <button class="btn btn-light"
+        onclick="document.getElementById('music-vision').scrollIntoView({behavior:'smooth'})">
+        DÉCOUVRIR CET UNIVERS ↓
+      </button>
     </div>
+  </section>
 
-    <div class="contact-grid">
+  <nav class="project-subnav">
+    <div class="container">
+      <a href="#music-vision">VISION</a>
+      <a href="#music-artists">ARTISTES</a>
+      <a href="#music-production">PRODUCTION</a>
+      <a href="#music-business">BUSINESS</a>
+      <a href="#music-gallery">UNIVERS</a>
+    </div>
+  </nav>
 
-      <div class="contact-info">
+  <section class="section" id="music-vision">
+    <div class="container project-intro">
+      <div>
+        <div class="eyebrow">THE VISION</div>
+        <h2>Comprendre la musique au-delà de la création.</h2>
+        <p>
+          L'industrie musicale évolue à travers les artistes,
+          les producteurs, les labels, les distributeurs,
+          les plateformes numériques et les acteurs du spectacle.
+        </p>
+        <p>
+          Ce projet explore les mécanismes qui permettent
+          de développer des talents, de valoriser les œuvres
+          et de construire des activités économiques autour
+          de la musique.
+        </p>
+        <p>
+          Une attention particulière est portée aux possibilités
+          de développement de la musique africaine et à son
+          rayonnement sur les marchés internationaux.
+        </p>
+      </div>
 
-        <h3>Connect with me.</h3>
+      <div class="project-intro-image">
+        <img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=1000&q=85"
+             alt="Performance musicale">
+      </div>
+    </div>
+  </section>
+
+  <section class="section projects-section" id="music-artists">
+    <div class="container">
+      <div class="section-head">
+        <div class="eyebrow">ARTIST DEVELOPMENT</div>
+        <h2>Le talent mérite une stratégie.</h2>
+        <p>
+          Le développement artistique nécessite une vision
+          cohérente, une identité forte et une organisation
+          professionnelle.
+        </p>
+      </div>
+
+      <div class="feature-grid">
+        <article class="feature">
+          <div class="number">01</div>
+          <h3>Artist Branding</h3>
+          <p>
+            Identité artistique, positionnement,
+            image publique et différenciation.
+          </p>
+        </article>
+
+        <article class="feature">
+          <div class="number">02</div>
+          <h3>Career Development</h3>
+          <p>
+            Planification de carrière, stratégie
+            de lancement et développement du public.
+          </p>
+        </article>
+
+        <article class="feature">
+          <div class="number">03</div>
+          <h3>Artist Relations</h3>
+          <p>
+            Collaboration entre artistes, producteurs,
+            managers et partenaires professionnels.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="music-production">
+    <div class="container project-intro">
+      <div class="project-intro-image">
+        <img src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&w=1000&q=85"
+             alt="Studio d'enregistrement">
+      </div>
+
+      <div>
+        <div class="eyebrow">PRODUCTION & DISTRIBUTION</div>
+        <h2>De la création à la diffusion.</h2>
+        <p>
+          La production musicale, l'enregistrement,
+          le mixage, le mastering et la distribution
+          constituent différentes étapes de la création
+          et de l'exploitation d'une œuvre.
+        </p>
+        <p>
+          Le développement numérique ouvre également
+          des possibilités de diffusion sur les plateformes
+          de streaming et de monétisation des catalogues.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section projects-section" id="music-business">
+    <div class="container">
+      <div class="section-head">
+        <div class="eyebrow">MUSIC BUSINESS</div>
+        <h2>La musique est aussi une économie.</h2>
+        <p>
+          Comprendre les droits, les revenus,
+          les partenaires et les différents modèles
+          économiques de l'industrie.
+        </p>
+      </div>
+
+      <div class="process-list">
+        <div class="process-item">
+          <span>01</span>
+          <h3>Production</h3>
+          <p>Financement, création, enregistrement et réalisation de projets musicaux.</p>
+        </div>
+        <div class="process-item">
+          <span>02</span>
+          <h3>Distribution</h3>
+          <p>Diffusion des œuvres et présence sur les plateformes numériques.</p>
+        </div>
+        <div class="process-item">
+          <span>03</span>
+          <h3>Music Rights</h3>
+          <p>Gestion des droits d'auteur, droits voisins, licences et exploitation.</p>
+        </div>
+        <div class="process-item">
+          <span>04</span>
+          <h3>Live Business</h3>
+          <p>Concerts, tournées, spectacles et partenariats commerciaux.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="project-cta">
+    <div class="container">
+      <div class="eyebrow">MUSIC INDUSTRY</div>
+      <h2>Let's build the next sound.</h2>
+      <p>Vous souhaitez discuter d'une collaboration musicale ?</p>
+      <button class="btn btn-light" onclick="contactProject('Music')">
+        DISCUTER DU PROJET ↗
+      </button>
+    </div>
+  </section>
+
+</div>
+
+<!-- ================= CONTACT ================= -->
+
+<div class="page" id="contact">
+
+  <section class="section">
+    <div class="container contact-layout">
+
+      <div class="contact-copy">
+        <div class="eyebrow">CONTACT & COLLABORATIONS</div>
+        <h2>Let's start a conversation.</h2>
 
         <p>
-          Je reste ouvert aux échanges constructifs,
-          aux partenariats stratégiques et aux opportunités
-          de développement.
+          Une proposition de partenariat, une opportunité
+          commerciale, une collaboration ou un échange
+          autour de l'un de mes projets ?
         </p>
 
-        <div class="contact-item">
+        <div class="contact-line">
           <strong>EMAIL</strong>
-          <a href="mailto:Mikaelfico85@gmail.com">
-            Mikaelfico85@gmail.com
-          </a>
+          <a href="mailto:Mikaelfico85@gmail.com">Mikaelfico85@gmail.com</a>
         </div>
 
-        <div class="contact-item">
+        <div class="contact-line">
           <strong>WHATSAPP</strong>
           <a href="https://wa.me/2290148057370"
              target="_blank" rel="noopener noreferrer">
@@ -1103,221 +1623,246 @@ footer {
           </a>
         </div>
 
-        <div class="contact-item">
+        <div class="contact-line">
           <strong>LOCATION</strong>
-          Cotonou · Bénin
+          <span>Cotonou, Bénin</span>
         </div>
 
         <div class="socials">
-          <a href="https://www.instagram.com/st_mikael_fico_05"
-             target="_blank" rel="noopener noreferrer">Instagram ↗</a>
-
-          <a href="https://x.com/FicoMikael22573"
-             target="_blank" rel="noopener noreferrer">X ↗</a>
-
-          <a href="https://www.facebook.com/share/1E2TgzZPQh/"
-             target="_blank" rel="noopener noreferrer">Facebook ↗</a>
+          <a href="https://www.instagram.com/st_mikael_fico_05" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
+          <a href="https://x.com/FicoMikael22573" target="_blank" rel="noopener noreferrer">X ↗</a>
+          <a href="https://www.facebook.com/share/1E2TgzZPQh/" target="_blank" rel="noopener noreferrer">Facebook ↗</a>
         </div>
-
       </div>
 
-      <form class="contact-form" id="partnerForm">
+      <form class="contact-form" id="contactForm">
+        <h3>Send an inquiry.</h3>
 
-        <h3>Contact & Partnerships</h3>
+        <div class="form-row">
+          <div class="field">
+            <label for="fullName">Nom complet *</label>
+            <input id="fullName" required placeholder="Votre nom">
+          </div>
 
-        <div class="form-group">
-          <label for="name">Nom complet *</label>
-          <input id="name" name="name" required
-            placeholder="Votre nom complet">
+          <div class="field">
+            <label for="company">Entreprise</label>
+            <input id="company" placeholder="Votre organisation">
+          </div>
         </div>
 
-        <div class="form-group">
-          <label for="organization">Organisation / Entreprise</label>
-          <input id="organization" name="organization"
-            placeholder="Nom de votre organisation">
+        <div class="form-row">
+          <div class="field">
+            <label for="mail">E-mail *</label>
+            <input type="email" id="mail" required placeholder="Votre e-mail">
+          </div>
+
+          <div class="field">
+            <label for="tel">Téléphone</label>
+            <input type="tel" id="tel" placeholder="+229 ...">
+          </div>
         </div>
 
-        <div class="form-group">
-          <label for="email">Adresse e-mail *</label>
-          <input type="email" id="email" name="email"
-            required placeholder="exemple@email.com">
-        </div>
-
-        <div class="form-group">
-          <label for="phone">WhatsApp</label>
-          <input type="tel" id="phone" name="phone"
-            placeholder="+229 ...">
-        </div>
-
-        <div class="form-group">
-          <label for="project">Projet concerné *</label>
-          <select id="project" name="project" required>
-            <option value="">Sélectionner un projet</option>
+        <div class="field">
+          <label for="selectedProject">Projet concerné *</label>
+          <select id="selectedProject" required>
+            <option value="">Choisir un univers</option>
             <option>Made For Bounce</option>
-            <option>Kouandé Agro</option>
-            <option>Music & Entertainment</option>
+            <option>Agriculture</option>
+            <option>Music</option>
             <option>Collaboration générale</option>
           </select>
         </div>
 
-        <div class="form-group">
-          <label for="subject">Nature de la proposition *</label>
-          <select id="subject" name="subject" required>
-            <option value="">Choisir une option</option>
-            <option>Partenariat stratégique</option>
+        <div class="field">
+          <label for="inquiry">Nature de la demande</label>
+          <select id="inquiry">
+            <option>Partenariat</option>
             <option>Investissement</option>
-            <option>Collaboration commerciale</option>
+            <option>Collaboration</option>
             <option>Sponsoring</option>
-            <option>Proposition de service</option>
-            <option>Autre proposition</option>
+            <option>Proposition commerciale</option>
+            <option>Autre</option>
           </select>
         </div>
 
-        <div class="form-group">
+        <div class="field">
           <label for="message">Votre message *</label>
-          <textarea id="message" name="message"
-            required placeholder="Présentez votre proposition..."></textarea>
+          <textarea id="message" required placeholder="Présentez votre proposition..."></textarea>
         </div>
 
-        <div class="form-group">
-          <label for="method">Mode d'envoi</label>
-          <select id="method" name="method">
+        <div class="field">
+          <label for="sendMethod">Envoyer par</label>
+          <select id="sendMethod">
             <option value="email">E-mail</option>
             <option value="whatsapp">WhatsApp</option>
           </select>
         </div>
 
-        <button type="submit" class="btn btn-primary">
-          ENVOYER MA PROPOSITION ↗
+        <button class="btn btn-green" type="submit">
+          ENVOYER MA DEMANDE ↗
         </button>
 
         <p class="form-note">
-          Le formulaire préparera votre message dans
-          votre application e-mail ou WhatsApp.
+          Votre application e-mail ou WhatsApp s'ouvrira
+          avec votre message prérempli.
         </p>
-
       </form>
+
     </div>
-  </div>
-</section>
+  </section>
+</div>
 
 </main>
 
+<!-- FOOTER -->
+
 <footer>
-  <div class="container footer-content">
-    <div>
-      <div class="brand">THE STRATEGIC OFFICE<span>.</span></div>
-      <p>© <span id="year"></span> Mikael Fico · Cotonou, Bénin</p>
+  <div class="container">
+    <div class="footer-top">
+      <div>
+        <div class="footer-brand">Mikael Fico<span>.</span></div>
+        <p>
+          A world of ideas, opportunities and projects.
+          Explore the different universes and discover
+          the vision behind each initiative.
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <button onclick="showPage('home')">Accueil</button>
+        <button onclick="showPage('mfb')">Made For Bounce</button>
+        <button onclick="showPage('agriculture')">Agriculture</button>
+        <button onclick="showPage('music')">Music</button>
+        <button onclick="showPage('contact')">Contact</button>
+      </div>
     </div>
 
-    <p>Vision · Strategy · Value Creation</p>
-
-    <a href="#home" class="back-top">BACK TO TOP ↑</a>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Mikael Fico. All rights reserved.</span>
+      <span>Designed around vision & creativity.</span>
+    </div>
   </div>
 </footer>
 
 <script>
 
-// MOBILE NAVIGATION
+// PAGE NAVIGATION
+
+function showPage(page) {
+  const target = document.getElementById(page);
+
+  if (!target) return;
+
+  document.querySelectorAll(".page").forEach(section => {
+    section.classList.remove("active");
+  });
+
+  target.classList.add("active");
+
+  document.getElementById("navLinks").classList.remove("open");
+
+  document.getElementById("menuBtn").setAttribute("aria-expanded","false");
+
+  window.scrollTo({top:0,behavior:"smooth"});
+
+  history.replaceState(null,"","#"+page);
+}
+
+function goToProjects() {
+  showPage("home");
+
+  setTimeout(() => {
+    document.getElementById("discover").scrollIntoView({
+      behavior:"smooth"
+    });
+  },100);
+}
+
+// MOBILE MENU
 
 function toggleMenu() {
   const nav = document.getElementById("navLinks");
-  const btn = document.getElementById("menuBtn");
+  nav.classList.toggle("open");
 
-  nav.classList.toggle("active");
-
-  btn.setAttribute(
+  document.getElementById("menuBtn").setAttribute(
     "aria-expanded",
-    nav.classList.contains("active") ? "true" : "false"
+    nav.classList.contains("open") ? "true" : "false"
   );
 }
 
-document.querySelectorAll(".nav-links a").forEach(link => {
-  link.addEventListener("click", () => {
-    document.getElementById("navLinks").classList.remove("active");
-    document.getElementById("menuBtn").setAttribute("aria-expanded","false");
-  });
-});
+// CONTACT FROM PROJECT
 
-// PROJECT SELECTION
+function contactProject(project) {
+  showPage("contact");
 
-function setProject(project) {
-  document.getElementById("project").value = project;
+  setTimeout(() => {
+    document.getElementById("selectedProject").value = project;
+  },100);
 }
 
 // CONTACT FORM
 
-document.getElementById("partnerForm").addEventListener("submit", function(event) {
+document.getElementById("contactForm").addEventListener("submit", function(e) {
+  e.preventDefault();
 
-  event.preventDefault();
-
-  const name = document.getElementById("name").value.trim();
-  const organization = document.getElementById("organization").value.trim();
-  const email = document.getElementById("email").value.trim();
-  const phone = document.getElementById("phone").value.trim();
-  const project = document.getElementById("project").value;
-  const subject = document.getElementById("subject").value;
+  const name = document.getElementById("fullName").value.trim();
+  const company = document.getElementById("company").value.trim();
+  const email = document.getElementById("mail").value.trim();
+  const phone = document.getElementById("tel").value.trim();
+  const project = document.getElementById("selectedProject").value;
+  const inquiry = document.getElementById("inquiry").value;
   const message = document.getElementById("message").value.trim();
-  const method = document.getElementById("method").value;
+  const method = document.getElementById("sendMethod").value;
 
-  if (!name || !email || !project || !subject || !message) {
-    alert("Veuillez remplir tous les champs obligatoires.");
+  if (!name || !email || !project || !message) {
+    alert("Veuillez remplir les champs obligatoires.");
     return;
   }
 
-  const body =
-`NOUVELLE PROPOSITION — THE STRATEGIC OFFICE
+  const body = `
+NOUVELLE DEMANDE — MIKAEL FICO
 
 Nom : ${name}
-Organisation : ${organization || "Non renseignée"}
+Organisation : ${company || "Non renseignée"}
 E-mail : ${email}
-WhatsApp : ${phone || "Non renseigné"}
+Téléphone : ${phone || "Non renseigné"}
 
 Projet : ${project}
-Nature : ${subject}
+Nature : ${inquiry}
 
 MESSAGE :
 ${message}
-
-Envoyé depuis le site de Mikael Fico.`;
+`;
 
   if (method === "email") {
-    const mailto =
+    const url =
       "mailto:Mikaelfico85@gmail.com" +
-      "?subject=" + encodeURIComponent("Proposition - " + project) +
+      "?subject=" + encodeURIComponent("Demande - " + project) +
       "&body=" + encodeURIComponent(body);
 
-    window.location.href = mailto;
+    window.location.href = url;
 
   } else {
-    const whatsapp =
+    const url =
       "https://wa.me/2290148057370?text=" +
       encodeURIComponent(body);
 
-    window.open(whatsapp, "_blank", "noopener,noreferrer");
+    window.open(url,"_blank","noopener,noreferrer");
   }
-
 });
 
-// FOOTER YEAR
+// FOOTER DATE
 
 document.getElementById("year").textContent =
   new Date().getFullYear();
 
-// SCROLL ANIMATIONS
+// HANDLE DIRECT PAGE LINKS
 
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add("visible");
-      observer.unobserve(entry.target);
-    }
-  });
-}, { threshold: 0.08 });
+const initialPage = location.hash.replace("#","");
 
-document.querySelectorAll(".reveal").forEach(element => {
-  observer.observe(element);
-});
+if (["home","mfb","agriculture","music","contact"].includes(initialPage)) {
+  showPage(initialPage);
+}
 
 </script>
 
