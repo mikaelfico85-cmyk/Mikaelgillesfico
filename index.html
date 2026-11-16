@@ -21,12 +21,14 @@
 }
 
 * {margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}
+
 body {
   background:var(--black);
   color:var(--white);
   font-family:'DM Sans',sans-serif;
   overflow-x:hidden;
 }
+
 a {color:inherit;text-decoration:none}
 button {font:inherit;cursor:pointer}
 
@@ -37,20 +39,30 @@ button {font:inherit;cursor:pointer}
   text-align:center;padding:25px;
   transition:opacity 1s,visibility 1s;
 }
+
 #intro.hidden {opacity:0;visibility:hidden}
+
 .intro-content {animation:appear 1.5s ease}
+
 .intro-content h1 {
   font-family:'Playfair Display',serif;
   font-size:clamp(2.2rem,8vw,5rem);
   letter-spacing:5px;color:var(--gold);
 }
-.intro-content p {letter-spacing:5px;color:var(--muted);margin:20px 0 35px}
+
+.intro-content p {
+  letter-spacing:5px;color:var(--muted);margin:20px 0 35px
+}
+
 .enter {
   border:1px solid var(--gold);background:var(--gold);
   color:var(--black);padding:15px 30px;
   letter-spacing:2px;font-weight:700;
 }
-.skip {display:block;margin-top:20px;color:var(--muted);font-size:12px}
+
+.skip {
+  display:block;margin-top:20px;color:var(--muted);font-size:12px
+}
 
 header {
   position:fixed;top:0;width:100%;z-index:100;
@@ -58,85 +70,216 @@ header {
   padding:22px 8%;background:#090D16dd;
   backdrop-filter:blur(15px);border-bottom:1px solid #ffffff10;
 }
-.logo {font-family:'Playfair Display',serif;color:var(--gold);letter-spacing:2px}
+
+.logo {
+  font-family:'Playfair Display',serif;
+  color:var(--gold);letter-spacing:2px
+}
+
 nav {display:flex;gap:28px}
+
 nav a {font-size:13px;color:var(--muted);transition:.3s}
 nav a:hover {color:var(--gold)}
-.menu {display:none;background:none;color:var(--gold);border:0;font-size:26px}
+
+.menu {
+  display:none;background:none;color:var(--gold);
+  border:0;font-size:26px
+}
 
 section {padding:110px 9%;scroll-margin-top:80px}
+
 .hero {
   min-height:100vh;display:flex;flex-direction:column;
   justify-content:center;position:relative;overflow:hidden;
   background:linear-gradient(120deg,#090D16,#111b2a 75%,#090D16);
 }
+
 .hero:before {
   content:"";position:absolute;width:450px;height:450px;
   border:1px solid #C6A76B22;border-radius:50%;
   right:-100px;top:20%;box-shadow:0 0 100px #C6A76B10;
 }
-.eyebrow {color:var(--gold);letter-spacing:4px;font-size:12px;text-transform:uppercase}
+
+.eyebrow {
+  color:var(--gold);letter-spacing:4px;
+  font-size:12px;text-transform:uppercase
+}
+
 h1,h2,h3 {font-family:'Playfair Display',serif}
-.hero h2 {font-size:clamp(2.8rem,7vw,6rem);max-width:900px;margin:25px 0;line-height:1.08}
+
+.hero h2 {
+  font-size:clamp(2.8rem,7vw,6rem);
+  max-width:900px;margin:25px 0;line-height:1.08
+}
+
 .hero h2 span {color:var(--gold)}
-.hero-description {max-width:650px;color:var(--muted);line-height:1.9}
-.hero-actions {display:flex;gap:15px;flex-wrap:wrap;margin-top:35px}
+
+.hero-description {
+  max-width:650px;color:var(--muted);line-height:1.9
+}
+
+.hero-actions {
+  display:flex;gap:15px;flex-wrap:wrap;margin-top:35px
+}
+
 .btn {
   padding:14px 23px;border:1px solid var(--gold);
-  color:var(--gold);display:inline-block;transition:.3s;
+  color:var(--gold);display:inline-block;transition:.3s
 }
-.btn.primary {background:var(--gold);color:var(--black)}
-.btn:hover {transform:translateY(-4px);box-shadow:0 10px 30px #C6A76B22}
 
-.section-title {font-size:clamp(2rem,5vw,3.5rem);margin:15px 0 25px}
-.section-text {color:var(--muted);line-height:1.9;max-width:800px}
-.grid {display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;margin-top:40px}
+.btn.primary {background:var(--gold);color:var(--black)}
+
+.btn:hover {
+  transform:translateY(-4px);
+  box-shadow:0 10px 30px #C6A76B22
+}
+
+.section-title {
+  font-size:clamp(2rem,5vw,3.5rem);margin:15px 0 25px
+}
+
+.section-text {
+  color:var(--muted);line-height:1.9;max-width:800px
+}
+
+.grid {
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;margin-top:40px
+}
+
 .card {
   background:linear-gradient(145deg,#151D2B,#101722);
   border:1px solid #ffffff12;padding:30px;
-  transition:.4s;min-height:190px;
+  transition:.4s;min-height:190px
 }
-.card:hover {transform:translateY(-7px);border-color:var(--gold)}
-.card h3 {color:var(--gold);font-size:22px;margin-bottom:15px}
-.card p {color:var(--muted);line-height:1.7;font-size:14px}
-.project {border:1px solid #C6A76B55;padding:35px;background:#151D2B;margin-top:35px}
-.project h3 {font-size:30px;color:var(--gold);margin-bottom:15px}
-.project p {color:var(--muted);line-height:1.8}
-.project ul {margin:20px 0 20px 20px;color:var(--muted);line-height:2}
 
-.contact-grid {display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:35px}
+.card:hover {transform:translateY(-7px);border-color:var(--gold)}
+
+.card h3 {color:var(--gold);font-size:22px;margin-bottom:15px}
+
+.card p {color:var(--muted);line-height:1.7;font-size:14px}
+
+.project {
+  border:1px solid #C6A76B55;padding:35px;
+  background:#151D2B;margin-top:35px
+}
+
+.project h3 {font-size:30px;color:var(--gold);margin-bottom:15px}
+
+.project p {color:var(--muted);line-height:1.8}
+
+.project ul {
+  margin:20px 0 20px 20px;color:var(--muted);line-height:2
+}
+
+.contact-grid {
+  display:grid;grid-template-columns:1fr 1fr;
+  gap:40px;margin-top:35px
+}
+
 .contact-links {display:flex;flex-direction:column;gap:15px}
-.contact-links a {padding:16px;border:1px solid #ffffff18;color:var(--muted);transition:.3s}
+
+.contact-links a {
+  padding:16px;border:1px solid #ffffff18;
+  color:var(--muted);transition:.3s
+}
+
 .contact-links a:hover {border-color:var(--gold);color:var(--gold)}
+
 form {display:flex;flex-direction:column;gap:14px}
+
 input,select,textarea {
   width:100%;padding:15px;background:#151D2B;
   color:var(--white);border:1px solid #ffffff20;
-  outline:none;font:inherit;
+  outline:none;font:inherit;border-radius:0
 }
+
 input:focus,select:focus,textarea:focus {border-color:var(--gold)}
+
+select option {background:#151D2B;color:white}
+
 textarea {min-height:130px;resize:vertical}
-form button {padding:15px;background:var(--gold);border:0;font-weight:700;color:var(--black)}
-#form-message {color:var(--gold);font-size:13px;line-height:1.6}
+
+form button {
+  padding:15px;background:var(--gold);
+  border:0;font-weight:700;color:var(--black)
+}
+
+#send-options {
+  display:none;
+  flex-direction:column;
+  gap:12px;
+  margin-top:10px;
+  padding:20px;
+  background:#151D2B;
+  border:1px solid #C6A76B55;
+}
+
+#send-options h3 {
+  color:var(--gold);
+  font-size:20px;
+  margin-bottom:5px;
+}
+
+#send-options p {
+  color:var(--muted);
+  font-size:13px;
+  line-height:1.6;
+}
+
+.send-choice {
+  display:block;
+  text-align:center;
+  padding:15px;
+  font-weight:700;
+  border:1px solid var(--gold);
+  transition:.3s;
+}
+
+.email-choice {
+  background:var(--gold);
+  color:var(--black);
+}
+
+.whatsapp-choice {
+  color:var(--gold);
+}
+
+.send-choice:hover {transform:translateY(-3px)}
+
+#form-message {
+  color:var(--gold);
+  font-size:13px;
+  line-height:1.6
+}
 
 footer {
   padding:35px 9%;border-top:1px solid #ffffff15;
   display:flex;justify-content:space-between;gap:20px;
-  flex-wrap:wrap;color:var(--muted);font-size:12px;
+  flex-wrap:wrap;color:var(--muted);font-size:12px
 }
+
 footer span {color:var(--gold)}
 
-.reveal {opacity:0;transform:translateY(25px);transition:opacity .8s,transform .8s}
-.reveal.visible {opacity:1;transform:translateY(0)}
-.particle {
-  position:fixed;width:3px;height:3px;background:var(--gold);
-  border-radius:50%;opacity:.3;pointer-events:none;
-  animation:float 12s infinite ease-in-out;
+.reveal {
+  opacity:0;transform:translateY(25px);
+  transition:opacity .8s,transform .8s
 }
+
+.reveal.visible {opacity:1;transform:translateY(0)}
+
+.particle {
+  position:fixed;width:3px;height:3px;
+  background:var(--gold);border-radius:50%;
+  opacity:.3;pointer-events:none;
+  animation:float 12s infinite ease-in-out
+}
+
 @keyframes float {
   0%,100% {transform:translateY(0)}
   50% {transform:translateY(-35px)}
 }
+
 @keyframes appear {
   from {opacity:0;transform:scale(.95)}
   to {opacity:1;transform:scale(1)}
@@ -147,15 +290,19 @@ footer span {color:var(--gold)}
   .menu {display:block}
   nav {
     display:none;position:absolute;top:70px;left:0;width:100%;
-    background:var(--navy);padding:25px;flex-direction:column;
+    background:var(--navy);padding:25px;flex-direction:column
   }
   nav.open {display:flex}
   section {padding:90px 7%}
   .contact-grid {grid-template-columns:1fr}
   .hero h2 {font-size:clamp(2.7rem,12vw,4rem)}
 }
+
 @media(prefers-reduced-motion:reduce) {
-  *,*::before,*::after {scroll-behavior:auto!important;animation:none!important;transition:none!important}
+  *,*::before,*::after {
+    scroll-behavior:auto!important;
+    animation:none!important;transition:none!important
+  }
   .reveal {opacity:1;transform:none}
 }
 </style>
@@ -186,6 +333,7 @@ footer span {color:var(--gold)}
 </header>
 
 <main>
+
 <section class="hero" id="home">
   <p class="eyebrow">Strategic Mindset · Business Intelligence</p>
   <h2>La vision précède le capital. <span>La stratégie transforme les idées en actifs.</span></h2>
@@ -267,40 +415,84 @@ footer span {color:var(--gold)}
   </p>
 
   <div class="contact-grid">
+
     <div class="contact-links">
       <a href="mailto:Mikaelfico85@gmail.com">✉ Email — Mikaelfico85@gmail.com</a>
-      <a href="https://wa.me/2290148057370" target="_blank" rel="noopener">WhatsApp — +229 01 48 05 73 70</a>
-      <a href="https://www.instagram.com/st_mikael_fico_05?dlrf=eW4xZnB1ZjYwM2hr" target="_blank" rel="noopener">Instagram — @st_mikael_fico_05</a>
-      <a href="https://x.com/FicoMikael22573" target="_blank" rel="noopener">X — @FicoMikael22573</a>
-      <a href="https://www.facebook.com/share/1E2TgzZPQh/" target="_blank" rel="noopener">Facebook — Mikael Fico</a>
+
+      <a href="https://wa.me/2290148057370" target="_blank" rel="noopener">
+        WhatsApp — +229 01 48 05 73 70
+      </a>
+
+      <a href="https://www.instagram.com/st_mikael_fico_05?dlrf=eW4xZnB1ZjYwM2hr" target="_blank" rel="noopener">
+        Instagram — @st_mikael_fico_05
+      </a>
+
+      <a href="https://x.com/FicoMikael22573" target="_blank" rel="noopener">
+        X — @FicoMikael22573
+      </a>
+
+      <a href="https://www.facebook.com/share/1E2TgzZPQh/" target="_blank" rel="noopener">
+        Facebook — Mikael Fico
+      </a>
     </div>
 
-    <form id="partner-form">
-      <input name="name" placeholder="Nom complet" required>
-      <input name="organization" placeholder="Organisation / Entreprise">
-      <input name="email" type="email" placeholder="Adresse e-mail" required>
-      <input name="whatsapp" placeholder="WhatsApp">
-      <select name="type" required>
-        <option value="">Type de partenariat</option>
-        <option>Partenaire stratégique</option>
-        <option>Sponsor / Partenaire commercial</option>
-        <option>Investisseur</option>
-        <option>Partenaire technique</option>
-        <option>Partenaire institutionnel</option>
-        <option>Collaboration</option>
-        <option>Autre</option>
-      </select>
-      <select name="project">
-        <option value="">Projet concerné</option>
-        <option>Made For Bounce</option>
-        <option>Autre projet</option>
-      </select>
-      <textarea name="proposal" placeholder="Présentez votre proposition..." required></textarea>
-      <button type="submit">Envoyer une proposition</button>
-      <p id="form-message" aria-live="polite"></p>
-    </form>
+    <div>
+      <form id="partner-form">
+
+        <input name="name" placeholder="Nom complet" required>
+
+        <input name="organization" placeholder="Organisation / Entreprise">
+
+        <input name="email" type="email" placeholder="Adresse e-mail" required>
+
+        <input name="whatsapp" type="tel" placeholder="WhatsApp">
+
+        <select name="type" required>
+          <option value="">Type de partenariat</option>
+          <option>Partenaire stratégique</option>
+          <option>Sponsor / Partenaire commercial</option>
+          <option>Investisseur</option>
+          <option>Partenaire technique</option>
+          <option>Partenaire institutionnel</option>
+          <option>Collaboration</option>
+          <option>Autre</option>
+        </select>
+
+        <select name="project">
+          <option value="">Projet concerné</option>
+          <option>Made For Bounce</option>
+          <option>Autre projet</option>
+        </select>
+
+        <textarea name="proposal" placeholder="Présentez votre proposition..." required></textarea>
+
+        <button type="submit">Continuer vers l'envoi</button>
+
+        <p id="form-message" aria-live="polite"></p>
+
+      </form>
+
+      <div id="send-options">
+        <h3>Votre proposition est prête.</h3>
+        <p>Choisissez votre moyen d'envoi. Toutes les informations saisies seront automatiquement intégrées à votre message.</p>
+
+        <a id="email-send" class="send-choice email-choice">
+          ✉ ENVOYER PAR E-MAIL
+        </a>
+
+        <a id="whatsapp-send" class="send-choice whatsapp-choice" target="_blank" rel="noopener">
+          WHATSAPP — ENVOYER LE MESSAGE
+        </a>
+
+        <button type="button" id="edit-form" class="send-choice whatsapp-choice">
+          Modifier ma proposition
+        </button>
+      </div>
+
+    </div>
   </div>
 </section>
+
 </main>
 
 <footer>
@@ -343,13 +535,72 @@ for (let i = 0; i < 18; i++) {
   document.body.appendChild(particle);
 }
 
-// Le formulaire est visuel pour le moment.
-// Il faudra le connecter à un Cloudflare Worker pour recevoir les demandes.
-document.getElementById('partner-form').addEventListener('submit', function(e) {
+// FORMULAIRE DE CONTACT
+const form = document.getElementById('partner-form');
+const sendOptions = document.getElementById('send-options');
+const formMessage = document.getElementById('form-message');
+
+form.addEventListener('submit', function(e) {
   e.preventDefault();
-  document.getElementById('form-message').textContent =
-    "Le formulaire n'est pas encore connecté. Contacte-moi directement par e-mail ou WhatsApp.";
+
+  if (!form.reportValidity()) return;
+
+  const data = new FormData(form);
+
+  const name = data.get('name');
+  const organization = data.get('organization') || 'Non renseignée';
+  const email = data.get('email');
+  const whatsapp = data.get('whatsapp') || 'Non renseigné';
+  const type = data.get('type');
+  const project = data.get('project') || 'Non précisé';
+  const proposal = data.get('proposal');
+
+  const message =
+`NOUVELLE PROPOSITION DE PARTENARIAT
+THE STRATEGIC OFFICE — Mikael Fico
+
+Nom complet : ${name}
+Organisation : ${organization}
+Adresse e-mail : ${email}
+WhatsApp : ${whatsapp}
+
+TYPE DE PARTENARIAT
+${type}
+
+PROJET CONCERNÉ
+${project}
+
+PROPOSITION
+${proposal}
+
+Message envoyé depuis le site THE STRATEGIC OFFICE.`;
+
+  const subject = 'Nouvelle proposition de partenariat - ' + name;
+
+  const emailURL =
+    'mailto:Mikaelfico85@gmail.com' +
+    '?subject=' + encodeURIComponent(subject) +
+    '&body=' + encodeURIComponent(message);
+
+  const whatsappURL =
+    'https://wa.me/2290148057370?text=' +
+    encodeURIComponent(message);
+
+  document.getElementById('email-send').href = emailURL;
+  document.getElementById('whatsapp-send').href = whatsappURL;
+
+  form.style.display = 'none';
+  sendOptions.style.display = 'flex';
+
+  formMessage.textContent = '';
 });
+
+// Modifier sa proposition
+document.getElementById('edit-form').addEventListener('click', function() {
+  sendOptions.style.display = 'none';
+  form.style.display = 'flex';
+});
+
 </script>
 
 </body>
