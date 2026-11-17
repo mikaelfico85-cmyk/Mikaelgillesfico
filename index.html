@@ -1,1870 +1,604 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#f7f5ef">
-<title>Mikael Fico — Worlds & Ventures</title>
-<meta name="description" content="Découvrez l'univers de Mikael Fico et ses projets dans l'événementiel, l'agriculture et l'industrie musicale.">
-
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mikael Fico | The Strategic Office : stratégie, venture building, Made For Bounce</title>
+<meta name="description" content="Mikael Fico, Cotonou. Strategic Mindset, Business Intelligence, Capital Allocation, Venture Building. Découvrez Made For Bounce et proposez un partenariat.">
+<meta name="theme-color" content="#090D16">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Mikael Fico | The Strategic Office">
+<meta property="og:description" content="La vision précède le capital. La stratégie transforme les idées en actifs.">
+<meta property="og:locale" content="fr_FR">
+<meta name="twitter:card" content="summary">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Mikael Fico","address":{"@type":"PostalAddress","addressLocality":"Cotonou","addressCountry":"BJ"},"sameAs":["https://www.instagram.com/st_mikael_fico_05","https://x.com/FicoMikael22573","https://www.facebook.com/share/1E2TgzZPQh/"]}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
-
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap">
+<script>try{if(localStorage.getItem("so_intro"))document.documentElement.classList.add("seen")}catch(e){}</script>
+<noscript><style>#intro{display:none!important}.rv,.nm span,.sig span{opacity:1!important;transform:none!important;filter:none!important}</style></noscript>
 <style>
-:root {
-  --cream:#f7f5ef;
-  --white:#fffefa;
-  --ink:#20241f;
-  --muted:#777970;
-  --green:#315c49;
-  --line:#e6e3da;
-  --serif:'Playfair Display',Georgia,serif;
-  --sans:'DM Sans',Arial,sans-serif;
-}
+:root{color-scheme:dark;--bg:#090D16;--navy:#151D2B;--gold:#C6A76B;--gold2:#dcc590;--plat:#E8EAF0;--mut:#9aa3b5;--line:rgba(198,167,107,.22);--e:cubic-bezier(.2,.7,.2,1)}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:96px}
+body{margin:0;background:var(--bg);color:var(--plat);font:400 16px/1.7 Inter,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.skip{position:absolute;left:12px;top:-60px;z-index:300;background:var(--gold);color:#090D16;padding:10px 16px;border-radius:8px}
+.skip:focus{top:12px}
+h1,h2,h3{font-family:"Playfair Display",Georgia,serif;font-weight:600;margin:0;line-height:1.12;letter-spacing:-.01em}
+h2{font-size:clamp(2rem,5vw,3.2rem)}
+.wrap{width:min(1120px,calc(100% - 40px));margin-inline:auto;position:relative;z-index:2}
+.gold{color:var(--gold)}
+.eyebrow{font-size:.8rem;color:var(--gold);letter-spacing:.18em;text-transform:uppercase;margin:0 0 18px}
 
-* {
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-}
+/* INTRO */
+#intro{position:fixed;inset:0;z-index:500;background:#090D16;display:grid;place-items:center;text-align:center;padding:24px;transition:opacity 1s var(--e),transform 1s var(--e),filter 1s;}
+#intro.out{opacity:0;transform:scale(1.08);filter:blur(10px);pointer-events:none}
+.seen #intro{display:none}
+.ititle{font:600 clamp(1.7rem,7.5vw,4rem)/1.1 "Playfair Display",Georgia,serif;letter-spacing:.06em;text-shadow:0 0 28px rgba(198,167,107,.5);color:var(--plat)}
+.ititle span,.nm span{display:inline-block;opacity:0;transform:translateY(22px);filter:blur(8px);animation:in .9s var(--e) forwards;animation-delay:calc(var(--i)*55ms + 300ms)}
+.sp{width:.35em}
+.iw{margin:22px 0 0;color:var(--gold);letter-spacing:.3em;font-size:clamp(.8rem,3vw,1.1rem);opacity:0;animation:in 1s var(--e) 1.9s forwards}
+.ienter{margin-top:38px;opacity:0;animation:in 1s var(--e) 2.6s forwards}
+.skipi{position:absolute;right:20px;bottom:calc(20px + env(safe-area-inset-bottom,0px));background:none;border:0;color:var(--mut);font:inherit;font-size:.85rem;cursor:pointer;padding:10px;opacity:0;animation:in 1s 1s forwards}
+.skipi:hover{color:var(--plat)}
+@keyframes in{to{opacity:1;transform:none;filter:none}}
 
-html {
-  scroll-behavior:smooth;
-  scroll-padding-top:90px;
-}
+/* BOUTONS */
+.btn{position:relative;display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 32px;border-radius:999px;border:1px solid var(--gold);background:var(--gold);color:#090D16;font:600 .98rem Inter,system-ui,sans-serif;letter-spacing:.02em;text-decoration:none;cursor:pointer;transition:transform .3s var(--e),box-shadow .3s,background .3s}
+.btn:hover{transform:translateY(-3px);box-shadow:0 12px 40px rgba(198,167,107,.4);background:var(--gold2)}
+.btn.ol{background:transparent;color:var(--plat);border-color:rgba(232,234,240,.3)}
+.btn.ol:hover{border-color:var(--gold);box-shadow:0 10px 36px rgba(198,167,107,.22);background:rgba(198,167,107,.06)}
+.btn.in2{background:transparent;color:var(--gold);letter-spacing:.14em;font-size:.85rem}
+.btn.in2:hover{background:rgba(198,167,107,.1);box-shadow:0 0 40px rgba(198,167,107,.35)}
 
-body {
-  background:var(--cream);
-  color:var(--ink);
-  font-family:var(--sans);
-  overflow-x:hidden;
-}
+/* FOND */
+#fx{position:fixed;inset:0;width:100%;height:100%;z-index:0;pointer-events:none}
+.bg{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden}
+.sh{position:absolute;border:1px solid var(--line);will-change:transform,translate}
+.s1{width:340px;height:340px;border-radius:50%;right:-100px;top:12%;background:radial-gradient(circle at 30% 30%,rgba(198,167,107,.1),transparent 70%);animation:fa 26s ease-in-out infinite alternate}
+.s2{width:180px;height:180px;left:6%;top:58%;transform:rotate(18deg);background:rgba(21,29,43,.35);animation:fb 32s ease-in-out infinite alternate}
+.s3{width:120px;height:120px;right:14%;bottom:8%;border-radius:50%;animation:fa 30s ease-in-out infinite alternate-reverse}
+.s4{width:0;height:0;border:0;left:42%;top:16%;border-left:60px solid transparent;border-right:60px solid transparent;border-bottom:104px solid rgba(198,167,107,.05);animation:fb 38s ease-in-out infinite alternate}
+@keyframes fa{to{transform:translate(-40px,60px) rotate(25deg)}}
+@keyframes fb{to{transform:translate(50px,-50px) rotate(-30deg)}}
+.ln{position:absolute;height:1px;left:-20%;width:140%;background:linear-gradient(90deg,transparent,rgba(198,167,107,.35),transparent);animation:ls 18s linear infinite}
+.l1{top:28%}.l2{top:71%;animation-duration:26s;animation-direction:reverse}
+@keyframes ls{from{transform:translateX(-14%)}to{transform:translateX(14%)}}
 
-button,input,textarea,select {
-  font:inherit;
-}
+/* NAV */
+.hdr{position:fixed;top:calc(12px + env(safe-area-inset-top,0px));left:50%;transform:translateX(-50%);z-index:100;width:min(960px,calc(100% - 24px));opacity:0;transition:opacity .8s var(--e) .4s}
+.ready .hdr,.seen .hdr{opacity:1}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:8px 10px 8px 22px;border-radius:999px;background:rgba(21,29,43,.72);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border:1px solid var(--line);box-shadow:0 16px 50px rgba(0,0,0,.4)}
+.logo{font:700 .98rem "Playfair Display",Georgia,serif;text-decoration:none;letter-spacing:.04em;white-space:nowrap}
+.menu{position:relative}
+.menu ul{display:flex;gap:2px;list-style:none;margin:0;padding:0}
+.menu a{position:relative;display:block;padding:9px 14px;font-size:.88rem;color:var(--mut);text-decoration:none;transition:color .3s;z-index:1}
+.menu a:hover,.menu a.on{color:var(--plat)}
+.ind{position:absolute;bottom:2px;height:2px;border-radius:2px;background:var(--gold);box-shadow:0 0 12px var(--gold);transition:left .45s var(--e),width .45s var(--e);left:0;width:0}
+.cta{min-height:44px;padding:0 22px;font-size:.88rem}
+.burger{display:none;width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:transparent;color:var(--plat);cursor:pointer;position:relative}
+.burger i{position:absolute;left:13px;right:13px;height:2px;background:currentColor;transition:transform .35s var(--e),opacity .2s}
+.burger i:nth-child(1){top:16px}.burger i:nth-child(2){top:21px}.burger i:nth-child(3){top:26px}
+.burger[aria-expanded=true] i:nth-child(1){transform:translateY(5px) rotate(45deg)}
+.burger[aria-expanded=true] i:nth-child(2){opacity:0}
+.burger[aria-expanded=true] i:nth-child(3){transform:translateY(-5px) rotate(-45deg)}
 
-button,a {
-  -webkit-tap-highlight-color:transparent;
-}
+/* SECTIONS */
+main{position:relative;z-index:2}
+section{padding:110px 0;position:relative}
+.div{height:1px;max-width:1120px;margin:0 auto;background:linear-gradient(90deg,transparent,var(--gold),transparent);opacity:.5;transform:scaleX(0);transition:transform 1.4s var(--e)}
+.div.in{transform:scaleX(1)}
+.hero{min-height:100svh;display:flex;align-items:center;padding:130px 0 90px}
+.nm{font-size:clamp(2.8rem,11vw,7.4rem);font-weight:700;letter-spacing:.02em;text-transform:uppercase}
+.nm .sp{width:.3em}
+.sig{margin:26px 0 0;max-width:30ch;font:500 italic clamp(1.25rem,3.4vw,2rem)/1.35 "Playfair Display",Georgia,serif;color:var(--gold2)}
+.sig span{display:inline-block;opacity:0;transform:translateY(14px);filter:blur(6px)}
+.ready .sig span,.seen .sig span{animation:in .8s var(--e) forwards;animation-delay:calc(1s + var(--i)*70ms)}
+.seen .nm span{animation-delay:calc(var(--i)*45ms + 150ms)}
+.ready .nm span{animation-delay:calc(var(--i)*55ms + 350ms)}
+.nm span{animation-play-state:paused}
+.ready .nm span,.seen .nm span{animation-play-state:running}
+.intro-t{max-width:56ch;margin:26px 0 0;color:var(--mut);font-size:1.1rem;opacity:0}
+.ready .intro-t,.seen .intro-t{animation:in 1s var(--e) 2.1s forwards}
+.acts{display:flex;flex-wrap:wrap;gap:16px;margin-top:40px;opacity:0}
+.ready .acts,.seen .acts{animation:in 1s var(--e) 2.4s forwards}
+.pos{margin-top:34px;color:var(--mut);font-size:.85rem;letter-spacing:.12em;text-transform:uppercase;opacity:0}
+.ready .pos,.seen .pos{animation:in 1s var(--e) 2.7s forwards}
 
-a {
-  text-decoration:none;
-  color:inherit;
-}
+.two{display:grid;grid-template-columns:1fr 1.2fr;gap:64px;align-items:start}
+.two p{color:var(--mut);margin:0 0 18px;max-width:60ch}
+.quote{margin-top:28px;padding-left:20px;border-left:2px solid var(--gold);font:italic 1.2rem/1.5 "Playfair Display",Georgia,serif;color:var(--plat)}
+.grid{display:grid;gap:18px}
+.g3{grid-template-columns:repeat(3,1fr)}
+.card{position:relative;background:linear-gradient(160deg,rgba(21,29,43,.92),rgba(21,29,43,.6));border:1px solid var(--line);border-radius:18px;padding:30px;overflow:hidden;transition:transform .45s var(--e),border-color .3s,box-shadow .45s}
+.card:hover{transform:translateY(-8px);border-color:rgba(198,167,107,.55);box-shadow:0 26px 60px rgba(0,0,0,.45),0 0 40px rgba(198,167,107,.08)}
+.card .n{font:600 .9rem "Playfair Display",Georgia,serif;color:var(--gold);letter-spacing:.1em}
+.card h3{font-size:1.35rem;margin:14px 0 10px}
+.card p{margin:0;color:var(--mut);font-size:.96rem}
+.head{max-width:680px;margin-bottom:54px}
+.head p{color:var(--mut);margin:16px 0 0}
 
-img {
-  display:block;
-  width:100%;
-  object-fit:cover;
-}
+.proj{display:grid;grid-template-columns:1.1fr 1fr;gap:28px;align-items:stretch}
+.big{padding:44px;background:radial-gradient(120% 120% at 0% 0%,rgba(198,167,107,.14),transparent 55%),linear-gradient(160deg,#151D2B,#0d1320)}
+.big h3{font-size:clamp(2.2rem,5.5vw,3.6rem);letter-spacing:.02em;text-transform:uppercase;margin:10px 0 18px}
+.stat{display:inline-block;padding:6px 14px;border:1px solid var(--gold);border-radius:999px;color:var(--gold);font-size:.8rem;letter-spacing:.08em}
+.info{display:grid;gap:14px}
+.info .card{padding:24px 28px}
+.info h3{font-size:1.1rem;margin:0 0 6px;color:var(--gold2)}
+.gal{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:28px;perspective:900px}
+.tile{aspect-ratio:3/4;border-radius:16px;border:1px solid var(--line);display:grid;place-items:end start;padding:16px;color:var(--mut);font-size:.8rem;background:linear-gradient(145deg,rgba(198,167,107,.14),rgba(21,29,43,.9) 60%);transition:transform .6s var(--e),border-color .3s;position:relative;overflow:hidden}
+.tile:nth-child(2){background:linear-gradient(200deg,rgba(198,167,107,.1),rgba(21,29,43,.9) 60%)}
+.tile:nth-child(3){background:linear-gradient(120deg,rgba(232,234,240,.07),rgba(21,29,43,.9) 60%)}
+.tile::before{content:"";position:absolute;width:70%;aspect-ratio:1;border:1px solid var(--line);border-radius:50%;right:-20%;top:-10%}
+.tile:hover{transform:rotateY(-8deg) translateZ(20px) translateY(-6px);border-color:var(--gold)}
 
-button {
-  cursor:pointer;
-}
+.cats{grid-template-columns:repeat(3,1fr)}
+.cat{cursor:pointer;text-align:left;font:inherit;color:inherit;width:100%}
+.cat h3{font-size:1.15rem;margin:0}
+.cat small{display:block;margin-top:8px;color:var(--mut);font-size:.88rem}
+.sigl{font:600 clamp(2.4rem,8vw,5.2rem)/1.02 "Playfair Display",Georgia,serif;text-transform:uppercase;letter-spacing:.01em}
+form{margin-top:48px;padding:clamp(24px,5vw,48px);border:1px solid var(--line);border-radius:22px;background:linear-gradient(160deg,rgba(21,29,43,.9),rgba(9,13,22,.8));display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.fw{grid-column:1/-1}
+label{display:grid;gap:7px;font-size:.85rem;font-weight:500;color:var(--plat)}
+input,select,textarea{width:100%;padding:15px 16px;border-radius:12px;border:1px solid rgba(232,234,240,.18);background:rgba(9,13,22,.8);color:var(--plat);font:400 1rem Inter,system-ui,sans-serif;transition:border-color .25s,box-shadow .25s}
+input:focus,select:focus,textarea:focus{outline:0;border-color:var(--gold);box-shadow:0 0 0 3px rgba(198,167,107,.18)}
+textarea{min-height:130px;resize:vertical}
+.hp{position:absolute;left:-9999px;opacity:0;height:0}
+.note{color:var(--mut);font-size:.82rem;margin:0}
+#msg{min-height:1.4em;margin:0;font-size:.95rem}
+.ok{color:#8fd9a8}.er{color:#f0a0a0}
 
-.container {
-  width:min(1180px,90%);
-  margin:auto;
-}
+.soc{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
+.soc a{display:inline-flex;align-items:center;gap:12px;padding:0 24px 0 18px;min-height:56px;border:1px solid var(--line);border-radius:999px;text-decoration:none;font-weight:500;background:rgba(21,29,43,.6);transition:transform .3s var(--e),border-color .3s,color .3s,box-shadow .3s}
+.soc a:hover{transform:translateY(-3px);border-color:var(--gold);color:var(--gold2);box-shadow:0 10px 30px rgba(198,167,107,.14)}
+.soc svg{width:22px;height:22px;flex:none}
+footer{position:relative;z-index:2;border-top:1px solid var(--line);padding:34px 0 46px;color:var(--mut);font-size:.88rem}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
+.top{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:90;width:52px;height:52px;border-radius:50%;border:1px solid var(--gold);background:rgba(21,29,43,.85);color:var(--gold);cursor:pointer;display:grid;place-items:center;opacity:0;transform:translateY(20px) scale(.8);pointer-events:none;transition:opacity .4s,transform .5s var(--e),box-shadow .3s}
+.top.show{opacity:1;transform:none;pointer-events:auto;animation:bob 3s ease-in-out infinite}
+.top:hover{box-shadow:0 0 30px rgba(198,167,107,.45)}
+@keyframes bob{50%{translate:0 -4px}}
 
-.page {
-  display:none;
-  animation:pageIn .45s ease;
-}
+.js .rv{opacity:0;transform:translateY(34px);filter:blur(5px);transition:opacity .9s var(--e),transform .9s var(--e),filter .9s var(--e)}
+.js .rv.in{opacity:1;transform:none;filter:none}
 
-.page.active {
-  display:block;
+@media (max-width:900px){.two,.proj{grid-template-columns:1fr;gap:34px}.g3,.cats{grid-template-columns:1fr 1fr}.gal{grid-template-columns:1fr 1fr}}
+@media (max-width:760px){
+  .burger{display:block}.cta{display:none}
+  .menu{position:static}
+  .menu ul{position:absolute;left:0;right:0;top:calc(100% + 10px);flex-direction:column;padding:12px;border-radius:24px;background:rgba(21,29,43,.96);backdrop-filter:blur(18px);border:1px solid var(--line);opacity:0;visibility:hidden;transform:translateY(-12px) scale(.98);transition:opacity .4s var(--e),transform .4s var(--e),visibility .4s}
+  .menu.open ul{opacity:1;visibility:visible;transform:none}
+  .menu a{padding:14px 18px;font-size:1rem}.ind{display:none}
+  .bar{position:relative}.menu{position:static}
+  .hdr{position:fixed}.hdr .bar{position:relative}
+  section{padding:80px 0}
+  form,.g3,.cats{grid-template-columns:1fr}.gal{grid-template-columns:1fr 1fr}.big{padding:30px 24px}.acts .btn{width:100%}
 }
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.001ms!important;animation-delay:0s!important;transition-duration:.001ms!important}.js .rv{opacity:1;transform:none;filter:none}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Aller au contenu</a>
 
-@keyframes pageIn {
-  from {opacity:0;transform:translateY(9px)}
-  to {opacity:1;transform:translateY(0)}
-}
+<div id="intro" role="dialog" aria-label="Introduction">
+  <div>
+    <div class="ititle" id="it" aria-label="The Strategic Office">THE STRATEGIC OFFICE</div>
+    <p class="iw">WELCOME TO MY WORLD.</p>
+    <button class="btn in2 ienter" id="enter" type="button">ENTER EXPERIENCE ↗</button>
+  </div>
+  <button class="skipi" id="skip" type="button">Skip intro</button>
+</div>
 
-.serif {
-  font-family:var(--serif);
-}
+<canvas id="fx" aria-hidden="true"></canvas>
+<div class="bg" aria-hidden="true"><div class="sh s1"></div><div class="sh s2"></div><div class="sh s3"></div><div class="sh s4"></div><div class="ln l1"></div><div class="ln l2"></div></div>
 
-.eyebrow {
-  font-size:10px;
-  letter-spacing:3px;
-  font-weight:700;
-  text-transform:uppercase;
-}
+<header class="hdr"><div class="bar">
+  <a class="logo" href="#accueil">MIKAEL FICO</a>
+  <nav class="menu" id="menu" aria-label="Navigation principale">
+    <ul id="nl">
+      <li><a href="#accueil">Accueil</a></li>
+      <li><a href="#apropos">À propos</a></li>
+      <li><a href="#expertise">Expertise</a></li>
+      <li><a href="#projets">Projets</a></li>
+      <li><a href="#partenariats">Partenariats</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <span class="ind" id="ind"></span>
+  </nav>
+  <a class="btn cta" href="#partenariats">Partenariat</a>
+  <button class="burger" id="bg" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nl"><i></i><i></i><i></i></button>
+</div></header>
 
-.muted {
-  color:var(--muted);
-}
+<main id="main">
+<section class="hero" id="accueil"><div class="wrap">
+  <p class="eyebrow">The Strategic Office · Cotonou, Bénin</p>
+  <h1 class="nm" id="nm">Mikael Fico</h1>
+  <p class="sig" id="sig">La vision précède le capital. La stratégie transforme les idées en actifs.</p>
+  <p class="intro-t">Entrepreneur basé à Cotonou. Je construis des projets à fort potentiel, de la stratégie à l’exécution, et je cherche les bons partenaires pour les faire grandir.</p>
+  <div class="acts">
+    <a class="btn" href="#projets">Découvrir mes projets</a>
+    <a class="btn ol" href="#partenariats">Discuter d’un partenariat</a>
+  </div>
+  <p class="pos">Strategic Mindset • Business Intelligence • Capital Allocation • Venture Building</p>
+</div></section>
 
-.section {
-  padding:105px 0;
-}
+<div class="div rv"></div>
+<section id="apropos"><div class="wrap two">
+  <div class="rv"><p class="eyebrow">À propos</p><h2>Une vision, avant le capital.</h2></div>
+  <div class="rv">
+    <p>Je m’appelle Mikael Fico. Je vis à Cotonou, au Bénin, et je m’intéresse à la stratégie, à l’investissement et à la création d’entreprises.</p>
+    <p>Ma philosophie est simple : une idée n’a de valeur que lorsqu’elle est pensée avec méthode, structurée avec rigueur et portée par les bonnes personnes. Je cherche à transformer des intentions en actifs durables.</p>
+    <p>Je travaille avec une logique de long terme : choisir où placer les ressources, mesurer ce qui compte et bâtir des projets qui créent de la valeur.</p>
+    <div class="quote">La stratégie transforme les idées en actifs.</div>
+  </div>
+</div></section>
 
-.section-head {
-  max-width:680px;
-  margin-bottom:45px;
-}
+<div class="div rv"></div>
+<section id="expertise"><div class="wrap">
+  <div class="head rv"><p class="eyebrow">Expertise</p><h2>Cinq domaines, une même exigence.</h2></div>
+  <div class="grid g3">
+    <article class="card rv"><span class="n">01</span><h3>Strategic Thinking</h3><p>Prendre du recul, fixer un cap et arbitrer avec méthode.</p></article>
+    <article class="card rv"><span class="n">02</span><h3>Business Intelligence</h3><p>Transformer les données en décisions claires et mesurables.</p></article>
+    <article class="card rv"><span class="n">03</span><h3>Capital Allocation</h3><p>Placer chaque ressource là où elle crée le plus de valeur.</p></article>
+    <article class="card rv"><span class="n">04</span><h3>Venture Building</h3><p>Construire des projets, de l’idée jusqu’au lancement.</p></article>
+    <article class="card rv"><span class="n">05</span><h3>Project Development</h3><p>Structurer, piloter et faire avancer les projets avec les bonnes équipes.</p></article>
+  </div>
+</div></section>
 
-.section-head h2 {
-  font:600 clamp(32px,5vw,53px)/1.12 var(--serif);
-  margin:15px 0;
-  letter-spacing:-1px;
-}
+<div class="div rv"></div>
+<section id="projets"><div class="wrap">
+  <div class="head rv"><p class="eyebrow">Projets &amp; initiatives</p><h2>Ce que je construis.</h2></div>
+  <div class="proj">
+    <article class="card big rv">
+      <span class="stat" id="stat">Concept en développement</span>
+      <h3>Made For Bounce</h3>
+      <p>Un festival urbain annuel à Cotonou, pensé comme un village d’expériences : musique, gastronomie, entrepreneuriat et lifestyle réunis dans un même rendez-vous.</p>
+      <p style="margin-top:18px"><a class="btn" href="#partenariats" data-pre="Made For Bounce">Devenir partenaire</a></p>
+    </article>
+    <div class="info">
+      <div class="card rv"><h3>Vision et objectifs</h3><p>Créer un rendez-vous annuel de la culture urbaine où artistes, entrepreneurs, marques et public se rencontrent.</p></div>
+      <div class="card rv"><h3>Positionnement</h3><p>Festival urbain multi-expériences, ancré à Cotonou, au Bénin.</p></div>
+      <div class="card rv"><h3>Opportunités de développement</h3><p>Sponsoring, partenariats institutionnels, médias, soutien technique et collaborations créatives.</p></div>
+    </div>
+  </div>
+  <div class="gal rv" aria-label="Galerie de visuels">
+    <div class="tile">Visuel à venir</div><div class="tile">Visuel à venir</div><div class="tile">Visuel à venir</div><div class="tile">Visuel à venir</div>
+  </div>
+</div></section>
 
-.section-head p {
-  color:var(--muted);
-  line-height:1.9;
-  font-size:14px;
-}
+<div class="div rv"></div>
+<section id="partenariats"><div class="wrap">
+  <div class="head rv"><p class="eyebrow">Espace partenariats</p><h2 class="sigl">Let’s build something significant.</h2>
+    <p>Je suis ouvert aux collaborations stratégiques, aux partenariats commerciaux et aux opportunités d’investissement autour de projets à fort potentiel. Si vous partagez cette vision, échangeons.</p></div>
+  <div class="grid cats" id="cats">
+    <button class="card cat rv" type="button" data-t="Partenaire stratégique"><h3>Partenaires stratégiques</h3><small>Construire une vision commune</small></button>
+    <button class="card cat rv" type="button" data-t="Sponsor ou partenaire commercial"><h3>Sponsors et partenaires commerciaux</h3><small>Associer votre marque</small></button>
+    <button class="card cat rv" type="button" data-t="Investisseur"><h3>Investisseurs</h3><small>Soutenir des projets à potentiel</small></button>
+    <button class="card cat rv" type="button" data-t="Partenaire technique"><h3>Partenaires techniques</h3><small>Apporter une expertise</small></button>
+    <button class="card cat rv" type="button" data-t="Partenaire institutionnel"><h3>Partenaires institutionnels</h3><small>Collaborer avec les institutions</small></button>
+    <button class="card cat rv" type="button" data-t="Collaborateur ou prestataire"><h3>Collaborateurs et prestataires</h3><small>Rejoindre l’aventure</small></button>
+  </div>
 
-.btn {
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  gap:12px;
-  padding:15px 22px;
-  border:1px solid var(--ink);
-  background:var(--ink);
-  color:white;
-  font-size:11px;
-  font-weight:700;
-  letter-spacing:1px;
-  transition:.3s;
-}
+  <form id="pf" class="rv" novalidate>
+    <label>Nom et prénom<input name="nom" autocomplete="name" required></label>
+    <label>Entreprise ou organisation<input name="org" autocomplete="organization"></label>
+    <label>Fonction<input name="fonction" autocomplete="organization-title"></label>
+    <label>Adresse e-mail<input name="email" type="email" autocomplete="email" required></label>
+    <label>Numéro WhatsApp<input name="wa" type="tel" autocomplete="tel" placeholder="+229 …"></label>
+    <label>Type de partenariat souhaité
+      <select name="type" id="ptype" required>
+        <option value="">Choisir…</option>
+        <option>Partenaire stratégique</option><option>Sponsor ou partenaire commercial</option><option>Investisseur</option><option>Partenaire technique</option><option>Partenaire institutionnel</option><option>Collaborateur ou prestataire</option>
+      </select></label>
+    <label class="fw">Projet concerné
+      <select name="projet" id="pproj"><option>Made For Bounce</option><option>Autre projet</option><option>Collaboration générale</option></select></label>
+    <label class="fw">Proposition ou message<textarea name="message" required></textarea></label>
+    <input class="hp" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+    <div class="fw"><button class="btn" type="submit">Soumettre une proposition de partenariat</button></div>
+    <p class="note fw">Vos informations servent uniquement à répondre à votre proposition.</p>
+    <p class="fw" id="msg" role="status" aria-live="polite"></p>
+  </form>
+</div></section>
 
-.btn:hover {
-  background:transparent;
-  color:var(--ink);
-}
+<div class="div rv"></div>
+<section id="contact"><div class="wrap">
+  <div class="head rv"><p class="eyebrow">Contact et réseaux</p><h2>Restons en contact.</h2></div>
+  <div class="soc rv">
+    <a href="https://wa.me/2290148057370" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 0 1-13.4 7.8L3 21l1.3-4.4A9 9 0 1 1 21 12z"/></svg>WhatsApp</a>
+    <a href="mailto:Mikaelfico85@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>Email</a>
+    <a href="https://www.instagram.com/st_mikael_fico_05" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6" fill="currentColor"/></svg>Instagram</a>
+    <a href="https://x.com/FicoMikael22573" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg>X</a>
+    <a href="https://www.facebook.com/share/1E2TgzZPQh/" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>Facebook</a>
+  </div>
+</div></section>
+</main>
 
-.btn-light {
-  background:var(--white);
-  color:var(--ink);
-  border-color:var(--white);
-}
+<footer><div class="wrap"><span>© <span id="yr"></span> Mikael Fico · The Strategic Office</span><span>Cotonou, Bénin</span></div></footer>
+<button class="top" id="top" type="button" aria-label="Retour en haut"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 14 6-6 6 6"/></svg></button>
 
-.btn-light:hover {
-  background:transparent;
-  color:white;
-  border-color:white;
-}
+<script>
+(function(){
+"use strict";
+/* RÉGLAGES MODIFIABLES */
+var PROJECT_STATUS="Concept en développement"; /* statut affiché de Made For Bounce */
+var FORM_ENDPOINT=""; /* mettre l'URL d'un service (ex. Formspree) pour recevoir les propositions par e-mail */
+var MAIL="Mikaelfico85@gmail.com";
+var $=function(s){return document.querySelector(s)},A=function(s){return document.querySelectorAll(s)};
+var H=document.documentElement,rm=matchMedia("(prefers-reduced-motion: reduce)").matches;
+var fine=matchMedia("(hover:hover) and (pointer:fine)").matches;
+$("#yr").textContent=new Date().getFullYear();$("#stat").textContent=PROJECT_STATUS;
+function spans(el,txt,cls){el.innerHTML=txt.split("").map(function(c,i){return c===" "?'<span class="sp" style="--i:'+i+'"> </span>':'<span style="--i:'+i+'" aria-hidden="true">'+c+'</span>'}).join("")}
+spans($("#it"),"THE STRATEGIC OFFICE");$("#it").setAttribute("aria-label","The Strategic Office");
+var nm=$("#nm");nm.setAttribute("aria-label","Mikael Fico");spans(nm,"Mikael Fico");
+var sg=$("#sig");sg.innerHTML=sg.textContent.split(" ").map(function(w,i){return '<span style="--i:'+i+'">'+w+'</span>'}).join(" ");
 
-.btn-green {
-  background:var(--green);
-  border-color:var(--green);
-}
+/* PARTICULES */
+var cv=$("#fx"),cx=cv.getContext("2d"),P=[],run=false,W=0,Hh=0;
+function size(){W=cv.width=innerWidth;Hh=cv.height=innerHeight;var n=W<700?22:42;P=[];for(var i=0;i<n;i++)P.push({x:Math.random()*W,y:Math.random()*Hh,r:Math.random()*1.5+.4,v:Math.random()*.22+.07,a:Math.random()*.5+.15,d:Math.random()*6.28})}
+function loop(){if(!run)return;cx.clearRect(0,0,W,Hh);for(var i=0;i<P.length;i++){var p=P[i];p.y-=p.v;p.d+=.004;p.x+=Math.sin(p.d)*.2;if(p.y<-5){p.y=Hh+5;p.x=Math.random()*W}cx.beginPath();cx.arc(p.x,p.y,p.r,0,6.283);cx.fillStyle="rgba(198,167,107,"+p.a+")";cx.fill()}requestAnimationFrame(loop)}
+function fx(){if(rm||run)return;size();run=true;loop()}
+addEventListener("resize",function(){if(run)size()});
+document.addEventListener("visibilitychange",function(){if(document.hidden){run=false}else if(started&&!rm){run=true;loop()}});
 
-.btn-green:hover {
-  background:transparent;
-  color:var(--green);
+/* INTRO */
+var started=false;
+function begin(){if(started)return;started=true;document.body.classList.add("ready");fx()}
+function leave(){try{localStorage.setItem("so_intro","1")}catch(e){}
+  var it=$("#intro");it.classList.add("out");begin();setTimeout(function(){it.style.display="none"},1100)}
+$("#enter").addEventListener("click",leave);$("#skip").addEventListener("click",leave);
+if(H.classList.contains("seen"))begin();else{document.body.style.overflow="hidden";var rel=function(){document.body.style.overflow=""};$("#enter").addEventListener("click",rel);$("#skip").addEventListener("click",rel)}
+
+/* RÉVÉLATIONS */
+if("IntersectionObserver" in window&&!rm){
+  H.classList.add("js");
+  var io=new IntersectionObserver(function(l){l.forEach(function(x){if(x.isIntersecting){x.target.classList.add("in");io.unobserve(x.target)}})},{threshold:.12});
+  A(".rv").forEach(function(el,i){el.style.transitionDelay=(i%3)*90+"ms";io.observe(el)});
 }
 
 /* NAVIGATION */
-
-header {
-  height:78px;
-  position:sticky;
-  top:0;
-  z-index:1000;
-  background:rgba(247,245,239,.95);
-  backdrop-filter:blur(14px);
-  border-bottom:1px solid var(--line);
-}
-
-.nav {
-  height:100%;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-}
-
-.logo {
-  font-size:19px;
-  font-weight:700;
-  letter-spacing:1px;
-  cursor:pointer;
-}
-
-.logo span {
-  color:var(--green);
-}
-
-.nav-links {
-  display:flex;
-  gap:28px;
-  align-items:center;
-}
-
-.nav-links button {
-  background:none;
-  border:0;
-  color:#575b54;
-  font-size:11px;
-  font-weight:600;
-}
-
-.nav-links button:hover {
-  color:var(--green);
-}
-
-.nav-contact {
-  border:1px solid var(--ink)!important;
-  padding:11px 17px;
-}
-
-.menu {
-  display:none;
-  background:none;
-  border:1px solid var(--line);
-  padding:8px 12px;
-  font-size:20px;
-}
-
-/* HOME HERO */
-
-.home-hero {
-  min-height:680px;
-  display:flex;
-  align-items:center;
-  position:relative;
-  color:white;
-  background:
-  linear-gradient(90deg,rgba(12,25,19,.83),rgba(12,25,19,.16)),
-  url("https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=2000&q=85") center/cover;
-}
-
-.home-hero-content {
-  max-width:750px;
-  padding:100px 0;
-}
-
-.home-hero .eyebrow {
-  color:#d6c9a7;
-}
-
-.home-hero h1 {
-  font:600 clamp(48px,8vw,88px)/1.08 var(--serif);
-  margin:25px 0;
-}
-
-.home-hero p {
-  color:#e4e5df;
-  max-width:550px;
-  font-size:15px;
-  line-height:1.9;
-}
-
-.home-hero .btn {
-  margin-top:32px;
-}
-
-.hero-meta {
-  display:flex;
-  gap:35px;
-  flex-wrap:wrap;
-  margin-top:65px;
-  font-size:10px;
-  letter-spacing:2px;
-  color:#deded4;
-}
-
-/* INTRO */
-
-.intro-grid {
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:85px;
-  align-items:center;
-}
-
-.intro-image {
-  height:500px;
-  overflow:hidden;
-}
-
-.intro-image img {
-  height:100%;
-}
-
-.intro-copy h2 {
-  font:600 clamp(35px,5vw,55px)/1.2 var(--serif);
-  margin:20px 0;
-}
-
-.intro-copy p {
-  color:var(--muted);
-  font-size:14px;
-  line-height:2;
-  margin-bottom:17px;
-}
-
-.signature {
-  color:var(--green);
-  font:italic 23px var(--serif);
-  margin-top:25px;
-}
-
-/* PROJECT DISCOVERY */
-
-.projects-section {
-  background:#eeece4;
-}
-
-.project-grid {
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:22px;
-}
-
-.project-tile {
-  background:var(--white);
-  overflow:hidden;
-  cursor:pointer;
-  transition:.35s;
-}
-
-.project-tile:hover {
-  transform:translateY(-8px);
-}
-
-.tile-image {
-  height:310px;
-  overflow:hidden;
-  position:relative;
-}
-
-.tile-image img {
-  height:100%;
-  transition:.6s;
-}
-
-.project-tile:hover img {
-  transform:scale(1.05);
-}
-
-.tile-number {
-  position:absolute;
-  top:17px;
-  left:17px;
-  background:white;
-  padding:8px 12px;
-  font-size:10px;
-}
-
-.tile-content {
-  padding:27px;
-}
-
-.tile-content .eyebrow {
-  color:var(--green);
-}
-
-.tile-content h3 {
-  font:600 27px var(--serif);
-  margin:12px 0;
-}
-
-.tile-content p {
-  color:var(--muted);
-  font-size:13px;
-  line-height:1.8;
-}
-
-.tile-link {
-  display:inline-block;
-  margin-top:23px;
-  font-size:10px;
-  font-weight:700;
-  letter-spacing:1.5px;
-  border-bottom:1px solid var(--green);
-  padding-bottom:6px;
-  color:var(--green);
-}
-
-/* EXPERIENCE STRIP */
-
-.statement {
-  background:#294b3d;
-  color:white;
-  padding:95px 0;
-  text-align:center;
-}
-
-.statement h2 {
-  font:500 clamp(34px,6vw,58px)/1.25 var(--serif);
-  max-width:850px;
-  margin:22px auto;
-}
-
-.statement p {
-  color:#d2ddd5;
-  font-size:13px;
-}
-
-/* COMMON PROJECT HERO */
-
-.project-hero {
-  min-height:610px;
-  display:flex;
-  align-items:flex-end;
-  color:white;
-  position:relative;
-  background-size:cover;
-  background-position:center;
-}
-
-.project-hero::before {
-  content:"";
-  position:absolute;
-  inset:0;
-  background:linear-gradient(0deg,rgba(0,0,0,.77),rgba(0,0,0,.08));
-}
-
-.project-hero-content {
-  position:relative;
-  z-index:1;
-  padding:85px 0;
-  max-width:780px;
-}
-
-.project-hero .eyebrow {
-  color:#e7d8b8;
-}
-
-.project-hero h1 {
-  font:600 clamp(48px,8vw,86px)/1.08 var(--serif);
-  margin:18px 0;
-}
-
-.project-hero p {
-  max-width:600px;
-  color:#f0eee9;
-  line-height:1.9;
-  font-size:14px;
-}
-
-.project-hero .btn {
-  margin-top:27px;
-}
-
-.mfb-hero {
-  background-image:url("https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?auto=format&fit=crop&w=2000&q=85");
-}
-
-.agri-hero {
-  background-image:url("https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=2000&q=85");
-}
-
-.music-hero {
-  background-image:url("https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=2000&q=85");
-}
-
-/* PROJECT NAV */
-
-.project-subnav {
-  background:var(--white);
-  border-bottom:1px solid var(--line);
-}
-
-.project-subnav .container {
-  display:flex;
-  gap:25px;
-  overflow-x:auto;
-  padding-top:19px;
-  padding-bottom:19px;
-}
-
-.project-subnav a {
-  font-size:10px;
-  white-space:nowrap;
-  font-weight:700;
-  letter-spacing:1px;
-  color:var(--muted);
-}
-
-.project-subnav a:hover {
-  color:var(--green);
-}
-
-/* PROJECT DETAILS */
-
-.project-intro {
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:70px;
-  align-items:center;
-}
-
-.project-intro h2 {
-  font:600 clamp(32px,5vw,51px)/1.2 var(--serif);
-  margin:18px 0;
-}
-
-.project-intro p {
-  color:var(--muted);
-  line-height:2;
-  font-size:14px;
-  margin-bottom:16px;
-}
-
-.project-intro-image {
-  height:430px;
-}
-
-.project-intro-image img {
-  height:100%;
-}
-
-.feature-grid {
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:18px;
-}
-
-.feature {
-  background:var(--white);
-  padding:30px 25px;
-  border:1px solid var(--line);
-}
-
-.feature .number {
-  font:500 25px var(--serif);
-  color:var(--green);
-}
-
-.feature h3 {
-  font:600 20px var(--serif);
-  margin:20px 0 10px;
-}
-
-.feature p {
-  color:var(--muted);
-  font-size:13px;
-  line-height:1.8;
-}
-
-/* GALLERY */
-
-.gallery {
-  display:grid;
-  grid-template-columns:1.3fr 1fr 1fr;
-  gap:14px;
-}
-
-.gallery img {
-  height:270px;
-}
-
-/* PROCESS */
-
-.process-list {
-  border-top:1px solid var(--line);
-}
-
-.process-item {
-  display:grid;
-  grid-template-columns:90px 1fr 1.2fr;
-  gap:25px;
-  padding:25px 0;
-  border-bottom:1px solid var(--line);
-}
-
-.process-item span {
-  color:var(--green);
-  font-size:12px;
-}
-
-.process-item h3 {
-  font:500 22px var(--serif);
-}
-
-.process-item p {
-  color:var(--muted);
-  font-size:13px;
-  line-height:1.8;
-}
-
-/* CTA */
-
-.project-cta {
-  padding:80px 0;
-  background:#294b3d;
-  color:white;
-  text-align:center;
-}
-
-.project-cta h2 {
-  font:500 clamp(33px,5vw,51px) var(--serif);
-  margin:15px 0;
-}
-
-.project-cta p {
-  color:#d7e0d9;
-  font-size:13px;
-  margin-bottom:25px;
-}
-
-/* CONTACT */
-
-.contact-layout {
-  display:grid;
-  grid-template-columns:.8fr 1.2fr;
-  gap:65px;
-}
-
-.contact-copy h2 {
-  font:600 47px/1.15 var(--serif);
-  margin:20px 0;
-}
-
-.contact-copy p {
-  color:var(--muted);
-  font-size:14px;
-  line-height:1.9;
-}
-
-.contact-line {
-  margin-top:25px;
-}
-
-.contact-line strong {
-  display:block;
-  font-size:10px;
-  letter-spacing:2px;
-  color:var(--green);
-}
-
-.contact-line a {
-  font-size:14px;
-  overflow-wrap:anywhere;
-}
-
-.socials {
-  display:flex;
-  gap:18px;
-  flex-wrap:wrap;
-  margin-top:25px;
-}
-
-.socials a {
-  font-size:12px;
-  color:var(--green);
-}
-
-.contact-form {
-  background:var(--white);
-  padding:35px;
-  border:1px solid var(--line);
-}
-
-.contact-form h3 {
-  font:600 27px var(--serif);
-  margin-bottom:25px;
-}
-
-.form-row {
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:15px;
-}
-
-.field {
-  margin-bottom:17px;
-}
-
-.field label {
-  display:block;
-  font-size:11px;
-  font-weight:700;
-  margin-bottom:8px;
-}
-
-.field input,
-.field textarea,
-.field select {
-  width:100%;
-  padding:14px;
-  background:#f9f8f4;
-  border:1px solid #deddd5;
-  outline:none;
-  border-radius:0;
-  color:var(--ink);
-}
-
-.field input:focus,
-.field textarea:focus,
-.field select:focus {
-  border-color:var(--green);
-}
-
-.field textarea {
-  min-height:125px;
-  resize:vertical;
-}
-
-.contact-form .btn {
-  width:100%;
-}
-
-.form-note {
-  color:var(--muted);
-  font-size:10px;
-  margin-top:13px;
-  line-height:1.7;
-}
-
-/* FOOTER */
-
-footer {
-  background:#202e27;
-  color:white;
-  padding:55px 0 25px;
-}
-
-.footer-top {
-  display:flex;
-  justify-content:space-between;
-  flex-wrap:wrap;
-  gap:30px;
-  padding-bottom:40px;
-}
-
-.footer-brand {
-  font:600 28px var(--serif);
-}
-
-.footer-brand span {
-  color:#c5b18a;
-}
-
-.footer-top p {
-  color:#c3cec6;
-  font-size:12px;
-  max-width:350px;
-  margin-top:12px;
-  line-height:1.8;
-}
-
-.footer-links {
-  display:flex;
-  flex-wrap:wrap;
-  gap:20px;
-}
-
-.footer-links button {
-  background:none;
-  border:0;
-  color:#d5ddd6;
-  font-size:11px;
-}
-
-.footer-bottom {
-  border-top:1px solid #4b5c51;
-  padding-top:22px;
-  display:flex;
-  justify-content:space-between;
-  flex-wrap:wrap;
-  gap:15px;
-  color:#b9c5bb;
-  font-size:10px;
-}
-
-/* MOBILE */
-
-@media(max-width:850px) {
-  .menu {display:block}
-
-  .nav-links {
-    display:none;
-    position:absolute;
-    top:78px;
-    left:0;
-    width:100%;
-    background:var(--cream);
-    padding:25px 5%;
-    flex-direction:column;
-    align-items:flex-start;
-    border-bottom:1px solid var(--line);
-  }
-
-  .nav-links.open {display:flex}
-
-  .intro-grid,
-  .project-intro,
-  .contact-layout {
-    grid-template-columns:1fr;
-    gap:35px;
-  }
-
-  .project-grid {
-    grid-template-columns:1fr 1fr;
-  }
-
-  .project-grid .project-tile:last-child {
-    grid-column:1/-1;
-  }
-
-  .feature-grid {
-    grid-template-columns:1fr 1fr;
-  }
-
-  .gallery {
-    grid-template-columns:1fr 1fr;
-  }
-
-  .gallery img:last-child {
-    display:none;
-  }
-
-  .process-item {
-    grid-template-columns:55px 1fr;
-  }
-
-  .process-item p {
-    grid-column:2;
-  }
-}
-
-@media(max-width:540px) {
-  .section {padding:72px 0}
-
-  .home-hero {min-height:660px}
-
-  .home-hero-content {padding:75px 0}
-
-  .home-hero h1 {letter-spacing:-1.5px}
-
-  .hero-meta {gap:15px;margin-top:45px}
-
-  .project-grid,
-  .feature-grid {
-    grid-template-columns:1fr;
-  }
-
-  .project-grid .project-tile:last-child {
-    grid-column:auto;
-  }
-
-  .tile-image {height:250px}
-
-  .project-hero {min-height:580px}
-
-  .project-hero-content {padding:70px 0}
-
-  .project-intro-image {height:300px}
-
-  .gallery {grid-template-columns:1fr 1fr}
-
-  .gallery img {height:180px}
-
-  .gallery img:last-child {display:none}
-
-  .contact-form {padding:22px}
-
-  .form-row {grid-template-columns:1fr}
-
-  .contact-copy h2 {font-size:39px}
-
-  .footer-top {flex-direction:column}
-}
-</style>
-</head>
-
-<body>
-
-<header>
-  <div class="container nav">
-    <a class="logo" href="#home" onclick="showPage('home')">
-      MIKAEL FICO<span>.</span>
-    </a>
-
-    <nav class="nav-links" id="navLinks">
-      <button onclick="showPage('home')">ACCUEIL</button>
-      <button onclick="showPage('mfb')">MADE FOR BOUNCE</button>
-      <button onclick="showPage('agriculture')">AGRICULTURE</button>
-      <button onclick="showPage('music')">MUSIC</button>
-      <button class="nav-contact" onclick="showPage('contact')">CONTACT ↗</button>
-    </nav>
-
-    <button class="menu" id="menuBtn" onclick="toggleMenu()" aria-label="Ouvrir le menu">☰</button>
-  </div>
-</header>
-
-<main>
-
-<!-- ================= HOME ================= -->
-
-<div class="page active" id="home">
-
-  <section class="home-hero">
-    <div class="container home-hero-content">
-      <div class="eyebrow">A WORLD OF IDEAS & POSSIBILITIES</div>
-
-      <h1>
-        Discover the<br>
-        world of <span class="serif">Mikael Fico.</span>
-      </h1>
-
-      <p>
-        Une vision, plusieurs univers.
-        Explorez des initiatives à la croisée
-        de l'événementiel, de l'agriculture
-        et de l'industrie musicale.
-      </p>
-
-      <button class="btn btn-light" onclick="goToProjects()">
-        EXPLORER MES UNIVERS ↗
-      </button>
-
-      <div class="hero-meta">
-        <span>VISION</span>
-        <span>CREATION</span>
-        <span>BUSINESS</span>
-        <span>DEVELOPMENT</span>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container intro-grid">
-
-      <div class="intro-image">
-        <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1000&q=85"
-             alt="Espace de travail et de réflexion">
-      </div>
-
-      <div class="intro-copy">
-        <div class="eyebrow">THE PERSON BEHIND THE VISION</div>
-
-        <h2>Des idées aux projets. Des projets aux opportunités.</h2>
-
-        <p>
-          Je suis Mikael Fico. Je m'intéresse à la stratégie,
-          à l'entrepreneuriat et à la construction de projets
-          dans différents secteurs.
-        </p>
-
-        <p>
-          Cet espace présente mon univers, mes réflexions
-          et les initiatives que je souhaite développer.
-          Chaque projet possède son identité, sa vision
-          et ses perspectives.
-        </p>
-
-        <p>
-          Mon ambition : apprendre, expérimenter, structurer
-          et transformer des idées en réalisations concrètes.
-        </p>
-
-        <div class="signature">Mikael Fico.</div>
-      </div>
-
-    </div>
-  </section>
-
-  <section class="section projects-section" id="discover">
-    <div class="container">
-
-      <div class="section-head">
-        <div class="eyebrow">EXPLORE THE UNIVERSES</div>
-        <h2>Three worlds. Three ambitions.</h2>
-        <p>
-          Chaque univers est une porte d'entrée vers
-          un secteur, une vision et de nouvelles possibilités.
-          Choisissez votre destination.
-        </p>
-      </div>
-
-      <div class="project-grid">
-
-        <article class="project-tile" onclick="showPage('mfb')">
-          <div class="tile-image">
-            <img src="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?auto=format&fit=crop&w=900&q=85"
-                 alt="Festival et expérience musicale">
-            <span class="tile-number">01 / EVENTS</span>
-          </div>
-          <div class="tile-content">
-            <div class="eyebrow">EVENTS & EXPERIENCES</div>
-            <h3>Made For Bounce</h3>
-            <p>
-              Une vision de l'événementiel construite autour
-              de la musique, du divertissement, des marques
-              et des expériences immersives.
-            </p>
-            <span class="tile-link">ENTRER DANS CET UNIVERS ↗</span>
-          </div>
-        </article>
-
-        <article class="project-tile" onclick="showPage('agriculture')">
-          <div class="tile-image">
-            <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=900&q=85"
-                 alt="Paysage agricole">
-            <span class="tile-number">02 / AGRICULTURE</span>
-          </div>
-          <div class="tile-content">
-            <div class="eyebrow">AGRICULTURE & DEVELOPMENT</div>
-            <h3>Agriculture</h3>
-            <p>
-              Une réflexion sur la production agricole,
-              la valorisation des ressources, les filières
-              et les opportunités économiques.
-            </p>
-            <span class="tile-link">ENTRER DANS CET UNIVERS ↗</span>
-          </div>
-        </article>
-
-        <article class="project-tile" onclick="showPage('music')">
-          <div class="tile-image">
-            <img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=900&q=85"
-                 alt="Artiste sur scène">
-            <span class="tile-number">03 / MUSIC</span>
-          </div>
-          <div class="tile-content">
-            <div class="eyebrow">MUSIC & ENTERTAINMENT</div>
-            <h3>Music Industry</h3>
-            <p>
-              Explorer le potentiel de l'industrie musicale,
-              le développement artistique et les modèles
-              économiques de la musique.
-            </p>
-            <span class="tile-link">ENTRER DANS CET UNIVERS ↗</span>
-          </div>
-        </article>
-
-      </div>
-    </div>
-  </section>
-
-  <section class="statement">
-    <div class="container">
-      <div class="eyebrow">A LONG-TERM PERSPECTIVE</div>
-      <h2>Think beyond the idea. Build beyond the limits.</h2>
-      <p>Vision · Strategy · Creativity · Value Creation</p>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container section-head">
-      <div class="eyebrow">LET'S CONNECT</div>
-      <h2>Every great opportunity begins with a conversation.</h2>
-      <p>
-        Vous représentez une entreprise, une marque,
-        une structure ou vous souhaitez simplement échanger ?
-      </p>
-      <br>
-      <button class="btn btn-green" onclick="showPage('contact')">
-        PRENDRE CONTACT ↗
-      </button>
-    </div>
-  </section>
-
-</div>
-
-<!-- ================= MADE FOR BOUNCE ================= -->
-
-<div class="page" id="mfb">
-
-  <section class="project-hero mfb-hero">
-    <div class="container project-hero-content">
-      <div class="eyebrow">01 — EVENT & CULTURE</div>
-      <h1>MADE FOR<br>BOUNCE.</h1>
-      <p>
-        More than an event. An experience.
-        Un univers dédié au divertissement,
-        à la culture musicale et à la création
-        d'expériences mémorables.
-      </p>
-      <button class="btn btn-light"
-        onclick="document.getElementById('mfb-vision').scrollIntoView({behavior:'smooth'})">
-        DÉCOUVRIR LE CONCEPT ↓
-      </button>
-    </div>
-  </section>
-
-  <nav class="project-subnav">
-    <div class="container">
-      <a href="#mfb-vision">VISION</a>
-      <a href="#mfb-concept">CONCEPT</a>
-      <a href="#mfb-experience">EXPERIENCES</a>
-      <a href="#mfb-business">BUSINESS MODEL</a>
-      <a href="#mfb-gallery">UNIVERS</a>
-    </div>
-  </nav>
-
-  <section class="section" id="mfb-vision">
-    <div class="container project-intro">
-      <div>
-        <div class="eyebrow">THE VISION</div>
-        <h2>Créer une expérience qui dépasse la scène.</h2>
-        <p>
-          Made For Bounce est un concept événementiel
-          qui ambitionne de proposer une expérience
-          de divertissement originale, en réunissant
-          musique, public, marques et créativité.
-        </p>
-        <p>
-          L'idée est de penser l'événement comme un véritable
-          univers : une identité, une ambiance, des activités,
-          des partenaires et une expérience globale.
-        </p>
-        <p>
-          La construction du projet repose sur la qualité
-          de l'organisation, la cohérence du concept
-          et la viabilité économique.
-        </p>
-      </div>
-
-      <div class="project-intro-image">
-        <img src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&w=1000&q=85"
-             alt="Public lors d'un festival">
-      </div>
-    </div>
-  </section>
-
-  <section class="section projects-section" id="mfb-concept">
-    <div class="container">
-      <div class="section-head">
-        <div class="eyebrow">THE CONCEPT</div>
-        <h2>Une marque. Plusieurs dimensions.</h2>
-        <p>
-          L'expérience Made For Bounce peut se construire
-          autour de plusieurs composantes complémentaires.
-        </p>
-      </div>
-
-      <div class="feature-grid">
-        <article class="feature">
-          <div class="number">01</div>
-          <h3>Live Experiences</h3>
-          <p>
-            Concerts, performances, DJ sets et animations
-            pour créer une expérience collective.
-          </p>
-        </article>
-
-        <article class="feature">
-          <div class="number">02</div>
-          <h3>Immersive Spaces</h3>
-          <p>
-            Espaces thématiques, installations visuelles,
-            zones interactives et expériences originales.
-          </p>
-        </article>
-
-        <article class="feature">
-          <div class="number">03</div>
-          <h3>Brand Experiences</h3>
-          <p>
-            Activations de marques, visibilité commerciale
-            et expériences destinées aux partenaires.
-          </p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="mfb-experience">
-    <div class="container">
-      <div class="section-head">
-        <div class="eyebrow">THE EXPERIENCE</div>
-        <h2>Au-delà de la musique.</h2>
-        <p>
-          Un événement peut devenir un espace de découverte,
-          de rencontre, de divertissement et de création
-          de souvenirs.
-        </p>
-      </div>
-
-      <div class="gallery">
-        <img src="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?auto=format&fit=crop&w=800&q=80" alt="DJ et musique">
-        <img src="https://images.unsplash.com/photo-1506157786151-b8491531f063?auto=format&fit=crop&w=800&q=80" alt="Concert">
-        <img src="https://images.unsplash.com/photo-1459749411175-04bf5292ceea?auto=format&fit=crop&w=800&q=80" alt="Spectacle">
-      </div>
-    </div>
-  </section>
-
-  <section class="section projects-section" id="mfb-business">
-    <div class="container">
-      <div class="section-head">
-        <div class="eyebrow">BUSINESS & DEVELOPMENT</div>
-        <h2>Construire un modèle durable.</h2>
-        <p>
-          L'événementiel est également une activité économique.
-          Le projet doit penser son financement, ses revenus,
-          ses coûts et sa capacité à se développer.
-        </p>
-      </div>
-
-      <div class="process-list">
-        <div class="process-item">
-          <span>01</span>
-          <h3>Billetterie</h3>
-          <p>Conception de différentes catégories d'accès et d'expériences pour le public.</p>
-        </div>
-        <div class="process-item">
-          <span>02</span>
-          <h3>Sponsoring</h3>
-          <p>Développement de partenariats commerciaux et de visibilité pour les marques.</p>
-        </div>
-        <div class="process-item">
-          <span>03</span>
-          <h3>Partenariats</h3>
-          <p>Collaboration avec des acteurs culturels, médiatiques et économiques.</p>
-        </div>
-        <div class="process-item">
-          <span>04</span>
-          <h3>Développement</h3>
-          <p>Construction progressive d'une marque capable de produire plusieurs expériences.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="project-cta">
-    <div class="container">
-      <div class="eyebrow">MADE FOR BOUNCE</div>
-      <h2>Let's create an experience.</h2>
-      <p>Vous souhaitez devenir partenaire ou collaborer au projet ?</p>
-      <button class="btn btn-light" onclick="contactProject('Made For Bounce')">
-        DISCUTER DU PROJET ↗
-      </button>
-    </div>
-  </section>
-
-</div>
-
-<!-- ================= AGRICULTURE ================= -->
-
-<div class="page" id="agriculture">
-
-  <section class="project-hero agri-hero">
-    <div class="container project-hero-content">
-      <div class="eyebrow">02 — AGRICULTURE & OPPORTUNITIES</div>
-      <h1>GROWING<br>THE FUTURE.</h1>
-      <p>
-        Agriculture, production, transformation
-        et développement économique.
-        Explorer le potentiel agricole et construire
-        des activités durables.
-      </p>
-      <button class="btn btn-light"
-        onclick="document.getElementById('agri-vision').scrollIntoView({behavior:'smooth'})">
-        EXPLORER L'UNIVERS ↓
-      </button>
-    </div>
-  </section>
-
-  <nav class="project-subnav">
-    <div class="container">
-      <a href="#agri-vision">VISION</a>
-      <a href="#agri-production">PRODUCTION</a>
-      <a href="#agri-transformation">TRANSFORMATION</a>
-      <a href="#agri-market">MARCHÉ</a>
-      <a href="#agri-gallery">UNIVERS</a>
-    </div>
-  </nav>
-
-  <section class="section" id="agri-vision">
-    <div class="container project-intro">
-      <div>
-        <div class="eyebrow">THE VISION</div>
-        <h2>Faire de la terre une source de valeur.</h2>
-        <p>
-          L'agriculture représente un secteur essentiel
-          pour la sécurité alimentaire, l'emploi,
-          la transformation économique et la création
-          d'activités productives.
-        </p>
-        <p>
-          Cette initiative s'intéresse aux possibilités
-          offertes par la production agricole, la valorisation
-          des ressources, l'organisation des filières
-          et la commercialisation.
-        </p>
-        <p>
-          L'objectif est d'explorer des modèles d'exploitation
-          adaptés aux réalités locales et aux opportunités
-          du marché.
-        </p>
-      </div>
-
-      <div class="project-intro-image">
-        <img src="https://images.unsplash.com/photo-1499529112087-3cb3b73cec95?auto=format&fit=crop&w=1000&q=85"
-             alt="Culture agricole">
-      </div>
-    </div>
-  </section>
-
-  <section class="section projects-section" id="agri-production">
-    <div class="container">
-      <div class="section-head">
-        <div class="eyebrow">AGRICULTURAL PRODUCTION</div>
-        <h2>Produire avec méthode.</h2>
-        <p>
-          Identifier les cultures pertinentes,
-          étudier les conditions de production
-          et construire une organisation agricole efficace.
-        </p>
-      </div>
-
-      <div class="feature-grid">
-        <article class="feature">
-          <div class="number">01</div>
-          <h3>Cultures vivrières</h3>
-          <p>
-            Étudier les opportunités autour du maïs,
-            du manioc, de l'igname et d'autres cultures
-            adaptées aux conditions locales.
-          </p>
-        </article>
-
-        <article class="feature">
-          <div class="number">02</div>
-          <h3>Gestion des exploitations</h3>
-          <p>
-            Organisation du travail, gestion des intrants,
-            suivi des parcelles et planification des récoltes.
-          </p>
-        </article>
-
-        <article class="feature">
-          <div class="number">03</div>
-          <h3>Ressources agricoles</h3>
-          <p>
-            Réflexion sur les sols, l'eau, les équipements
-            et les moyens de production.
-          </p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="agri-transformation">
-    <div class="container project-intro">
-      <div class="project-intro-image">
-        <img src="https://images.unsplash.com/photo-1601593768795-7c3f4e6a5c7e?auto=format&fit=crop&w=1000&q=85"
-             alt="Récolte agricole">
-      </div>
-
-      <div>
-        <div class="eyebrow">VALUE CHAIN</div>
-        <h2>Ne pas seulement produire. Valoriser.</h2>
-        <p>
-          La valeur agricole ne s'arrête pas à la récolte.
-          Le stockage, la transformation, le conditionnement
-          et la commercialisation constituent des étapes
-          essentielles de la chaîne de valeur.
-        </p>
-        <p>
-          Une approche intégrée permet d'étudier les pertes,
-          les coûts, la qualité et les débouchés commerciaux.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <section class="section projects-section" id="agri-market">
-    <div class="container">
-      <div class="section-head">
-        <div class="eyebrow">ECONOMIC OPPORTUNITIES</div>
-        <h2>Une filière, plusieurs opportunités.</h2>
-        <p>
-          Construire une activité agricole suppose
-          de comprendre chaque étape du marché.
-        </p>
-      </div>
-
-      <div class="process-list">
-        <div class="process-item">
-          <span>01</span>
-          <h3>Production</h3>
-          <p>Planification des cultures, gestion des exploitations et suivi des rendements.</p>
-        </div>
-        <div class="process-item">
-          <span>02</span>
-          <h3>Approvisionnement</h3>
-          <p>Accès aux semences, intrants, équipements et services agricoles.</p>
-        </div>
-        <div class="process-item">
-          <span>03</span>
-          <h3>Transformation</h3>
-          <p>Étude des possibilités de transformation et de conservation des produits.</p>
-        </div>
-        <div class="process-item">
-          <span>04</span>
-          <h3>Commercialisation</h3>
-          <p>Identification des acheteurs, circuits de distribution et marchés.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="project-cta">
-    <div class="container">
-      <div class="eyebrow">AGRICULTURE & DEVELOPMENT</div>
-      <h2>Let's grow opportunities.</h2>
-      <p>Échangeons autour d'une opportunité agricole ou commerciale.</p>
-      <button class="btn btn-light" onclick="contactProject('Agriculture')">
-        DISCUTER DU PROJET ↗
-      </button>
-    </div>
-  </section>
-
-</div>
-
-<!-- ================= MUSIC ================= -->
-
-<div class="page" id="music">
-
-  <section class="project-hero music-hero">
-    <div class="container project-hero-content">
-      <div class="eyebrow">03 — MUSIC & ENTERTAINMENT INDUSTRY</div>
-      <h1>BEYOND<br>THE SOUND.</h1>
-      <p>
-        La musique est une expression artistique,
-        mais aussi une industrie, un marché et
-        un ensemble d'opportunités économiques.
-      </p>
-      <button class="btn btn-light"
-        onclick="document.getElementById('music-vision').scrollIntoView({behavior:'smooth'})">
-        DÉCOUVRIR CET UNIVERS ↓
-      </button>
-    </div>
-  </section>
-
-  <nav class="project-subnav">
-    <div class="container">
-      <a href="#music-vision">VISION</a>
-      <a href="#music-artists">ARTISTES</a>
-      <a href="#music-production">PRODUCTION</a>
-      <a href="#music-business">BUSINESS</a>
-      <a href="#music-gallery">UNIVERS</a>
-    </div>
-  </nav>
-
-  <section class="section" id="music-vision">
-    <div class="container project-intro">
-      <div>
-        <div class="eyebrow">THE VISION</div>
-        <h2>Comprendre la musique au-delà de la création.</h2>
-        <p>
-          L'industrie musicale évolue à travers les artistes,
-          les producteurs, les labels, les distributeurs,
-          les plateformes numériques et les acteurs du spectacle.
-        </p>
-        <p>
-          Ce projet explore les mécanismes qui permettent
-          de développer des talents, de valoriser les œuvres
-          et de construire des activités économiques autour
-          de la musique.
-        </p>
-        <p>
-          Une attention particulière est portée aux possibilités
-          de développement de la musique africaine et à son
-          rayonnement sur les marchés internationaux.
-        </p>
-      </div>
-
-      <div class="project-intro-image">
-        <img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=1000&q=85"
-             alt="Performance musicale">
-      </div>
-    </div>
-  </section>
-
-  <section class="section projects-section" id="music-artists">
-    <div class="container">
-      <div class="section-head">
-        <div class="eyebrow">ARTIST DEVELOPMENT</div>
-        <h2>Le talent mérite une stratégie.</h2>
-        <p>
-          Le développement artistique nécessite une vision
-          cohérente, une identité forte et une organisation
-          professionnelle.
-        </p>
-      </div>
-
-      <div class="feature-grid">
-        <article class="feature">
-          <div class="number">01</div>
-          <h3>Artist Branding</h3>
-          <p>
-            Identité artistique, positionnement,
-            image publique et différenciation.
-          </p>
-        </article>
-
-        <article class="feature">
-          <div class="number">02</div>
-          <h3>Career Development</h3>
-          <p>
-            Planification de carrière, stratégie
-            de lancement et développement du public.
-          </p>
-        </article>
-
-        <article class="feature">
-          <div class="number">03</div>
-          <h3>Artist Relations</h3>
-          <p>
-            Collaboration entre artistes, producteurs,
-            managers et partenaires professionnels.
-          </p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="music-production">
-    <div class="container project-intro">
-      <div class="project-intro-image">
-        <img src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&w=1000&q=85"
-             alt="Studio d'enregistrement">
-      </div>
-
-      <div>
-        <div class="eyebrow">PRODUCTION & DISTRIBUTION</div>
-        <h2>De la création à la diffusion.</h2>
-        <p>
-          La production musicale, l'enregistrement,
-          le mixage, le mastering et la distribution
-          constituent différentes étapes de la création
-          et de l'exploitation d'une œuvre.
-        </p>
-        <p>
-          Le développement numérique ouvre également
-          des possibilités de diffusion sur les plateformes
-          de streaming et de monétisation des catalogues.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <section class="section projects-section" id="music-business">
-    <div class="container">
-      <div class="section-head">
-        <div class="eyebrow">MUSIC BUSINESS</div>
-        <h2>La musique est aussi une économie.</h2>
-        <p>
-          Comprendre les droits, les revenus,
-          les partenaires et les différents modèles
-          économiques de l'industrie.
-        </p>
-      </div>
-
-      <div class="process-list">
-        <div class="process-item">
-          <span>01</span>
-          <h3>Production</h3>
-          <p>Financement, création, enregistrement et réalisation de projets musicaux.</p>
-        </div>
-        <div class="process-item">
-          <span>02</span>
-          <h3>Distribution</h3>
-          <p>Diffusion des œuvres et présence sur les plateformes numériques.</p>
-        </div>
-        <div class="process-item">
-          <span>03</span>
-          <h3>Music Rights</h3>
-          <p>Gestion des droits d'auteur, droits voisins, licences et exploitation.</p>
-        </div>
-        <div class="process-item">
-          <span>04</span>
-          <h3>Live Business</h3>
-          <p>Concerts, tournées, spectacles et partenariats commerciaux.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="project-cta">
-    <div class="container">
-      <div class="eyebrow">MUSIC INDUSTRY</div>
-      <h2>Let's build the next sound.</h2>
-      <p>Vous souhaitez discuter d'une collaboration musicale ?</p>
-      <button class="btn btn-light" onclick="contactProject('Music')">
-        DISCUTER DU PROJET ↗
-      </button>
-    </div>
-  </section>
-
-</div>
-
-<!-- ================= CONTACT ================= -->
-
-<div class="page" id="contact">
-
-  <section class="section">
-    <div class="container contact-layout">
-
-      <div class="contact-copy">
-        <div class="eyebrow">CONTACT & COLLABORATIONS</div>
-        <h2>Let's start a conversation.</h2>
-
-        <p>
-          Une proposition de partenariat, une opportunité
-          commerciale, une collaboration ou un échange
-          autour de l'un de mes projets ?
-        </p>
-
-        <div class="contact-line">
-          <strong>EMAIL</strong>
-          <a href="mailto:Mikaelfico85@gmail.com">Mikaelfico85@gmail.com</a>
-        </div>
-
-        <div class="contact-line">
-          <strong>WHATSAPP</strong>
-          <a href="https://wa.me/2290148057370"
-             target="_blank" rel="noopener noreferrer">
-            +229 01 48 05 73 70
-          </a>
-        </div>
-
-        <div class="contact-line">
-          <strong>LOCATION</strong>
-          <span>Cotonou, Bénin</span>
-        </div>
-
-        <div class="socials">
-          <a href="https://www.instagram.com/st_mikael_fico_05" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
-          <a href="https://x.com/FicoMikael22573" target="_blank" rel="noopener noreferrer">X ↗</a>
-          <a href="https://www.facebook.com/share/1E2TgzZPQh/" target="_blank" rel="noopener noreferrer">Facebook ↗</a>
-        </div>
-      </div>
-
-      <form class="contact-form" id="contactForm">
-        <h3>Send an inquiry.</h3>
-
-        <div class="form-row">
-          <div class="field">
-            <label for="fullName">Nom complet *</label>
-            <input id="fullName" required placeholder="Votre nom">
-          </div>
-
-          <div class="field">
-            <label for="company">Entreprise</label>
-            <input id="company" placeholder="Votre organisation">
-          </div>
-        </div>
-
-        <div class="form-row">
-          <div class="field">
-            <label for="mail">E-mail *</label>
-            <input type="email" id="mail" required placeholder="Votre e-mail">
-          </div>
-
-          <div class="field">
-            <label for="tel">Téléphone</label>
-            <input type="tel" id="tel" placeholder="+229 ...">
-          </div>
-        </div>
-
-        <div class="field">
-          <label for="selectedProject">Projet concerné *</label>
-          <select id="selectedProject" required>
-            <option value="">Choisir un univers</option>
-            <option>Made For Bounce</option>
-            <option>Agriculture</option>
-            <option>Music</option>
-            <option>Collaboration générale</option>
-          </select>
-        </div>
-
-        <div class="field">
-          <label for="inquiry">Nature de la demande</label>
-          <select id="inquiry">
-            <option>Partenariat</option>
-            <option>Investissement</option>
-            <option>Collaboration</option>
-            <option>Sponsoring</option>
-            <option>Proposition commerciale</option>
-            <option>Autre</option>
-          </select>
-        </div>
-
-        <div class="field">
-          <label for="message">Votre message *</label>
-          <textarea id="message" required placeholder="Présentez votre proposition..."></textarea>
-        </div>
-
-        <div class="field">
-          <label for="sendMethod">Envoyer par</label>
-          <select id="sendMethod">
-            <option value="email">E-mail</option>
-            <option value="whatsapp">WhatsApp</option>
-          </select>
-        </div>
-
-        <button class="btn btn-green" type="submit">
-          ENVOYER MA DEMANDE ↗
-        </button>
-
-        <p class="form-note">
-          Votre application e-mail ou WhatsApp s'ouvrira
-          avec votre message prérempli.
-        </p>
-      </form>
-
-    </div>
-  </section>
-</div>
-
-</main>
-
-<!-- FOOTER -->
-
-<footer>
-  <div class="container">
-    <div class="footer-top">
-      <div>
-        <div class="footer-brand">Mikael Fico<span>.</span></div>
-        <p>
-          A world of ideas, opportunities and projects.
-          Explore the different universes and discover
-          the vision behind each initiative.
-        </p>
-      </div>
-
-      <div class="footer-links">
-        <button onclick="showPage('home')">Accueil</button>
-        <button onclick="showPage('mfb')">Made For Bounce</button>
-        <button onclick="showPage('agriculture')">Agriculture</button>
-        <button onclick="showPage('music')">Music</button>
-        <button onclick="showPage('contact')">Contact</button>
-      </div>
-    </div>
-
-    <div class="footer-bottom">
-      <span>© <span id="year"></span> Mikael Fico. All rights reserved.</span>
-      <span>Designed around vision & creativity.</span>
-    </div>
-  </div>
-</footer>
-
-<script>
-
-// PAGE NAVIGATION
-
-function showPage(page) {
-  const target = document.getElementById(page);
-
-  if (!target) return;
-
-  document.querySelectorAll(".page").forEach(section => {
-    section.classList.remove("active");
-  });
-
-  target.classList.add("active");
-
-  document.getElementById("navLinks").classList.remove("open");
-
-  document.getElementById("menuBtn").setAttribute("aria-expanded","false");
-
-  window.scrollTo({top:0,behavior:"smooth"});
-
-  history.replaceState(null,"","#"+page);
-}
-
-function goToProjects() {
-  showPage("home");
-
-  setTimeout(() => {
-    document.getElementById("discover").scrollIntoView({
-      behavior:"smooth"
-    });
-  },100);
-}
-
-// MOBILE MENU
-
-function toggleMenu() {
-  const nav = document.getElementById("navLinks");
-  nav.classList.toggle("open");
-
-  document.getElementById("menuBtn").setAttribute(
-    "aria-expanded",
-    nav.classList.contains("open") ? "true" : "false"
-  );
-}
-
-// CONTACT FROM PROJECT
-
-function contactProject(project) {
-  showPage("contact");
-
-  setTimeout(() => {
-    document.getElementById("selectedProject").value = project;
-  },100);
-}
-
-// CONTACT FORM
-
-document.getElementById("contactForm").addEventListener("submit", function(e) {
-  e.preventDefault();
-
-  const name = document.getElementById("fullName").value.trim();
-  const company = document.getElementById("company").value.trim();
-  const email = document.getElementById("mail").value.trim();
-  const phone = document.getElementById("tel").value.trim();
-  const project = document.getElementById("selectedProject").value;
-  const inquiry = document.getElementById("inquiry").value;
-  const message = document.getElementById("message").value.trim();
-  const method = document.getElementById("sendMethod").value;
-
-  if (!name || !email || !project || !message) {
-    alert("Veuillez remplir les champs obligatoires.");
-    return;
-  }
-
-  const body = `
-NOUVELLE DEMANDE — MIKAEL FICO
-
-Nom : ${name}
-Organisation : ${company || "Non renseignée"}
-E-mail : ${email}
-Téléphone : ${phone || "Non renseigné"}
-
-Projet : ${project}
-Nature : ${inquiry}
-
-MESSAGE :
-${message}
-`;
-
-  if (method === "email") {
-    const url =
-      "mailto:Mikaelfico85@gmail.com" +
-      "?subject=" + encodeURIComponent("Demande - " + project) +
-      "&body=" + encodeURIComponent(body);
-
-    window.location.href = url;
-
-  } else {
-    const url =
-      "https://wa.me/2290148057370?text=" +
-      encodeURIComponent(body);
-
-    window.open(url,"_blank","noopener,noreferrer");
+var links=[].slice.call(A("#nl a")),ind=$("#ind"),menu=$("#menu"),bg=$("#bg");
+function mark(id){links.forEach(function(a){var on=a.getAttribute("href")==="#"+id;a.classList.toggle("on",on);if(on&&ind.offsetParent!==null){ind.style.left=a.offsetLeft+14+"px";ind.style.width=a.offsetWidth-28+"px"}})}
+if("IntersectionObserver" in window){var so=new IntersectionObserver(function(l){l.forEach(function(x){if(x.isIntersecting)mark(x.target.id)})},{rootMargin:"-45% 0px -50% 0px"});A("main section").forEach(function(s){so.observe(s)})}
+addEventListener("resize",function(){var a=$("#nl a.on");if(a)mark(a.getAttribute("href").slice(1))});
+function tog(o){menu.classList.toggle("open",o);bg.setAttribute("aria-expanded",o);bg.setAttribute("aria-label",o?"Fermer le menu":"Ouvrir le menu")}
+bg.addEventListener("click",function(){tog(!menu.classList.contains("open"))});
+links.forEach(function(a){a.addEventListener("click",function(){tog(false)})});
+addEventListener("keydown",function(e){if(e.key==="Escape")tog(false)});
+
+/* PROFONDEUR : curseur + défilement */
+var sh=[].slice.call(A(".sh")),mx=0,my=0,sy=0,tick=false;
+function par(){tick=false;sh.forEach(function(s,i){var d=(i+1)*6;s.style.translate=(mx*d)+"px "+(my*d+sy*(.02+i*.012)*-1)+"px"})}
+function req(){if(!tick&&!rm){tick=true;requestAnimationFrame(par)}}
+if(fine&&!rm)addEventListener("pointermove",function(e){mx=e.clientX/innerWidth-.5;my=e.clientY/innerHeight-.5;req()},{passive:true});
+var top=$("#top");
+addEventListener("scroll",function(){sy=scrollY;top.classList.toggle("show",sy>700);req()},{passive:true});
+top.addEventListener("click",function(){scrollTo({top:0,behavior:rm?"auto":"smooth"})});
+
+/* PARTENARIATS */
+function pre(t){$("#ptype").value=t}
+A("#cats .cat").forEach(function(b){b.addEventListener("click",function(){pre(b.dataset.t);$("#pf").scrollIntoView({behavior:rm?"auto":"smooth",block:"center"})})});
+A("[data-pre]").forEach(function(a){a.addEventListener("click",function(){$("#pproj").value=a.dataset.pre})});
+var f=$("#pf"),msg=$("#msg");
+f.addEventListener("submit",function(e){
+  e.preventDefault();msg.className="";msg.textContent="";
+  var d=new FormData(f);if(d.get("website"))return;
+  if(!f.checkValidity()){f.reportValidity();return}
+  var data={};d.forEach(function(v,k){if(k!=="website")data[k]=String(v).trim().slice(0,3000)});
+  if(FORM_ENDPOINT){
+    fetch(FORM_ENDPOINT,{method:"POST",headers:{"Content-Type":"application/json",Accept:"application/json"},body:JSON.stringify(data)})
+    .then(function(r){if(!r.ok)throw 0;msg.className="ok";msg.textContent="Merci, votre proposition a bien été envoyée.";f.reset()})
+    .catch(function(){msg.className="er";msg.textContent="L’envoi a échoué. Écrivez-moi directement par e-mail ou WhatsApp."});
+  }else{
+    var body="Nom : "+data.nom+"\nOrganisation : "+(data.org||"-")+"\nFonction : "+(data.fonction||"-")+"\nEmail : "+data.email+"\nWhatsApp : "+(data.wa||"-")+"\nType : "+data.type+"\nProjet : "+data.projet+"\n\nMessage :\n"+data.message;
+    location.href="mailto:"+MAIL+"?subject="+encodeURIComponent("Proposition de partenariat : "+data.type)+"&body="+encodeURIComponent(body);
+    msg.className="ok";msg.textContent="Votre application de messagerie s’ouvre avec votre proposition, il ne reste qu’à l’envoyer.";
   }
 });
-
-// FOOTER DATE
-
-document.getElementById("year").textContent =
-  new Date().getFullYear();
-
-// HANDLE DIRECT PAGE LINKS
-
-const initialPage = location.hash.replace("#","");
-
-if (["home","mfb","agriculture","music","contact"].includes(initialPage)) {
-  showPage(initialPage);
-}
-
+})();
 </script>
+<!-- VENTURES & INVESTMENTS : bloc complémentaire -->
+<style>
+#ventures{padding:110px 0}
+.vh{max-width:780px;margin-bottom:46px}
+.vh h2{font-size:clamp(2rem,5.4vw,3.6rem)}
+.vh p{color:var(--mut,#9aa3b5);margin:16px 0 0}
+.vleg{display:flex;flex-wrap:wrap;gap:10px 18px;margin:0 0 26px;font-size:.82rem;color:var(--mut,#9aa3b5)}
+.tg{font-style:normal;font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;padding:3px 9px;border-radius:999px;border:1px solid;white-space:nowrap;vertical-align:middle}
+.tg.a{color:#C6A76B;border-color:rgba(198,167,107,.5)}
+.tg.h{color:#9fb8e8;border-color:rgba(159,184,232,.5)}
+.tg.r{color:#e8b4b4;border-color:rgba(232,180,180,.5)}
+.vg{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.vc{display:flex;flex-direction:column;text-decoration:none;color:inherit;min-height:340px;padding:30px;background:linear-gradient(160deg,rgba(21,29,43,.95),rgba(13,19,32,.8))}
+.vc .vn{font:600 .9rem "Playfair Display",Georgia,serif;color:#C6A76B;letter-spacing:.14em}
+.vc h3{font-size:1.7rem;margin:14px 0 6px}
+.vc .vs{color:#9aa3b5;font-size:.85rem;margin:0 0 14px}
+.vc p.vd{color:#9aa3b5;font-size:.95rem;margin:0}
+.vc .vf{margin-top:auto;padding-top:24px;display:flex;justify-content:space-between;align-items:center;gap:10px;color:#C6A76B;font-weight:600;font-size:.9rem}
+.vc .vf i{font-style:normal;transition:transform .4s var(--e,ease)}
+.vc:hover .vf i{transform:translate(4px,-4px)}
+.vst{display:inline-block;margin-top:16px;padding:5px 12px;border:1px solid rgba(198,167,107,.5);border-radius:999px;color:#dcc590;font-size:.78rem;align-self:flex-start}
+.vo{display:grid;grid-template-columns:1.1fr 1fr;gap:28px;margin-top:70px;align-items:center}
+.vi{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.vi div{padding:20px;border:1px solid rgba(198,167,107,.22);border-radius:16px;background:rgba(21,29,43,.6)}
+.vi b{display:block;font:600 1.6rem "Playfair Display",Georgia,serif;color:#E8EAF0}
+.vi span{color:#9aa3b5;font-size:.85rem}
+.vdg{text-align:center}
+.vdg svg{width:100%;max-width:340px}
+.vdg small{display:block;color:#9aa3b5;font-size:.78rem;margin-top:8px}
+.vpt{margin-top:70px;padding:clamp(28px,5vw,56px);border:1px solid rgba(198,167,107,.3);border-radius:24px;background:radial-gradient(120% 140% at 0% 0%,rgba(198,167,107,.12),transparent 60%),#0d1320;text-align:center}
+.vpt p{max-width:62ch;margin:16px auto 28px;color:#9aa3b5}
 
+#vp{position:fixed;inset:0;z-index:400;background:#090D16;overflow-y:auto;overscroll-behavior:contain;opacity:0;visibility:hidden;transform:translateY(26px) scale(.99);transition:opacity .5s var(--e,ease),transform .6s var(--e,ease),visibility .5s}
+#vp.open{opacity:1;visibility:visible;transform:none}
+html.vlock{overflow:hidden}
+.vbar{position:sticky;top:0;z-index:2;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:calc(12px + env(safe-area-inset-top,0px)) 20px 12px;background:rgba(9,13,22,.88);backdrop-filter:blur(14px);border-bottom:1px solid rgba(198,167,107,.2)}
+.vbar button,.vbar a{min-height:44px;min-width:44px;display:inline-grid;place-items:center;padding:0 16px;border-radius:999px;border:1px solid rgba(198,167,107,.35);background:transparent;color:#E8EAF0;font:500 .9rem Inter,system-ui,sans-serif;text-decoration:none;cursor:pointer;transition:border-color .3s,color .3s}
+.vbar button:hover,.vbar a:hover{border-color:#C6A76B;color:#dcc590}
+.vnv{display:flex;gap:8px}
+.vart{width:min(880px,calc(100% - 40px));margin:0 auto;padding:56px 0 90px}
+.vt{font:700 clamp(2.4rem,9vw,5rem)/1.02 "Playfair Display",Georgia,serif;text-transform:uppercase;margin:10px 0 14px}
+.vq{font:italic 1.3rem/1.4 "Playfair Display",Georgia,serif;color:#dcc590;margin:0 0 22px}
+.vsec{padding:32px 0;border-top:1px solid rgba(198,167,107,.2);animation:vin .8s var(--e,ease) both;animation-delay:calc(var(--i)*70ms)}
+.vsec h3{font:600 .8rem Inter,system-ui,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#C6A76B;margin:0 0 14px}
+.vsec p{color:#c9ced9;margin:0 0 14px;max-width:66ch}
+.vl{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.vl li{display:flex;gap:12px;color:#c9ced9}
+.vl li::before{content:"";flex:none;width:6px;height:6px;margin-top:.7em;border-radius:50%;background:#C6A76B}
+.kv{margin:0;display:grid;gap:0}
+.kv div{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding:14px 0;border-bottom:1px solid rgba(232,234,240,.08)}
+.kv dt{color:#9aa3b5}.kv dd{margin:0;text-align:right;color:#E8EAF0}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.chips span{padding:7px 14px;border:1px solid rgba(198,167,107,.3);border-radius:999px;font-size:.88rem;color:#E8EAF0}
+.gl{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.gl div{aspect-ratio:4/3;border-radius:14px;border:1px solid rgba(198,167,107,.22);background:linear-gradient(145deg,rgba(198,167,107,.14),#151D2B 65%);display:grid;place-items:end start;padding:14px;font-size:.78rem;color:#9aa3b5;transition:transform .5s var(--e,ease),border-color .3s}
+.gl div:hover{transform:translateY(-6px);border-color:#C6A76B}
+.vstat{padding:22px 24px;border:1px solid rgba(198,167,107,.4);border-radius:16px;background:rgba(198,167,107,.06)}
+.vend{margin-top:26px;display:flex;flex-wrap:wrap;gap:12px}
+@keyframes vin{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+
+#vm{position:fixed;inset:0;z-index:450;display:grid;place-items:center;padding:16px;background:rgba(5,8,14,.82);backdrop-filter:blur(8px);opacity:0;visibility:hidden;transition:opacity .4s,visibility .4s}
+#vm.open{opacity:1;visibility:visible}
+.vbx{width:min(640px,100%);max-height:92vh;overflow:auto;padding:clamp(22px,5vw,40px);border:1px solid rgba(198,167,107,.35);border-radius:22px;background:#0d1320;transform:translateY(20px) scale(.98);transition:transform .5s var(--e,ease)}
+#vm.open .vbx{transform:none}
+.vbx h3{font-size:1.6rem;margin:0 0 6px}
+.vbx form{display:grid;gap:14px;margin:18px 0 0;padding:0;border:0;background:none}
+.vbx label{display:grid;gap:6px;font-size:.85rem;font-weight:500}
+.vbx input,.vbx select,.vbx textarea{width:100%;padding:14px 15px;border-radius:12px;border:1px solid rgba(232,234,240,.18);background:rgba(9,13,22,.9);color:#E8EAF0;font:400 1rem Inter,system-ui,sans-serif}
+.vbx input:focus,.vbx select:focus,.vbx textarea:focus{outline:0;border-color:#C6A76B;box-shadow:0 0 0 3px rgba(198,167,107,.18)}
+.vbx textarea{min-height:110px;resize:vertical}
+.vact{display:flex;flex-wrap:wrap;gap:12px}
+.vx{float:right;background:none;border:1px solid rgba(198,167,107,.35);color:#E8EAF0;width:44px;height:44px;border-radius:50%;cursor:pointer;font-size:1.2rem}
+#vmsg{margin:0;min-height:1.3em;font-size:.9rem;color:#8fd9a8}
+.vhp{position:absolute;left:-9999px;height:0;opacity:0}
+.vr{opacity:0;transform:translateY(30px);filter:blur(5px);transition:opacity .9s var(--e,ease),transform .9s var(--e,ease),filter .9s var(--e,ease)}
+.vr.in{opacity:1;transform:none;filter:none}
+@media (min-width:761px) and (max-width:1000px){.cta{display:none}}
+.menu a{font-size:.84rem}
+@media (max-width:900px){.vg,.vo{grid-template-columns:1fr}.gl{grid-template-columns:1fr 1fr}}
+@media (max-width:760px){#ventures{padding:80px 0}.vc{min-height:0}.vi{grid-template-columns:1fr 1fr}.vend .btn,.vact .btn{width:100%}}
+@media (prefers-reduced-motion:reduce){.vr{opacity:1;transform:none;filter:none}.vsec{animation:none}}
+</style>
+<script>
+(function(){
+"use strict";
+var $=function(s){return document.querySelector(s)},A=function(s){return document.querySelectorAll(s)};
+var WA="2290148057370",MAIL="Mikaelfico85@gmail.com",rm=matchMedia("(prefers-reduced-motion: reduce)").matches;
+var TG={a:"Ambition",h:"Hypothèse",r:"Sous réserve"};
+function tg(t){return '<em class="tg '+t+'">'+TG[t]+'</em>'}
+function p(s){return "<p>"+s+"</p>"}
+function ul(a){return '<ul class="vl">'+a.map(function(x){return "<li><span>"+x+"</span></li>"}).join("")+"</ul>"}
+function kv(a){return '<dl class="kv">'+a.map(function(x){return "<div><dt>"+x[0]+"</dt><dd>"+x[1]+(x[2]?" "+tg(x[2]):"")+"</dd></div>"}).join("")+"</dl>"}
+function chips(a){return '<div class="chips">'+a.map(function(x){return "<span>"+x+"</span>"}).join("")+"</div>"}
+var FIN=p("À définir. Le budget détaillé est en cours d’élaboration. Aucun financement n’est annoncé à ce stade.");
+var GAL='<div class="gl"><div>Visuel à venir</div><div>Visuel à venir</div><div>Visuel à venir</div></div>';
+var V=[
+{id:"bounce",n:"01",name:"Made For Bounce",sector:"Événementiel, divertissement et industries culturelles",tag:"Une ville d’été dans une ville.",status:"En développement",
+ short:"Une marque événementielle pour créer des expériences immersives et des rendez-vous culturels au Bénin.",chip:"Août 2027 envisagé",
+ S:[["Présentation générale",p("Made For Bounce est un projet de marque événementielle dédiée aux festivals musicaux, aux expériences immersives et aux rendez-vous culturels. Il est en développement : aucun événement n’a encore eu lieu.")],
+ ["Vision et objectifs",p("Construire une marque événementielle capable de créer des expériences immersives, de développer des rendez-vous culturels et de devenir une référence du divertissement au Bénin et en Afrique de l’Ouest. "+tg("a"))],
+ ["Description du concept",p("« Une ville d’été dans une ville. »")+ul(["Festivals et événements musicaux","Expériences immersives","Activations de marques","Espaces VIP et Premium","Partenariats commerciaux","Billetterie et stratégie de monétisation"])],
+ ["Données du projet envisagé",kv([["Objectif de fréquentation","15 000 personnes","h"],["Billet Standard","15 000 FCFA","h"],["Billet Premium","50 000 FCFA","h"],["Billet VIP","150 000 FCFA","h"],["Période envisagée","Août 2027","h"],["Lieux initialement envisagés","Palais des Congrès, Esplanade de l’Amazone","h"]])],
+ ["Secteur d’activité",p("Événementiel, divertissement et industries culturelles.")],
+ ["Modèle économique",ul(["Billetterie","Sponsoring","Partenariats","Activations commerciales","Espaces d’exposition","Expériences premium"])],
+ ["Stratégie de développement",ul(["Structurer le concept et l’offre (Standard, Premium, VIP)","Construire des partenariats commerciaux et des activations de marques","Définir la stratégie de billetterie et de monétisation","Valider les lieux et la période envisagés"])],
+ ["Ressources nécessaires",ul(["Équipe d’organisation et de production","Lieux et infrastructures événementielles","Partenaires et sponsors","Dispositif de billetterie et de communication"])],
+ ["Besoins en financement",FIN],
+ ["Perspectives à long terme",p("Devenir une référence du divertissement au Bénin et en Afrique de l’Ouest, avec des rendez-vous culturels récurrents. "+tg("a"))],
+ ["Galerie visuelle",GAL]],
+ st:"Projet en développement. Les données de fréquentation, de prix, de période et de lieux sont des hypothèses de travail, non confirmées."},
+{id:"agri",n:"02",name:"Agriculture & Agro-industrie",sector:"Agriculture, agro-industrie et investissement foncier",tag:"Du foncier à la valeur agricole.",status:"En réflexion et structuration",
+ short:"Une activité agricole structurée à partir d’un patrimoine foncier, jusqu’à la transformation agroalimentaire.",chip:"Kouandé, 5 hectares envisagés",
+ S:[["Présentation générale",p("Initiative agricole et agro-industrielle visant à développer une activité structurée à partir d’un patrimoine foncier. Le projet est en phase de réflexion et de structuration : aucune exploitation n’est opérationnelle à ce jour.")],
+ ["Vision et objectifs",p("Développer une activité agricole structurée à partir d’un patrimoine foncier, avec une perspective de production, de commercialisation et de transformation agroalimentaire. "+tg("a"))],
+ ["Description du concept",p("Valoriser un patrimoine foncier par une activité agricole structurée : produire, commercialiser, puis transformer.")+kv([["Localisation envisagée","Kouandé, nord du Bénin","h"],["Objectif foncier initial","5 hectares","h"]])+'<p style="margin-top:18px">Cultures à étudier :</p>'+chips(["Maïs","Manioc","Igname","Sorgho","Arachide","Anacarde","Karité"])],
+ ["Secteur d’activité",p("Agriculture, agro-industrie et investissement foncier.")],
+ ["Modèle économique",ul(["Vente de récoltes","Location de terres","Commercialisation","Transformation des produits agricoles"])],
+ ["Stratégie de développement",ul(["Acquisition et sécurisation foncière","Exploitation agricole et production végétale","Location agricole éventuelle","Développement de plantations pérennes","Commercialisation des récoltes","Transformation agroalimentaire à long terme"])],
+ ["Ressources nécessaires",ul(["Foncier (objectif initial : 5 hectares)","Études de faisabilité des cultures","Main-d’œuvre et savoir-faire agricoles","Équipements agricoles","Accompagnement technique et juridique pour la sécurisation foncière"])],
+ ["Besoins en financement",FIN],
+ ["Perspectives à long terme",p("Développer des plantations pérennes et, à long terme, une transformation agroalimentaire. "+tg("a"))],
+ ["Galerie visuelle",GAL]],
+ st:"Initiative en phase de réflexion et de structuration. Ce n’est pas une exploitation déjà opérationnelle. La localisation et la surface sont envisagées."},
+{id:"music",n:"03",name:"Music Label & Production",sector:"Industrie musicale, production phonographique et distribution",tag:"Produire sans enfermer les artistes.",status:"En cours de conception",
+ short:"Une structure de production musicale professionnelle qui préserve la liberté artistique des artistes.",chip:"Nom provisoire",
+ S:[["Présentation générale",p("Music Label & Production (nom provisoire) est un projet de structure de production musicale professionnelle au Bénin. L’initiative est en cours de conception.")],
+ ["Vision et objectifs",p("Créer une structure de production musicale professionnelle, capable d’accompagner des artistes, de produire des œuvres de qualité internationale et de développer un catalogue musical rentable. "+tg("a"))],
+ ["Description du concept",p("Le projet repose sur une philosophie : préserver la liberté artistique et professionnelle des artistes. Le label privilégiera des accords de production, de financement et de licence d’exploitation clairement définis.")+p("Les contrats devront préciser :")+ul(["La propriété des masters","La durée des licences","Les modalités de récupération des investissements","Le partage des revenus","Les droits des auteurs, compositeurs et producteurs","Les conditions de résiliation"])],
+ ["Secteur d’activité",p("Industrie musicale, production phonographique et distribution.")],
+ ["Modèle économique",p("Sources de revenus visées :")+ul(["Streaming","YouTube","Distribution","Licences musicales","Synchronisation audiovisuelle","Prestations de studio","Exploitation du catalogue"])],
+ ["Stratégie de développement",ul(["Concevoir la structure et le modèle contractuel","Définir l’infrastructure et l’équipe","Explorer la distribution avec Tieme Music "+tg("r"),"Constituer progressivement un catalogue"])],
+ ["Ressources nécessaires",p("Infrastructure envisagée :")+ul(["Studio professionnel","Cabine d’enregistrement","Équipements de prise de son","Matériel de mixage et mastering","Logiciels professionnels","Espace de production musicale"])+'<p style="margin-top:18px">Équipe envisagée :</p>'+ul(["Direction générale","Producteur exécutif","Producteur musical","Beatmakers","Ingénieur du son","Ingénieur mastering","Responsable marketing","Responsable juridique"])],
+ ["Besoins en financement",FIN],
+ ["Perspectives à long terme",p("Produire des œuvres de qualité internationale et développer un catalogue musical rentable. "+tg("a"))],
+ ["Galerie visuelle",GAL]],
+ st:"Initiative en cours de conception. Le partenariat de distribution avec Tieme Music est envisagé, sous réserve d’un accord."}
+];
+
+/* SECTION PRINCIPALE */
+var sec=document.createElement("section");sec.id="ventures";
+sec.innerHTML='<div class="wrap">'+
+'<div class="vh vr"><p class="eyebrow">Ventures &amp; Investments</p><h2>Building Ventures. Creating Long-Term Value.</h2><p>Trois secteurs stratégiques. Une vision entrepreneuriale. Construire aujourd’hui les entreprises de demain.</p></div>'+
+'<div class="vleg vr"><span>'+tg("a")+' objectif visé</span><span>'+tg("h")+' donnée envisagée, non confirmée</span><span>'+tg("r")+' dépend d’un accord</span><span>Aucune réalisation n’est revendiquée sans mention explicite.</span></div>'+
+'<div class="vg">'+V.map(function(v){return '<a class="card vc vr" href="#v-'+v.id+'" aria-label="Voir le projet '+v.name+'"><span class="vn">PROJET '+v.n+'</span><h3>'+v.name+'</h3><p class="vs">'+v.sector+'</p><p class="vd">'+v.short+'</p><span class="vst">'+v.status+'</span><span class="vf"><span>'+v.chip+'</span><i>↗</i></span></a>'}).join("")+'</div>'+
+'<div class="vo"><div class="vr"><p class="eyebrow">Investment overview</p><div class="vi"><div><b>3</b><span>Projets</span></div><div><b>3</b><span>Secteurs stratégiques</span></div><div><b>Bénin</b><span>Localisation principale</span></div><div><b>2026–2031</b><span>Horizon de développement</span></div><div style="grid-column:1/-1"><b>En structuration</b><span>Statut des projets</span></div></div></div>'+
+'<div class="vdg vr"><svg viewBox="0 0 340 280" role="img" aria-label="Trois secteurs reliés à une vision entrepreneuriale commune"><g stroke="#C6A76B" stroke-opacity=".45" fill="none"><line x1="170" y1="140" x2="170" y2="46"/><line x1="170" y1="140" x2="64" y2="214"/><line x1="170" y1="140" x2="276" y2="214"/><circle cx="170" cy="140" r="100" stroke-dasharray="3 6"/></g><g fill="#151D2B" stroke="#C6A76B"><circle cx="170" cy="140" r="36"/><circle cx="170" cy="46" r="30"/><circle cx="64" cy="214" r="30"/><circle cx="276" cy="214" r="30"/></g><g fill="#E8EAF0" font-family="Inter,sans-serif" font-size="11" text-anchor="middle"><text x="170" y="136">Vision</text><text x="170" y="150">commune</text><text x="170" y="50">01</text><text x="64" y="218">02</text><text x="276" y="218">03</text></g><g fill="#9aa3b5" font-family="Inter,sans-serif" font-size="10.5" text-anchor="middle"><text x="170" y="14">Événementiel et culture</text><text x="64" y="262">Agriculture</text><text x="276" y="262">Musique</text></g></svg><small>Vue des secteurs. Aucune répartition d’investissement n’est établie.</small></div></div>'+
+'<div class="vpt vr"><p class="eyebrow">Partnerships</p><h2 style="font-size:clamp(1.8rem,4.5vw,2.8rem)">Construire sur le long terme.</h2><p>Nous recherchons des partenaires stratégiques, des investisseurs et des collaborateurs partageant une vision commune : construire des entreprises solides, développer des opportunités économiques et créer de la valeur sur le long terme.</p><button class="btn" type="button" data-pm="">Discuss a Partnership</button></div>'+
+'</div>';
+var pa=$("#partenariats");if(pa&&pa.parentNode){var dv=document.createElement("div");dv.className="div in";pa.parentNode.insertBefore(dv,pa);pa.parentNode.insertBefore(sec,dv)}else{$("main").appendChild(sec)}
+
+/* LIEN DE MENU */
+var nl=$("#nl"),pl=nl&&nl.querySelector('a[href="#partenariats"]');
+if(pl){var li=document.createElement("li");li.innerHTML='<a href="#ventures">Ventures</a>';pl.parentNode.parentNode.insertBefore(li,pl.parentNode);
+  li.firstChild.addEventListener("click",function(){var m=$("#menu"),b=$("#bg");if(m)m.classList.remove("open");if(b)b.setAttribute("aria-expanded","false")})}
+var vl=nl&&nl.querySelector('a[href="#ventures"]'),ind=$("#ind");
+if(vl&&"IntersectionObserver" in window){var so=new IntersectionObserver(function(l){l.forEach(function(x){if(!x.isIntersecting)return;var on=x.target.id==="ventures";vl.classList.toggle("on",on);if(on){[].forEach.call(nl.querySelectorAll("a"),function(a){if(a!==vl)a.classList.remove("on")});if(ind&&ind.offsetParent!==null){ind.style.left=vl.offsetLeft+14+"px";ind.style.width=vl.offsetWidth-28+"px"}}})},{rootMargin:"-45% 0px -50% 0px"});
+  [].forEach.call(A("main section"),function(s){so.observe(s)})}
+if("IntersectionObserver" in window&&!rm){var io=new IntersectionObserver(function(l){l.forEach(function(x){if(x.isIntersecting){x.target.classList.add("in");io.unobserve(x.target)}})},{threshold:.1});
+  [].forEach.call(A("#ventures .vr"),function(el,i){el.style.transitionDelay=(i%3)*90+"ms";io.observe(el)})}else{[].forEach.call(A("#ventures .vr"),function(e){e.classList.add("in")})}
+
+/* PAGES DE PROJET */
+var vp=document.createElement("div");vp.id="vp";vp.setAttribute("role","dialog");vp.setAttribute("aria-modal","true");vp.setAttribute("aria-label","Détail du projet");
+vp.innerHTML='<div class="vbar"><button type="button" id="vxx">← Ventures</button><span id="vct" style="color:#9aa3b5;font-size:.85rem"></span><div class="vnv"><a id="vpv" href="#" aria-label="Projet précédent">‹</a><a id="vnx" href="#" aria-label="Projet suivant">›</a></div></div><article class="vart" id="vbody"></article>';
+document.body.appendChild(vp);
+var last=null,cur=null;
+function show(v){var i=V.indexOf(v);
+  $("#vct").textContent="Projet "+v.n+" / 03";$("#vpv").href="#v-"+V[(i+2)%3].id;$("#vnx").href="#v-"+V[(i+1)%3].id;
+  $("#vbody").innerHTML='<p class="eyebrow">Projet n°'+v.n+' · '+v.sector+'</p><h2 class="vt">'+v.name+'</h2><p class="vq">'+v.tag+'</p><span class="vst" style="margin:0 0 28px">'+v.status+'</span>'+
+  v.S.map(function(s,k){return '<section class="vsec" style="--i:'+k+'"><h3>'+s[0]+'</h3>'+s[1]+'</section>'}).join("")+
+  '<section class="vsec" style="--i:12"><h3>Statut actuel</h3><div class="vstat">'+p(v.st)+'</div><div class="vend"><button class="btn" type="button" data-pm="'+v.name+'">Discuss a Partnership</button><a class="btn ol" href="#ventures">Tous les projets</a></div></section>';
+  vp.scrollTop=0;document.title=v.name+" | Mikael Fico"}
+function route(){var m=location.hash.match(/^#v-(\w+)$/),v=m&&V.filter(function(x){return x.id===m[1]})[0];
+  if(v){if(!vp.classList.contains("open"))last=document.activeElement;cur=v;show(v);vp.classList.add("open");document.documentElement.classList.add("vlock");$("#vxx").focus({preventScroll:true})}
+  else if(vp.classList.contains("open")){vp.classList.remove("open");document.documentElement.classList.remove("vlock");document.title="Mikael Fico | The Strategic Office";if(last&&last.focus)last.focus({preventScroll:true})}}
+addEventListener("hashchange",route);route();
+$("#vxx").addEventListener("click",function(){location.hash="#ventures"});
+
+/* FORMULAIRE DE PARTENARIAT */
+var vm=document.createElement("div");vm.id="vm";vm.setAttribute("role","dialog");vm.setAttribute("aria-modal","true");vm.setAttribute("aria-label","Discuter d’un partenariat");
+vm.innerHTML='<div class="vbx"><button class="vx" type="button" id="vmx" aria-label="Fermer">×</button><h3>Discuss a Partnership</h3><p style="color:#9aa3b5;margin:0">Présentez-moi votre intérêt, je reviens vers vous.</p>'+
+'<form id="vf" novalidate><label>Nom et prénom<input name="nom" autocomplete="name" required></label><label>Organisation<input name="org" autocomplete="organization"></label><label>Adresse e-mail<input name="email" type="email" autocomplete="email" required></label>'+
+'<label>Type de partenariat souhaité<select name="type" required><option value="">Choisir…</option><option>Partenaire stratégique</option><option>Investisseur</option><option>Entreprise ou sponsor</option><option>Collaborateur</option><option>Autre</option></select></label>'+
+'<label>Projet concerné<select name="projet" id="vpj"><option>Portefeuille global</option>'+V.map(function(v){return "<option>"+v.name+"</option>"}).join("")+'</select></label>'+
+'<label>Message<textarea name="message" required></textarea></label><input class="vhp" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">'+
+'<div class="vact"><button class="btn" type="submit">Envoyer par e-mail</button><button class="btn ol" type="button" id="vwa">Envoyer par WhatsApp</button></div><p id="vmsg" role="status" aria-live="polite"></p></form></div>';
+document.body.appendChild(vm);
+var lastF=null;
+function openM(name){lastF=document.activeElement;var s=$("#vpj");if(name)s.value=name;vm.classList.add("open");document.documentElement.classList.add("vlock");setTimeout(function(){var f=vm.querySelector("input");if(f)f.focus({preventScroll:true})},60)}
+function closeM(){vm.classList.remove("open");if(!vp.classList.contains("open"))document.documentElement.classList.remove("vlock");if(lastF&&lastF.focus)lastF.focus({preventScroll:true})}
+document.addEventListener("click",function(e){var b=e.target.closest("[data-pm]");if(b){e.preventDefault();openM(b.getAttribute("data-pm"))}});
+$("#vmx").addEventListener("click",closeM);vm.addEventListener("click",function(e){if(e.target===vm)closeM()});
+addEventListener("keydown",function(e){if(e.key==="Escape"){if(vm.classList.contains("open"))closeM();else if(vp.classList.contains("open"))location.hash="#ventures"}});
+var f=$("#vf"),msg=$("#vmsg");
+function data(){if(f.website&&f.website.value)return null;if(!f.checkValidity()){f.reportValidity();return null}
+  var d={};["nom","org","email","type","projet","message"].forEach(function(k){d[k]=String(f.elements[k].value).trim().slice(0,3000)});return d}
+function body(d){return "Nom : "+d.nom+"\nOrganisation : "+(d.org||"-")+"\nEmail : "+d.email+"\nType : "+d.type+"\nProjet : "+d.projet+"\n\nMessage :\n"+d.message}
+f.addEventListener("submit",function(e){e.preventDefault();var d=data();if(!d)return;
+  location.href="mailto:"+MAIL+"?subject="+encodeURIComponent("Partenariat : "+d.projet)+"&body="+encodeURIComponent(body(d));msg.textContent="Votre messagerie s’ouvre avec le message prêt à envoyer."});
+$("#vwa").addEventListener("click",function(){var d=data();if(!d)return;
+  window.open("https://wa.me/"+WA+"?text="+encodeURIComponent("Bonjour Mikael,\n"+body(d)),"_blank","noopener");msg.textContent="WhatsApp s’ouvre avec le message prêt à envoyer."});
+})();
+</script>
 </body>
-</html>
+                                                                                                                </html>
